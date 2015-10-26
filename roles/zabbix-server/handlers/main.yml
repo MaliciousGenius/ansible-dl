@@ -1,0 +1,19 @@
+---
+- name: nginx sevice reconfig
+  service: name=nginx
+           state=restarted
+           enabled=yes
+
+- name: php-fpm sevice reconfig
+  service: name=php-fpm
+           state=restarted
+           enabled=yes
+
+- name: zabbix-server sevice reconfig
+  service: name=zabbix-server
+           state=restarted
+           enabled=yes
+
+- name: firewall reload
+  service: name=firewalld
+           state=reloaded

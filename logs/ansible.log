@@ -1,0 +1,482 @@
+2015-10-26 12:17:39,099 p=26177 u=Administrator |   
+2015-10-26 12:17:39,099 p=26177 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/common.yml
+2015-10-26 12:17:39,100 p=26177 u=Administrator |   
+2015-10-26 12:17:39,494 p=26177 u=Administrator |  PLAY [all] ******************************************************************** 
+2015-10-26 12:17:39,494 p=26177 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-10-26 12:17:43,422 p=26177 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 12:17:46,073 p=26177 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 12:17:46,719 p=26177 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 12:17:46,722 p=26177 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 12:17:46,733 p=26177 u=Administrator |  TASK: [common | Hostname change] ********************************************** 
+2015-10-26 12:17:47,127 p=26177 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 12:17:47,504 p=26177 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 12:17:47,805 p=26177 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 12:17:47,806 p=26177 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 12:17:47,815 p=26177 u=Administrator |  TASK: [common | EPEL repository] ********************************************** 
+2015-10-26 12:18:30,038 p=26177 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 12:18:30,039 p=26177 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 12:18:31,670 p=26177 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 12:18:31,671 p=26177 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 12:18:31,693 p=26177 u=Administrator |  TASK: [common | Nux Dextop repository] **************************************** 
+2015-10-26 12:18:33,523 p=26177 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 12:18:35,853 p=26177 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 12:18:35,853 p=26177 u=Administrator |  changed: [zabbix-node-1.dl.local]
+2015-10-26 12:18:35,854 p=26177 u=Administrator |  changed: [template-pc.dl.local]
+2015-10-26 12:18:35,871 p=26177 u=Administrator |  TASK: [common | Adobe repository] ********************************************* 
+2015-10-26 12:18:37,852 p=26177 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 12:18:37,852 p=26177 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 12:18:37,853 p=26177 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 12:18:39,616 p=26177 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 12:18:39,626 p=26177 u=Administrator |  TASK: [common | Zabbix repository] ******************************************** 
+2015-10-26 12:18:41,332 p=26177 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 12:18:41,332 p=26177 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 12:18:42,287 p=26177 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 12:18:42,288 p=26177 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 12:18:42,298 p=26177 u=Administrator |  TASK: [common | Nginx repository] ********************************************* 
+2015-10-26 12:18:43,838 p=26177 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 12:18:43,839 p=26177 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 12:18:43,839 p=26177 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 12:18:45,324 p=26177 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 12:18:45,334 p=26177 u=Administrator |  TASK: [common | Development Tools install] ************************************ 
+2015-10-26 12:21:34,635 p=26177 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 12:22:43,524 p=26177 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 12:22:43,525 p=26177 u=Administrator |  changed: [zabbix-node-1.dl.local]
+2015-10-26 12:23:00,659 p=26177 u=Administrator |  changed: [template-pc.dl.local]
+2015-10-26 12:23:00,672 p=26177 u=Administrator |  TASK: [common | Packages install] ********************************************* 
+2015-10-26 12:23:11,066 p=26177 u=Administrator |  ok: [template-pc.dl.local] => (item=wget,git,mc)
+2015-10-26 12:23:11,066 p=26177 u=Administrator |  changed: [db-node-1.dl.local] => (item=wget,git,mc)
+2015-10-26 12:23:11,067 p=26177 u=Administrator |  ok: [root-console-1.dl.local] => (item=wget,git,mc)
+2015-10-26 12:23:12,516 p=26177 u=Administrator |  ok: [zabbix-node-1.dl.local] => (item=wget,git,mc)
+2015-10-26 12:23:12,527 p=26177 u=Administrator |  NOTIFIED: [common | epel repo disable] **************************************** 
+2015-10-26 12:23:12,995 p=26177 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 12:23:12,995 p=26177 u=Administrator |  NOTIFIED: [common | nux repo disable] ***************************************** 
+2015-10-26 12:23:13,299 p=26177 u=Administrator |  changed: [template-pc.dl.local]
+2015-10-26 12:23:13,715 p=26177 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 12:23:13,715 p=26177 u=Administrator |  changed: [zabbix-node-1.dl.local]
+2015-10-26 12:23:13,725 p=26177 u=Administrator |  NOTIFIED: [common | adobe repo disable] *************************************** 
+2015-10-26 12:23:14,113 p=26177 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 12:23:14,113 p=26177 u=Administrator |  NOTIFIED: [common | zabbix repo disable] ************************************** 
+2015-10-26 12:23:14,500 p=26177 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 12:23:14,501 p=26177 u=Administrator |  NOTIFIED: [common | nginx repo disable] *************************************** 
+2015-10-26 12:23:14,892 p=26177 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 12:23:14,892 p=26177 u=Administrator |  PLAY RECAP ******************************************************************** 
+2015-10-26 12:23:14,893 p=26177 u=Administrator |  db-node-1.dl.local         : ok=14   changed=13   unreachable=0    failed=0   
+2015-10-26 12:23:14,893 p=26177 u=Administrator |  root-console-1.dl.local    : ok=9    changed=1    unreachable=0    failed=0   
+2015-10-26 12:23:14,893 p=26177 u=Administrator |  template-pc.dl.local       : ok=10   changed=3    unreachable=0    failed=0   
+2015-10-26 12:23:14,893 p=26177 u=Administrator |  zabbix-node-1.dl.local     : ok=10   changed=3    unreachable=0    failed=0   
+2015-10-26 12:25:28,896 p=26974 u=Administrator |   
+2015-10-26 12:25:28,897 p=26974 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/common.yml
+2015-10-26 12:25:28,897 p=26974 u=Administrator |   
+2015-10-26 12:25:28,934 p=26974 u=Administrator |  PLAY [all] ******************************************************************** 
+2015-10-26 12:25:28,934 p=26974 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-10-26 12:25:31,906 p=26974 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 12:25:31,906 p=26974 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 12:25:33,258 p=26974 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 12:25:33,261 p=26974 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 12:25:33,272 p=26974 u=Administrator |  TASK: [common | Hostname change] ********************************************** 
+2015-10-26 12:25:33,620 p=26974 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 12:25:33,621 p=26974 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 12:25:34,140 p=26974 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 12:25:34,140 p=26974 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 12:25:34,149 p=26974 u=Administrator |  TASK: [common | EPEL repository] ********************************************** 
+2015-10-26 12:25:35,815 p=26974 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 12:25:35,816 p=26974 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 12:25:37,123 p=26974 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 12:25:37,124 p=26974 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 12:25:37,134 p=26974 u=Administrator |  TASK: [common | Nux Dextop repository] **************************************** 
+2015-10-26 12:25:38,382 p=26974 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 12:25:39,268 p=26974 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 12:25:39,268 p=26974 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 12:25:39,269 p=26974 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 12:25:39,282 p=26974 u=Administrator |  TASK: [common | Adobe repository] ********************************************* 
+2015-10-26 12:25:40,789 p=26974 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 12:25:41,733 p=26974 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 12:25:41,733 p=26974 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 12:25:41,734 p=26974 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 12:25:41,745 p=26974 u=Administrator |  TASK: [common | Zabbix repository] ******************************************** 
+2015-10-26 12:25:43,016 p=26974 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 12:25:43,017 p=26974 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 12:25:43,946 p=26974 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 12:25:43,946 p=26974 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 12:25:43,957 p=26974 u=Administrator |  TASK: [common | Nginx repository] ********************************************* 
+2015-10-26 12:25:45,425 p=26974 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 12:25:45,425 p=26974 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 12:25:46,553 p=26974 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 12:25:46,553 p=26974 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 12:25:46,563 p=26974 u=Administrator |  TASK: [common | Development Tools install] ************************************ 
+2015-10-26 12:25:49,224 p=26974 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 12:25:49,224 p=26974 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 12:25:49,225 p=26974 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 12:25:49,487 p=26974 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 12:25:49,498 p=26974 u=Administrator |  TASK: [common | Packages install] ********************************************* 
+2015-10-26 12:25:50,762 p=26974 u=Administrator |  ok: [root-console-1.dl.local] => (item=wget,git,mc)
+2015-10-26 12:25:51,645 p=26974 u=Administrator |  ok: [template-pc.dl.local] => (item=wget,git,mc)
+2015-10-26 12:25:51,645 p=26974 u=Administrator |  ok: [zabbix-node-1.dl.local] => (item=wget,git,mc)
+2015-10-26 12:25:51,646 p=26974 u=Administrator |  ok: [db-node-1.dl.local] => (item=wget,git,mc)
+2015-10-26 12:25:51,658 p=26974 u=Administrator |  PLAY RECAP ******************************************************************** 
+2015-10-26 12:25:51,659 p=26974 u=Administrator |  db-node-1.dl.local         : ok=9    changed=0    unreachable=0    failed=0   
+2015-10-26 12:25:51,659 p=26974 u=Administrator |  root-console-1.dl.local    : ok=9    changed=0    unreachable=0    failed=0   
+2015-10-26 12:25:51,659 p=26974 u=Administrator |  template-pc.dl.local       : ok=9    changed=0    unreachable=0    failed=0   
+2015-10-26 12:25:51,659 p=26974 u=Administrator |  zabbix-node-1.dl.local     : ok=9    changed=0    unreachable=0    failed=0   
+2015-10-26 12:26:03,399 p=27500 u=Administrator |   
+2015-10-26 12:26:03,399 p=27500 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/postgres.yml
+2015-10-26 12:26:03,399 p=27500 u=Administrator |   
+2015-10-26 12:26:03,438 p=27500 u=Administrator |  PLAY [db-node-1.dl.local] ***************************************************** 
+2015-10-26 12:26:03,439 p=27500 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-10-26 12:26:04,077 p=27500 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 12:26:04,078 p=27500 u=Administrator |  TASK: [postgres | Additional packages install] ******************************** 
+2015-10-26 12:27:08,812 p=27500 u=Administrator |  changed: [db-node-1.dl.local] => (item=perl-core,openjade,opensp,docbook-dtds,docbook-style-dsssl,icu,libicu,libicu-devel,readline-devel,zlib-devel,openssl-devel,pam-devel,python-devel,krb5-devel,libxml2-devel,libxslt-devel,openldap-devel,e2fsprogs-devel,tcl-devel)
+2015-10-26 12:27:08,813 p=27500 u=Administrator |  TASK: [postgres | Build packages | create link to libicuuc.so (x64)] ********** 
+2015-10-26 12:27:09,239 p=27500 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 12:27:09,240 p=27500 u=Administrator |  TASK: [postgres | Build packages | create link to libicuuc.so (x32)] ********** 
+2015-10-26 12:27:09,619 p=27500 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 12:27:09,620 p=27500 u=Administrator |  TASK: [postgres | Build packages | create link to libicudata.so (x64)] ******** 
+2015-10-26 12:27:10,014 p=27500 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 12:27:10,014 p=27500 u=Administrator |  TASK: [postgres | Build packages | create link to libicudata.so (x32)] ******** 
+2015-10-26 12:27:10,452 p=27500 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 12:27:10,453 p=27500 u=Administrator |  TASK: [postgres | Build packages | create link to libicui18n.so (x64)] ******** 
+2015-10-26 12:27:10,925 p=27500 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 12:27:10,925 p=27500 u=Administrator |  TASK: [postgres | Build packages | create link to libicui18n.so (x32)] ******** 
+2015-10-26 12:27:11,362 p=27500 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 12:27:11,362 p=27500 u=Administrator |  TASK: [postgres | Build packages | postgres source download] ****************** 
+2015-10-26 12:31:15,081 p=27500 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 12:31:15,081 p=27500 u=Administrator |  TASK: [postgres | Build packages | postgres source install] ******************* 
+2015-10-26 12:31:15,717 p=27500 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 12:31:15,717 p=27500 u=Administrator |  TASK: [postgres | Build packages | postgres source patch] ********************* 
+2015-10-26 12:31:16,409 p=27500 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 12:31:16,410 p=27500 u=Administrator |  TASK: [postgres | Build packages | postgres source build] ********************* 
+2015-10-26 12:35:23,978 p=27500 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 12:35:23,979 p=27500 u=Administrator |  TASK: [postgres | Postgres packages install] ********************************** 
+2015-10-26 12:35:37,921 p=27500 u=Administrator |  changed: [db-node-1.dl.local] => (item=/root/rpmbuild/RPMS/x86_64/postgresql94-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-contrib-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-debuginfo-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-devel-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-docs-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-libs-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-plperl-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-plpython-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-server-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-test-9.4.2-1.1C.x86_64.rpm)
+2015-10-26 12:35:37,921 p=27500 u=Administrator |  TASK: [postgres | Postgres configure | remove old data directory] ************* 
+2015-10-26 12:35:38,330 p=27500 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 12:35:38,331 p=27500 u=Administrator |  TASK: [postgres | Postgres configure | modify new data directory] ************* 
+2015-10-26 12:35:38,717 p=27500 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 12:35:38,717 p=27500 u=Administrator |  TASK: [postgres | Postgres configure | create link to new data directory] ***** 
+2015-10-26 12:35:39,109 p=27500 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 12:35:39,110 p=27500 u=Administrator |  TASK: [postgres | Postgres configure | initializing database] ***************** 
+2015-10-26 12:35:43,700 p=27500 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 12:35:43,701 p=27500 u=Administrator |  TASK: [postgres | Postgres configure | auth configure] ************************ 
+2015-10-26 12:35:44,324 p=27500 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 12:35:44,324 p=27500 u=Administrator |  TASK: [postgres | Firewall configure | port open] ***************************** 
+2015-10-26 12:35:44,918 p=27500 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 12:35:44,918 p=27500 u=Administrator |  TASK: [postgres | Start postgresql service] *********************************** 
+2015-10-26 12:35:47,760 p=27500 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 12:35:47,761 p=27500 u=Administrator |  NOTIFIED: [postgres | firewall reload] **************************************** 
+2015-10-26 12:35:49,190 p=27500 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 12:35:49,190 p=27500 u=Administrator |  PLAY RECAP ******************************************************************** 
+2015-10-26 12:35:49,190 p=27500 u=Administrator |  db-node-1.dl.local         : ok=21   changed=20   unreachable=0    failed=0   
+2015-10-26 12:41:49,750 p=28195 u=Administrator |   
+2015-10-26 12:41:49,750 p=28195 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/postgres.yml
+2015-10-26 12:41:49,750 p=28195 u=Administrator |   
+2015-10-26 12:41:49,786 p=28195 u=Administrator |  PLAY [db-node-1.dl.local] ***************************************************** 
+2015-10-26 12:41:49,786 p=28195 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-10-26 12:41:51,777 p=28195 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 12:41:51,777 p=28195 u=Administrator |  TASK: [postgres | Additional packages install] ******************************** 
+2015-10-26 12:41:55,479 p=28195 u=Administrator |  ok: [db-node-1.dl.local] => (item=perl-core,openjade,opensp,docbook-dtds,docbook-style-dsssl,icu,libicu,libicu-devel,readline-devel,zlib-devel,openssl-devel,pam-devel,python-devel,krb5-devel,libxml2-devel,libxslt-devel,openldap-devel,e2fsprogs-devel,tcl-devel)
+2015-10-26 12:41:55,480 p=28195 u=Administrator |  TASK: [postgres | Build packages | create link to libicuuc.so (x64)] ********** 
+2015-10-26 12:41:55,808 p=28195 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 12:41:55,809 p=28195 u=Administrator |  TASK: [postgres | Build packages | create link to libicuuc.so (x32)] ********** 
+2015-10-26 12:41:56,130 p=28195 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 12:41:56,130 p=28195 u=Administrator |  TASK: [postgres | Build packages | create link to libicudata.so (x64)] ******** 
+2015-10-26 12:41:56,476 p=28195 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 12:41:56,476 p=28195 u=Administrator |  TASK: [postgres | Build packages | create link to libicudata.so (x32)] ******** 
+2015-10-26 12:41:56,859 p=28195 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 12:41:56,860 p=28195 u=Administrator |  TASK: [postgres | Build packages | create link to libicui18n.so (x64)] ******** 
+2015-10-26 12:41:57,248 p=28195 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 12:41:57,248 p=28195 u=Administrator |  TASK: [postgres | Build packages | create link to libicui18n.so (x32)] ******** 
+2015-10-26 12:41:57,652 p=28195 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 12:41:57,653 p=28195 u=Administrator |  TASK: [postgres | Build packages | postgres source download] ****************** 
+2015-10-26 12:41:58,034 p=28195 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 12:41:58,035 p=28195 u=Administrator |  TASK: [postgres | Build packages | postgres source install] ******************* 
+2015-10-26 12:41:58,605 p=28195 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 12:41:58,606 p=28195 u=Administrator |  TASK: [postgres | Build packages | postgres source patch] ********************* 
+2015-10-26 12:41:59,200 p=28195 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 12:41:59,200 p=28195 u=Administrator |  TASK: [postgres | Build packages | postgres source build] ********************* 
+2015-10-26 12:41:59,520 p=28195 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 12:41:59,520 p=28195 u=Administrator |  TASK: [postgres | Postgres packages install] ********************************** 
+2015-10-26 12:42:04,098 p=28195 u=Administrator |  ok: [db-node-1.dl.local] => (item=/root/rpmbuild/RPMS/x86_64/postgresql94-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-contrib-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-debuginfo-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-devel-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-docs-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-libs-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-plperl-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-plpython-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-server-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-test-9.4.2-1.1C.x86_64.rpm)
+2015-10-26 12:42:04,099 p=28195 u=Administrator |  TASK: [postgres | Postgres configure | remove old data directory] ************* 
+2015-10-26 12:42:04,474 p=28195 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 12:42:04,474 p=28195 u=Administrator |  TASK: [postgres | Postgres configure | modify new data directory] ************* 
+2015-10-26 12:42:04,851 p=28195 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 12:42:04,852 p=28195 u=Administrator |  TASK: [postgres | Postgres configure | create link to new data directory] ***** 
+2015-10-26 12:42:05,224 p=28195 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 12:42:05,224 p=28195 u=Administrator |  TASK: [postgres | Postgres configure | initializing database] ***************** 
+2015-10-26 12:42:05,643 p=28195 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 12:42:05,643 p=28195 u=Administrator |  TASK: [postgres | Postgres configure | auth configure] ************************ 
+2015-10-26 12:42:06,184 p=28195 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 12:42:06,184 p=28195 u=Administrator |  TASK: [postgres | Firewall configure | port open] ***************************** 
+2015-10-26 12:42:06,694 p=28195 u=Administrator |  failed: [db-node-1.dl.local] => {"failed": true, "parsed": false}
+2015-10-26 12:42:06,694 p=28195 u=Administrator |  failed=True msg='failed to connect to the firewalld daemon'
+OpenSSH_6.6.1, OpenSSL 1.0.1e-fips 11 Feb 2013
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 56: Applying options for *
+debug1: auto-mux: Trying existing master
+debug1: mux_client_request_session: master session id: 2
+Shared connection to 192.168.0.250 closed.
+
+2015-10-26 12:42:06,695 p=28195 u=Administrator |  FATAL: all hosts have already failed -- aborting
+2015-10-26 12:42:06,695 p=28195 u=Administrator |  PLAY RECAP ******************************************************************** 
+2015-10-26 12:42:06,695 p=28195 u=Administrator |             to retry, use: --limit @/root/postgres.retry
+
+2015-10-26 12:42:06,696 p=28195 u=Administrator |  db-node-1.dl.local         : ok=18   changed=4    unreachable=0    failed=1   
+2015-10-26 12:57:07,209 p=28744 u=Administrator |   
+2015-10-26 12:57:07,209 p=28744 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/postgres.yml
+2015-10-26 12:57:07,209 p=28744 u=Administrator |   
+2015-10-26 12:57:07,250 p=28744 u=Administrator |  PLAY [db-node-1.dl.local] ***************************************************** 
+2015-10-26 12:57:07,251 p=28744 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-10-26 12:57:09,475 p=28744 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 12:57:09,476 p=28744 u=Administrator |  TASK: [postgres | Additional packages install] ******************************** 
+2015-10-26 12:57:13,646 p=28744 u=Administrator |  ok: [db-node-1.dl.local] => (item=perl-core,openjade,opensp,docbook-dtds,docbook-style-dsssl,icu,libicu,libicu-devel,readline-devel,zlib-devel,openssl-devel,pam-devel,python-devel,krb5-devel,libxml2-devel,libxslt-devel,openldap-devel,e2fsprogs-devel,tcl-devel)
+2015-10-26 12:57:13,647 p=28744 u=Administrator |  TASK: [postgres | Build packages | create link to libicuuc.so (x64)] ********** 
+2015-10-26 12:57:14,041 p=28744 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 12:57:14,042 p=28744 u=Administrator |  TASK: [postgres | Build packages | create link to libicuuc.so (x32)] ********** 
+2015-10-26 12:57:14,437 p=28744 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 12:57:14,437 p=28744 u=Administrator |  TASK: [postgres | Build packages | create link to libicudata.so (x64)] ******** 
+2015-10-26 12:57:14,836 p=28744 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 12:57:14,837 p=28744 u=Administrator |  TASK: [postgres | Build packages | create link to libicudata.so (x32)] ******** 
+2015-10-26 12:57:15,247 p=28744 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 12:57:15,247 p=28744 u=Administrator |  TASK: [postgres | Build packages | create link to libicui18n.so (x64)] ******** 
+2015-10-26 12:57:15,640 p=28744 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 12:57:15,641 p=28744 u=Administrator |  TASK: [postgres | Build packages | create link to libicui18n.so (x32)] ******** 
+2015-10-26 12:57:16,026 p=28744 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 12:57:16,027 p=28744 u=Administrator |  TASK: [postgres | Build packages | postgres source download] ****************** 
+2015-10-26 12:57:16,422 p=28744 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 12:57:16,422 p=28744 u=Administrator |  TASK: [postgres | Build packages | postgres source install] ******************* 
+2015-10-26 12:57:17,048 p=28744 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 12:57:17,048 p=28744 u=Administrator |  TASK: [postgres | Build packages | postgres source patch] ********************* 
+2015-10-26 12:57:17,748 p=28744 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 12:57:17,748 p=28744 u=Administrator |  TASK: [postgres | Build packages | postgres source build] ********************* 
+2015-10-26 12:57:18,145 p=28744 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 12:57:18,146 p=28744 u=Administrator |  TASK: [postgres | Postgres packages install] ********************************** 
+2015-10-26 12:57:23,032 p=28744 u=Administrator |  ok: [db-node-1.dl.local] => (item=/root/rpmbuild/RPMS/x86_64/postgresql94-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-contrib-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-debuginfo-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-devel-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-docs-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-libs-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-plperl-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-plpython-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-server-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-test-9.4.2-1.1C.x86_64.rpm)
+2015-10-26 12:57:23,033 p=28744 u=Administrator |  TASK: [postgres | Postgres configure | remove old data directory] ************* 
+2015-10-26 12:57:23,426 p=28744 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 12:57:23,427 p=28744 u=Administrator |  TASK: [postgres | Postgres configure | modify new data directory] ************* 
+2015-10-26 12:57:23,856 p=28744 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 12:57:23,856 p=28744 u=Administrator |  TASK: [postgres | Postgres configure | create link to new data directory] ***** 
+2015-10-26 12:57:24,189 p=28744 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 12:57:24,189 p=28744 u=Administrator |  TASK: [postgres | Postgres configure | initializing database] ***************** 
+2015-10-26 12:57:24,590 p=28744 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 12:57:24,591 p=28744 u=Administrator |  TASK: [postgres | Postgres configure | auth configure] ************************ 
+2015-10-26 12:57:25,116 p=28744 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 12:57:25,116 p=28744 u=Administrator |  TASK: [postgres | Firewall configure | port open] ***************************** 
+2015-10-26 12:57:25,585 p=28744 u=Administrator |  failed: [db-node-1.dl.local] => {"failed": true, "parsed": false}
+2015-10-26 12:57:25,586 p=28744 u=Administrator |  failed=True msg='failed to connect to the firewalld daemon'
+OpenSSH_6.6.1, OpenSSL 1.0.1e-fips 11 Feb 2013
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 56: Applying options for *
+debug1: auto-mux: Trying existing master
+debug1: mux_client_request_session: master session id: 2
+Shared connection to 192.168.0.250 closed.
+
+2015-10-26 12:57:25,586 p=28744 u=Administrator |  FATAL: all hosts have already failed -- aborting
+2015-10-26 12:57:25,586 p=28744 u=Administrator |  PLAY RECAP ******************************************************************** 
+2015-10-26 12:57:25,587 p=28744 u=Administrator |             to retry, use: --limit @/root/postgres.retry
+
+2015-10-26 12:57:25,587 p=28744 u=Administrator |  db-node-1.dl.local         : ok=18   changed=4    unreachable=0    failed=1   
+2015-10-26 13:39:10,636 p=30706 u=Administrator |   
+2015-10-26 13:39:10,636 p=30706 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/common.yml
+2015-10-26 13:39:10,636 p=30706 u=Administrator |   
+2015-10-26 13:39:10,669 p=30706 u=Administrator |  PLAY [all] ******************************************************************** 
+2015-10-26 13:39:10,670 p=30706 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-10-26 13:39:13,649 p=30706 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 13:39:13,649 p=30706 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 13:39:15,324 p=30706 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 13:39:15,327 p=30706 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 13:39:15,338 p=30706 u=Administrator |  TASK: [common | Hostname change] ********************************************** 
+2015-10-26 13:39:15,688 p=30706 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 13:39:15,689 p=30706 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 13:39:16,263 p=30706 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 13:39:16,263 p=30706 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 13:39:16,274 p=30706 u=Administrator |  TASK: [common | EPEL repository] ********************************************** 
+2015-10-26 13:39:50,895 p=30706 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 13:39:50,895 p=30706 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 13:39:52,479 p=30706 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 13:39:52,480 p=30706 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 13:39:52,490 p=30706 u=Administrator |  TASK: [common | Nux Dextop repository] **************************************** 
+2015-10-26 13:39:54,031 p=30706 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 13:39:54,031 p=30706 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 13:39:54,985 p=30706 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 13:39:54,985 p=30706 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 13:39:54,996 p=30706 u=Administrator |  TASK: [common | Adobe repository] ********************************************* 
+2015-10-26 13:39:56,852 p=30706 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 13:39:57,997 p=30706 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 13:39:57,998 p=30706 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 13:39:57,998 p=30706 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 13:39:58,013 p=30706 u=Administrator |  TASK: [common | Zabbix repository] ******************************************** 
+2015-10-26 13:39:59,507 p=30706 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 13:39:59,507 p=30706 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 13:39:59,507 p=30706 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 13:40:00,441 p=30706 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 13:40:00,451 p=30706 u=Administrator |  TASK: [common | Nginx repository] ********************************************* 
+2015-10-26 13:40:02,299 p=30706 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 13:40:02,300 p=30706 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 13:40:03,457 p=30706 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 13:40:03,458 p=30706 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 13:40:03,468 p=30706 u=Administrator |  TASK: [common | Development Tools install] ************************************ 
+2015-10-26 13:41:23,101 p=30706 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 13:41:23,102 p=30706 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 13:41:25,608 p=30706 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 13:41:25,609 p=30706 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 13:41:25,620 p=30706 u=Administrator |  TASK: [common | Packages install] ********************************************* 
+2015-10-26 13:41:35,177 p=30706 u=Administrator |  ok: [root-console-1.dl.local] => (item=wget,git,mc)
+2015-10-26 13:41:35,178 p=30706 u=Administrator |  ok: [template-pc.dl.local] => (item=wget,git,mc)
+2015-10-26 13:41:36,038 p=30706 u=Administrator |  changed: [db-node-1.dl.local] => (item=wget,git,mc)
+2015-10-26 13:41:36,038 p=30706 u=Administrator |  ok: [zabbix-node-1.dl.local] => (item=wget,git,mc)
+2015-10-26 13:41:36,049 p=30706 u=Administrator |  NOTIFIED: [common | epel repo disable] **************************************** 
+2015-10-26 13:41:36,424 p=30706 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 13:41:36,424 p=30706 u=Administrator |  NOTIFIED: [common | nux repo disable] ***************************************** 
+2015-10-26 13:41:36,783 p=30706 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 13:41:36,784 p=30706 u=Administrator |  NOTIFIED: [common | adobe repo disable] *************************************** 
+2015-10-26 13:41:37,143 p=30706 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 13:41:37,143 p=30706 u=Administrator |  NOTIFIED: [common | zabbix repo disable] ************************************** 
+2015-10-26 13:41:37,511 p=30706 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 13:41:37,511 p=30706 u=Administrator |  NOTIFIED: [common | nginx repo disable] *************************************** 
+2015-10-26 13:41:37,878 p=30706 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 13:41:37,878 p=30706 u=Administrator |  PLAY RECAP ******************************************************************** 
+2015-10-26 13:41:37,878 p=30706 u=Administrator |  db-node-1.dl.local         : ok=14   changed=13   unreachable=0    failed=0   
+2015-10-26 13:41:37,879 p=30706 u=Administrator |  root-console-1.dl.local    : ok=9    changed=0    unreachable=0    failed=0   
+2015-10-26 13:41:37,879 p=30706 u=Administrator |  template-pc.dl.local       : ok=9    changed=0    unreachable=0    failed=0   
+2015-10-26 13:41:37,879 p=30706 u=Administrator |  zabbix-node-1.dl.local     : ok=9    changed=0    unreachable=0    failed=0   
+2015-10-26 13:41:57,576 p=31403 u=Administrator |   
+2015-10-26 13:41:57,577 p=31403 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/postgres.yml
+2015-10-26 13:41:57,577 p=31403 u=Administrator |   
+2015-10-26 13:41:57,616 p=31403 u=Administrator |  PLAY [db-node-1.dl.local] ***************************************************** 
+2015-10-26 13:41:57,616 p=31403 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-10-26 13:41:58,707 p=31403 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 13:41:58,708 p=31403 u=Administrator |  TASK: [postgres | Additional packages install] ******************************** 
+2015-10-26 13:42:51,945 p=31403 u=Administrator |  changed: [db-node-1.dl.local] => (item=perl-core,openjade,opensp,docbook-dtds,docbook-style-dsssl,icu,libicu,libicu-devel,readline-devel,zlib-devel,openssl-devel,pam-devel,python-devel,krb5-devel,libxml2-devel,libxslt-devel,openldap-devel,e2fsprogs-devel,tcl-devel)
+2015-10-26 13:42:51,946 p=31403 u=Administrator |  TASK: [postgres | Build packages | create link to libicuuc.so (x64)] ********** 
+2015-10-26 13:42:52,322 p=31403 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 13:42:52,322 p=31403 u=Administrator |  TASK: [postgres | Build packages | create link to libicuuc.so (x32)] ********** 
+2015-10-26 13:42:52,686 p=31403 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 13:42:52,686 p=31403 u=Administrator |  TASK: [postgres | Build packages | create link to libicudata.so (x64)] ******** 
+2015-10-26 13:42:53,085 p=31403 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 13:42:53,086 p=31403 u=Administrator |  TASK: [postgres | Build packages | create link to libicudata.so (x32)] ******** 
+2015-10-26 13:42:53,452 p=31403 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 13:42:53,452 p=31403 u=Administrator |  TASK: [postgres | Build packages | create link to libicui18n.so (x64)] ******** 
+2015-10-26 13:42:53,815 p=31403 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 13:42:53,815 p=31403 u=Administrator |  TASK: [postgres | Build packages | create link to libicui18n.so (x32)] ******** 
+2015-10-26 13:42:54,173 p=31403 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 13:42:54,174 p=31403 u=Administrator |  TASK: [postgres | Build packages | postgres source download] ****************** 
+2015-10-26 13:44:05,216 p=31403 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 13:44:05,216 p=31403 u=Administrator |  TASK: [postgres | Build packages | postgres source install] ******************* 
+2015-10-26 13:44:05,770 p=31403 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 13:44:05,771 p=31403 u=Administrator |  TASK: [postgres | Build packages | postgres source patch] ********************* 
+2015-10-26 13:44:06,397 p=31403 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 13:44:06,397 p=31403 u=Administrator |  TASK: [postgres | Build packages | postgres source build] ********************* 
+2015-10-26 13:48:04,457 p=31403 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 13:48:04,458 p=31403 u=Administrator |  TASK: [postgres | Postgres packages install] ********************************** 
+2015-10-26 13:48:17,973 p=31403 u=Administrator |  changed: [db-node-1.dl.local] => (item=/root/rpmbuild/RPMS/x86_64/postgresql94-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-contrib-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-debuginfo-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-devel-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-docs-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-libs-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-plperl-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-plpython-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-server-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-test-9.4.2-1.1C.x86_64.rpm)
+2015-10-26 13:48:17,973 p=31403 u=Administrator |  TASK: [postgres | Postgres configure | remove old data directory] ************* 
+2015-10-26 13:48:18,344 p=31403 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 13:48:18,345 p=31403 u=Administrator |  TASK: [postgres | Postgres configure | modify new data directory] ************* 
+2015-10-26 13:48:18,707 p=31403 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 13:48:18,707 p=31403 u=Administrator |  TASK: [postgres | Postgres configure | create link to new data directory] ***** 
+2015-10-26 13:48:19,068 p=31403 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 13:48:19,069 p=31403 u=Administrator |  TASK: [postgres | Postgres configure | initializing database] ***************** 
+2015-10-26 13:48:21,617 p=31403 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 13:48:21,618 p=31403 u=Administrator |  TASK: [postgres | Postgres configure | auth configure] ************************ 
+2015-10-26 13:48:22,149 p=31403 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 13:48:22,149 p=31403 u=Administrator |  TASK: [postgres | Firewall configure | port open] ***************************** 
+2015-10-26 13:48:22,670 p=31403 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 13:48:22,670 p=31403 u=Administrator |  TASK: [postgres | Start postgresql service] *********************************** 
+2015-10-26 13:48:25,319 p=31403 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 13:48:25,320 p=31403 u=Administrator |  NOTIFIED: [postgres | firewall reload] **************************************** 
+2015-10-26 13:48:26,701 p=31403 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 13:48:26,702 p=31403 u=Administrator |  PLAY RECAP ******************************************************************** 
+2015-10-26 13:48:26,702 p=31403 u=Administrator |  db-node-1.dl.local         : ok=21   changed=20   unreachable=0    failed=0   
+2015-10-26 13:58:52,145 p=31897 u=Administrator |   
+2015-10-26 13:58:52,146 p=31897 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/postgres.yml
+2015-10-26 13:58:52,146 p=31897 u=Administrator |   
+2015-10-26 13:58:52,186 p=31897 u=Administrator |  PLAY [db-node-1.dl.local] ***************************************************** 
+2015-10-26 13:58:52,186 p=31897 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-10-26 13:58:54,185 p=31897 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 13:58:54,185 p=31897 u=Administrator |  TASK: [postgres | Additional packages install] ******************************** 
+2015-10-26 13:58:58,192 p=31897 u=Administrator |  ok: [db-node-1.dl.local] => (item=perl-core,openjade,opensp,docbook-dtds,docbook-style-dsssl,icu,libicu,libicu-devel,readline-devel,zlib-devel,openssl-devel,pam-devel,python-devel,krb5-devel,libxml2-devel,libxslt-devel,openldap-devel,e2fsprogs-devel,tcl-devel)
+2015-10-26 13:58:58,193 p=31897 u=Administrator |  TASK: [postgres | Build packages | create link to libicuuc.so (x64)] ********** 
+2015-10-26 13:58:58,574 p=31897 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 13:58:58,575 p=31897 u=Administrator |  TASK: [postgres | Build packages | create link to libicuuc.so (x32)] ********** 
+2015-10-26 13:58:58,957 p=31897 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 13:58:58,957 p=31897 u=Administrator |  TASK: [postgres | Build packages | create link to libicudata.so (x64)] ******** 
+2015-10-26 13:58:59,335 p=31897 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 13:58:59,335 p=31897 u=Administrator |  TASK: [postgres | Build packages | create link to libicudata.so (x32)] ******** 
+2015-10-26 13:58:59,693 p=31897 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 13:58:59,693 p=31897 u=Administrator |  TASK: [postgres | Build packages | create link to libicui18n.so (x64)] ******** 
+2015-10-26 13:59:00,091 p=31897 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 13:59:00,092 p=31897 u=Administrator |  TASK: [postgres | Build packages | create link to libicui18n.so (x32)] ******** 
+2015-10-26 13:59:00,478 p=31897 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 13:59:00,479 p=31897 u=Administrator |  TASK: [postgres | Build packages | postgres source download] ****************** 
+2015-10-26 13:59:00,853 p=31897 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 13:59:00,854 p=31897 u=Administrator |  TASK: [postgres | Build packages | postgres source install] ******************* 
+2015-10-26 13:59:01,466 p=31897 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 13:59:01,466 p=31897 u=Administrator |  TASK: [postgres | Build packages | postgres source patch] ********************* 
+2015-10-26 13:59:02,112 p=31897 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 13:59:02,112 p=31897 u=Administrator |  TASK: [postgres | Build packages | postgres source build] ********************* 
+2015-10-26 13:59:02,477 p=31897 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 13:59:02,477 p=31897 u=Administrator |  TASK: [postgres | Postgres packages install] ********************************** 
+2015-10-26 13:59:07,176 p=31897 u=Administrator |  ok: [db-node-1.dl.local] => (item=/root/rpmbuild/RPMS/x86_64/postgresql94-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-contrib-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-debuginfo-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-devel-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-docs-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-libs-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-plperl-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-plpython-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-server-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-test-9.4.2-1.1C.x86_64.rpm)
+2015-10-26 13:59:07,176 p=31897 u=Administrator |  TASK: [postgres | Postgres configure | remove old data directory] ************* 
+2015-10-26 13:59:07,556 p=31897 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 13:59:07,557 p=31897 u=Administrator |  TASK: [postgres | Postgres configure | modify new data directory] ************* 
+2015-10-26 13:59:07,927 p=31897 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 13:59:07,928 p=31897 u=Administrator |  TASK: [postgres | Postgres configure | create link to new data directory] ***** 
+2015-10-26 13:59:08,305 p=31897 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 13:59:08,306 p=31897 u=Administrator |  TASK: [postgres | Postgres configure | initializing database] ***************** 
+2015-10-26 13:59:08,718 p=31897 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 13:59:08,718 p=31897 u=Administrator |  TASK: [postgres | Postgres configure | auth configure] ************************ 
+2015-10-26 13:59:09,299 p=31897 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 13:59:09,300 p=31897 u=Administrator |  TASK: [postgres | Firewall configure | port open] ***************************** 
+2015-10-26 13:59:09,770 p=31897 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 13:59:09,771 p=31897 u=Administrator |  TASK: [postgres | Start postgresql service] *********************************** 
+2015-10-26 13:59:10,194 p=31897 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 13:59:10,194 p=31897 u=Administrator |  PLAY RECAP ******************************************************************** 
+2015-10-26 13:59:10,195 p=31897 u=Administrator |  db-node-1.dl.local         : ok=20   changed=4    unreachable=0    failed=0   
+2015-10-26 14:00:07,764 p=32099 u=Administrator |   
+2015-10-26 14:00:07,764 p=32099 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/postgres.yml
+2015-10-26 14:00:07,764 p=32099 u=Administrator |   
+2015-10-26 14:00:07,801 p=32099 u=Administrator |  PLAY [db-node-1.dl.local] ***************************************************** 
+2015-10-26 14:00:07,802 p=32099 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-10-26 14:00:08,315 p=32099 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 14:00:08,316 p=32099 u=Administrator |  TASK: [postgres | Additional packages install] ******************************** 
+2015-10-26 14:00:12,193 p=32099 u=Administrator |  ok: [db-node-1.dl.local] => (item=perl-core,openjade,opensp,docbook-dtds,docbook-style-dsssl,icu,libicu,libicu-devel,readline-devel,zlib-devel,openssl-devel,pam-devel,python-devel,krb5-devel,libxml2-devel,libxslt-devel,openldap-devel,e2fsprogs-devel,tcl-devel)
+2015-10-26 14:00:12,194 p=32099 u=Administrator |  TASK: [postgres | Build packages | create link to libicuuc.so (x64)] ********** 
+2015-10-26 14:00:12,528 p=32099 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 14:00:12,529 p=32099 u=Administrator |  TASK: [postgres | Build packages | create link to libicuuc.so (x32)] ********** 
+2015-10-26 14:00:12,872 p=32099 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 14:00:12,872 p=32099 u=Administrator |  TASK: [postgres | Build packages | create link to libicudata.so (x64)] ******** 
+2015-10-26 14:00:13,271 p=32099 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 14:00:13,271 p=32099 u=Administrator |  TASK: [postgres | Build packages | create link to libicudata.so (x32)] ******** 
+2015-10-26 14:00:13,657 p=32099 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 14:00:13,658 p=32099 u=Administrator |  TASK: [postgres | Build packages | create link to libicui18n.so (x64)] ******** 
+2015-10-26 14:00:13,998 p=32099 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 14:00:13,998 p=32099 u=Administrator |  TASK: [postgres | Build packages | create link to libicui18n.so (x32)] ******** 
+2015-10-26 14:00:14,314 p=32099 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 14:00:14,315 p=32099 u=Administrator |  TASK: [postgres | Build packages | postgres source download] ****************** 
+2015-10-26 14:00:14,721 p=32099 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 14:00:14,722 p=32099 u=Administrator |  TASK: [postgres | Build packages | postgres source install] ******************* 
+2015-10-26 14:00:15,307 p=32099 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 14:00:15,308 p=32099 u=Administrator |  TASK: [postgres | Build packages | postgres source patch] ********************* 
+2015-10-26 14:00:15,951 p=32099 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 14:00:15,952 p=32099 u=Administrator |  TASK: [postgres | Build packages | postgres source build] ********************* 
+2015-10-26 14:00:16,298 p=32099 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 14:00:16,298 p=32099 u=Administrator |  TASK: [postgres | Postgres packages install] ********************************** 
+2015-10-26 14:00:20,636 p=32099 u=Administrator |  ok: [db-node-1.dl.local] => (item=/root/rpmbuild/RPMS/x86_64/postgresql94-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-contrib-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-debuginfo-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-devel-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-docs-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-libs-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-plperl-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-plpython-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-server-9.4.2-1.1C.x86_64.rpm,/root/rpmbuild/RPMS/x86_64/postgresql94-test-9.4.2-1.1C.x86_64.rpm)
+2015-10-26 14:00:20,636 p=32099 u=Administrator |  TASK: [postgres | Postgres configure | remove old data directory] ************* 
+2015-10-26 14:00:21,046 p=32099 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 14:00:21,046 p=32099 u=Administrator |  TASK: [postgres | Postgres configure | modify new data directory] ************* 
+2015-10-26 14:00:21,462 p=32099 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 14:00:21,463 p=32099 u=Administrator |  TASK: [postgres | Postgres configure | create link to new data directory] ***** 
+2015-10-26 14:00:21,853 p=32099 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 14:00:21,853 p=32099 u=Administrator |  TASK: [postgres | Postgres configure | initializing database] ***************** 
+2015-10-26 14:00:22,314 p=32099 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 14:00:22,315 p=32099 u=Administrator |  TASK: [postgres | Postgres configure | auth configure] ************************ 
+2015-10-26 14:00:22,908 p=32099 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 14:00:22,909 p=32099 u=Administrator |  TASK: [postgres | Firewall configure | port open] ***************************** 
+2015-10-26 14:00:23,446 p=32099 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 14:00:23,446 p=32099 u=Administrator |  TASK: [postgres | Start postgresql service] *********************************** 
+2015-10-26 14:00:23,797 p=32099 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 14:00:23,798 p=32099 u=Administrator |  PLAY RECAP ******************************************************************** 
+2015-10-26 14:00:23,798 p=32099 u=Administrator |  db-node-1.dl.local         : ok=20   changed=4    unreachable=0    failed=0   

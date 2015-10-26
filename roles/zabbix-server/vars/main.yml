@@ -1,0 +1,18 @@
+DBHost: 192.168.0.250
+DBName: zabbix
+DBUser: zabbix
+DBPassword: password
+
+AdditionalPackages:
+  - nginx
+  - php-fpm
+  - postgresql
+
+ZabbixPackages:
+  - zabbix-server-pgsql
+  - zabbix-web-pgsql
+  - zabbix-agent
+
+ZabbixServerPort:
+  - 10051/tcp
+  - 10051/udp

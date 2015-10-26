@@ -1,0 +1,5 @@
+---
+- hosts: zabbix-servers
+  user: root
+  roles:
+    - zabbix-server

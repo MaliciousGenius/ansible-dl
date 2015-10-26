@@ -14,7 +14,9 @@
 - include: 02-postgres-config.yml
 
 - name: Firewall configure | port open
-  firewalld: zone=public service=postgresql permanent=true state=enabled
+  firewalld: zone=public
+             service=postgresql
+             permanent=true state=enabled
   notify:
     - firewall reload
 

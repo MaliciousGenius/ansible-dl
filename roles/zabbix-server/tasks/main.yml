@@ -1,0 +1,44 @@
+---
+- name: Additional packages install
+  yum: name={{ item }}
+       enablerepo=nginx
+       state=present
+  with_items: AdditionalPackages
+  notify:
+    - nginx sevice reconfig
+    - php-fpm sevice reconfig
+
+- name: Zabbix packages install
+  yum: name={{ item }}
+       enablerepo=zabbix,epel
+       state=present
+  with_items: ZabbixPackages
+  notify:
+    - zabbix-server sevice reconfig
+
+- include: 01-php-config.yml
+- include: 02-nginx-config.yml
+- include: 03-zabbix-config.yml
+
+- name: SELinux configure | zabbix_can_network=true
+  shell: setsebool -P zabbix_can_network=true
+
+- name: SELinux configure | httpd_can_network_connect=true
+  shell: setsebool -P httpd_can_network_connect=true
+
+- name: Firewall configure | front-end port open
+  firewalld: zone=public
+             service=http
+             permanent=true
+             state=enabled
+  notify:
+    - firewall reload
+
+- name: Firewall configure | back-end port open
+  firewalld: zone=public
+             port={{ item }}
+             permanent=true
+             state=enabled
+  with_items: ZabbixServerPort
+  notify:
+    - firewall reload
