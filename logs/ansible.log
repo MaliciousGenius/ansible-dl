@@ -480,3 +480,250 @@ Shared connection to 192.168.0.250 closed.
 2015-10-26 14:00:23,797 p=32099 u=Administrator |  ok: [db-node-1.dl.local]
 2015-10-26 14:00:23,798 p=32099 u=Administrator |  PLAY RECAP ******************************************************************** 
 2015-10-26 14:00:23,798 p=32099 u=Administrator |  db-node-1.dl.local         : ok=20   changed=4    unreachable=0    failed=0   
+2015-10-26 14:59:08,056 p=1459 u=Administrator |   
+2015-10-26 14:59:08,056 p=1459 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/common.yml
+2015-10-26 14:59:08,056 p=1459 u=Administrator |   
+2015-10-26 14:59:08,092 p=1459 u=Administrator |  PLAY [all] ******************************************************************** 
+2015-10-26 14:59:08,093 p=1459 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-10-26 14:59:11,204 p=1459 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 14:59:11,204 p=1459 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 14:59:12,821 p=1459 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 14:59:12,823 p=1459 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 14:59:12,834 p=1459 u=Administrator |  TASK: [common | Hostname change] ********************************************** 
+2015-10-26 14:59:13,165 p=1459 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 14:59:13,165 p=1459 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 14:59:13,661 p=1459 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 14:59:13,662 p=1459 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 14:59:13,672 p=1459 u=Administrator |  TASK: [common | EPEL repository] ********************************************** 
+2015-10-26 14:59:16,067 p=1459 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 14:59:16,067 p=1459 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 14:59:16,068 p=1459 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 14:59:17,402 p=1459 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 14:59:17,411 p=1459 u=Administrator |  TASK: [common | Nux Dextop repository] **************************************** 
+2015-10-26 14:59:19,463 p=1459 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 14:59:19,463 p=1459 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 14:59:20,544 p=1459 u=Administrator |  changed: [zabbix-node-1.dl.local]
+2015-10-26 14:59:20,544 p=1459 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 14:59:20,555 p=1459 u=Administrator |  TASK: [common | Adobe repository] ********************************************* 
+2015-10-26 14:59:22,168 p=1459 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 14:59:23,097 p=1459 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 14:59:23,097 p=1459 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 14:59:23,097 p=1459 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 14:59:23,110 p=1459 u=Administrator |  TASK: [common | Zabbix repository] ******************************************** 
+2015-10-26 14:59:24,357 p=1459 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 14:59:24,358 p=1459 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 14:59:25,274 p=1459 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 14:59:25,274 p=1459 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 14:59:25,284 p=1459 u=Administrator |  TASK: [common | Nginx repository] ********************************************* 
+2015-10-26 14:59:26,736 p=1459 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 14:59:26,736 p=1459 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 14:59:26,737 p=1459 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 14:59:28,187 p=1459 u=Administrator |  changed: [zabbix-node-1.dl.local]
+2015-10-26 14:59:28,238 p=1459 u=Administrator |  TASK: [common | Development Tools install] ************************************ 
+2015-10-26 15:01:48,254 p=1459 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 15:01:48,255 p=1459 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 15:01:48,255 p=1459 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 15:01:48,256 p=1459 u=Administrator |  changed: [zabbix-node-1.dl.local]
+2015-10-26 15:01:48,279 p=1459 u=Administrator |  TASK: [common | Packages install] ********************************************* 
+2015-10-26 15:01:51,731 p=1459 u=Administrator |  ok: [root-console-1.dl.local] => (item=wget,git,mc)
+2015-10-26 15:01:52,707 p=1459 u=Administrator |  ok: [template-pc.dl.local] => (item=wget,git,mc)
+2015-10-26 15:01:52,708 p=1459 u=Administrator |  ok: [zabbix-node-1.dl.local] => (item=wget,git,mc)
+2015-10-26 15:01:52,708 p=1459 u=Administrator |  ok: [db-node-1.dl.local] => (item=wget,git,mc)
+2015-10-26 15:01:52,720 p=1459 u=Administrator |  NOTIFIED: [common | nux repo disable] ***************************************** 
+2015-10-26 15:01:53,137 p=1459 u=Administrator |  changed: [zabbix-node-1.dl.local]
+2015-10-26 15:01:53,138 p=1459 u=Administrator |  NOTIFIED: [common | nginx repo disable] *************************************** 
+2015-10-26 15:01:53,498 p=1459 u=Administrator |  changed: [zabbix-node-1.dl.local]
+2015-10-26 15:01:53,499 p=1459 u=Administrator |  PLAY RECAP ******************************************************************** 
+2015-10-26 15:01:53,499 p=1459 u=Administrator |  db-node-1.dl.local         : ok=9    changed=0    unreachable=0    failed=0   
+2015-10-26 15:01:53,499 p=1459 u=Administrator |  root-console-1.dl.local    : ok=9    changed=0    unreachable=0    failed=0   
+2015-10-26 15:01:53,499 p=1459 u=Administrator |  template-pc.dl.local       : ok=9    changed=0    unreachable=0    failed=0   
+2015-10-26 15:01:53,499 p=1459 u=Administrator |  zabbix-node-1.dl.local     : ok=11   changed=5    unreachable=0    failed=0   
+2015-10-26 15:02:45,874 p=2228 u=Administrator |   
+2015-10-26 15:02:45,874 p=2228 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/service/zabbix-database-creation.yml
+2015-10-26 15:02:45,874 p=2228 u=Administrator |   
+2015-10-26 15:02:45,904 p=2228 u=Administrator |  PLAY [db-node-1.dl.local] ***************************************************** 
+2015-10-26 15:02:45,904 p=2228 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-10-26 15:02:46,591 p=2228 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 15:02:46,591 p=2228 u=Administrator |  TASK: [Python-psycopg2 install] *********************************************** 
+2015-10-26 15:02:49,542 p=2228 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 15:02:49,542 p=2228 u=Administrator |  TASK: [Create database user] ************************************************** 
+2015-10-26 15:02:50,273 p=2228 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 15:02:50,273 p=2228 u=Administrator |  TASK: [Create database"] ****************************************************** 
+2015-10-26 15:02:51,245 p=2228 u=Administrator |  changed: [db-node-1.dl.local]
+2015-10-26 15:02:51,246 p=2228 u=Administrator |  PLAY RECAP ******************************************************************** 
+2015-10-26 15:02:51,246 p=2228 u=Administrator |  db-node-1.dl.local         : ok=4    changed=3    unreachable=0    failed=0   
+2015-10-26 15:03:04,273 p=2262 u=Administrator |   
+2015-10-26 15:03:04,273 p=2262 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/zabbix-server.yml
+2015-10-26 15:03:04,273 p=2262 u=Administrator |   
+2015-10-26 15:03:04,312 p=2262 u=Administrator |  PLAY [zabbix-servers] ********************************************************* 
+2015-10-26 15:03:04,312 p=2262 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-10-26 15:03:06,133 p=2262 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 15:03:06,133 p=2262 u=Administrator |  TASK: [zabbix-server | Additional packages install] *************************** 
+2015-10-26 15:03:17,271 p=2262 u=Administrator |  changed: [zabbix-node-1.dl.local] => (item=nginx,php-fpm,postgresql)
+2015-10-26 15:03:17,272 p=2262 u=Administrator |  TASK: [zabbix-server | Zabbix packages install] ******************************* 
+2015-10-26 15:04:58,519 p=2262 u=Administrator |  changed: [zabbix-node-1.dl.local] => (item=zabbix-server-pgsql,zabbix-web-pgsql,zabbix-agent)
+2015-10-26 15:04:58,519 p=2262 u=Administrator |  TASK: [zabbix-server | PHP configure | set timezone in php.ini] *************** 
+2015-10-26 15:04:58,911 p=2262 u=Administrator |  changed: [zabbix-node-1.dl.local]
+2015-10-26 15:04:58,911 p=2262 u=Administrator |  TASK: [zabbix-server | PHP configure | set post_max_size in php.ini] ********** 
+2015-10-26 15:04:59,282 p=2262 u=Administrator |  changed: [zabbix-node-1.dl.local]
+2015-10-26 15:04:59,283 p=2262 u=Administrator |  TASK: [zabbix-server | PHP configure | set max_execution_time in php.ini] ***** 
+2015-10-26 15:04:59,653 p=2262 u=Administrator |  changed: [zabbix-node-1.dl.local]
+2015-10-26 15:04:59,653 p=2262 u=Administrator |  TASK: [zabbix-server | PHP configure | set max_input_time in php.ini] ********* 
+2015-10-26 15:05:00,023 p=2262 u=Administrator |  changed: [zabbix-node-1.dl.local]
+2015-10-26 15:05:00,024 p=2262 u=Administrator |  TASK: [zabbix-server | Nginx configure | remove old default.conf] ************* 
+2015-10-26 15:05:00,395 p=2262 u=Administrator |  changed: [zabbix-node-1.dl.local]
+2015-10-26 15:05:00,395 p=2262 u=Administrator |  TASK: [zabbix-server | Nginx configure | copy new default.conf] *************** 
+2015-10-26 15:05:00,910 p=2262 u=Administrator |  changed: [zabbix-node-1.dl.local]
+2015-10-26 15:05:00,910 p=2262 u=Administrator |  TASK: [zabbix-server | Zabbix server configure | copy new zabbix.conf.php] **** 
+2015-10-26 15:05:01,460 p=2262 u=Administrator |  changed: [zabbix-node-1.dl.local]
+2015-10-26 15:05:01,461 p=2262 u=Administrator |  TASK: [zabbix-server | Zabbix server configure | remove old zabbix_server.conf] *** 
+2015-10-26 15:05:01,824 p=2262 u=Administrator |  changed: [zabbix-node-1.dl.local]
+2015-10-26 15:05:01,824 p=2262 u=Administrator |  TASK: [zabbix-server | Zabbix server configure | copy new zabbix_server.conf] *** 
+2015-10-26 15:05:02,355 p=2262 u=Administrator |  changed: [zabbix-node-1.dl.local]
+2015-10-26 15:05:02,356 p=2262 u=Administrator |  TASK: [zabbix-server | SELinux configure | zabbix_can_network=true] *********** 
+2015-10-26 15:05:16,056 p=2262 u=Administrator |  changed: [zabbix-node-1.dl.local]
+2015-10-26 15:05:16,057 p=2262 u=Administrator |  TASK: [zabbix-server | SELinux configure | httpd_can_network_connect=true] **** 
+2015-10-26 15:05:29,075 p=2262 u=Administrator |  changed: [zabbix-node-1.dl.local]
+2015-10-26 15:05:29,075 p=2262 u=Administrator |  TASK: [zabbix-server | Firewall configure | front-end port open] ************** 
+2015-10-26 15:05:29,668 p=2262 u=Administrator |  changed: [zabbix-node-1.dl.local]
+2015-10-26 15:05:29,668 p=2262 u=Administrator |  TASK: [zabbix-server | Firewall configure | back-end port open] *************** 
+2015-10-26 15:05:30,200 p=2262 u=Administrator |  changed: [zabbix-node-1.dl.local] => (item=10051/tcp)
+2015-10-26 15:05:30,728 p=2262 u=Administrator |  changed: [zabbix-node-1.dl.local] => (item=10051/udp)
+2015-10-26 15:05:30,728 p=2262 u=Administrator |  NOTIFIED: [zabbix-server | nginx sevice reconfig] ***************************** 
+2015-10-26 15:05:31,336 p=2262 u=Administrator |  changed: [zabbix-node-1.dl.local]
+2015-10-26 15:05:31,336 p=2262 u=Administrator |  NOTIFIED: [zabbix-server | php-fpm sevice reconfig] *************************** 
+2015-10-26 15:05:31,978 p=2262 u=Administrator |  changed: [zabbix-node-1.dl.local]
+2015-10-26 15:05:31,978 p=2262 u=Administrator |  NOTIFIED: [zabbix-server | zabbix-server sevice reconfig] ********************* 
+2015-10-26 15:05:32,662 p=2262 u=Administrator |  changed: [zabbix-node-1.dl.local]
+2015-10-26 15:05:32,662 p=2262 u=Administrator |  NOTIFIED: [zabbix-server | firewall reload] *********************************** 
+2015-10-26 15:05:33,982 p=2262 u=Administrator |  changed: [zabbix-node-1.dl.local]
+2015-10-26 15:05:33,983 p=2262 u=Administrator |  PLAY RECAP ******************************************************************** 
+2015-10-26 15:05:33,983 p=2262 u=Administrator |  zabbix-node-1.dl.local     : ok=20   changed=19   unreachable=0    failed=0   
+2015-10-26 15:06:51,314 p=2432 u=Administrator |   
+2015-10-26 15:06:51,314 p=2432 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/service/zabbix-database-sqlload.yml
+2015-10-26 15:06:51,314 p=2432 u=Administrator |   
+2015-10-26 15:06:51,344 p=2432 u=Administrator |  PLAY [zabbix-node-1.dl.local] ************************************************* 
+2015-10-26 15:06:51,345 p=2432 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-10-26 15:06:53,218 p=2432 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 15:06:53,219 p=2432 u=Administrator |  TASK: [Importing schema file] ************************************************* 
+2015-10-26 15:06:54,398 p=2432 u=Administrator |  changed: [zabbix-node-1.dl.local]
+2015-10-26 15:06:54,399 p=2432 u=Administrator |  TASK: [Importing images file] ************************************************* 
+2015-10-26 15:06:55,017 p=2432 u=Administrator |  changed: [zabbix-node-1.dl.local]
+2015-10-26 15:06:55,017 p=2432 u=Administrator |  TASK: [Importing data file] *************************************************** 
+2015-10-26 15:06:56,830 p=2432 u=Administrator |  changed: [zabbix-node-1.dl.local]
+2015-10-26 15:06:56,831 p=2432 u=Administrator |  PLAY RECAP ******************************************************************** 
+2015-10-26 15:06:56,831 p=2432 u=Administrator |  zabbix-node-1.dl.local     : ok=4    changed=3    unreachable=0    failed=0   
+2015-10-26 15:28:05,901 p=3184 u=Administrator |   
+2015-10-26 15:28:05,901 p=3184 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/zabbix
+2015-10-26 15:28:05,901 p=3184 u=Administrator |   
+2015-10-26 15:28:05,902 p=3184 u=Administrator |  ERROR: the playbook: ./playbooks/zabbix could not be found
+2015-10-26 15:28:08,451 p=3192 u=Administrator |   
+2015-10-26 15:28:08,451 p=3192 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/service/zabbix-database-sqlload.yml
+2015-10-26 15:28:08,451 p=3192 u=Administrator |   
+2015-10-26 15:28:08,482 p=3192 u=Administrator |  PLAY [zabbix-node-1.dl.local] ************************************************* 
+2015-10-26 15:28:08,482 p=3192 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-10-26 15:28:09,858 p=3192 u=Administrator |  ERROR: interrupted
+2015-10-26 15:29:16,935 p=3258 u=Administrator |   
+2015-10-26 15:29:16,935 p=3258 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/zabbix-agent.yml
+2015-10-26 15:29:16,935 p=3258 u=Administrator |   
+2015-10-26 15:29:16,969 p=3258 u=Administrator |  PLAY [workstation;zabbix-servers] ********************************************* 
+2015-10-26 15:29:16,970 p=3258 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-10-26 15:29:19,401 p=3258 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 15:29:19,404 p=3258 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 15:29:19,503 p=3258 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 15:29:19,515 p=3258 u=Administrator |  TASK: [zabbix-agent | Zabbix-agent packages install] ************************** 
+2015-10-26 15:29:20,326 p=3258 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 15:29:20,327 p=3258 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 15:29:20,365 p=3258 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 15:29:20,375 p=3258 u=Administrator |  TASK: [zabbix-agent | Zabbix-agent configure | remove old zabbix_agentd.conf] *** 
+2015-10-26 15:29:20,564 p=3258 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 15:29:20,781 p=3258 u=Administrator |  changed: [template-pc.dl.local]
+2015-10-26 15:29:20,782 p=3258 u=Administrator |  changed: [zabbix-node-1.dl.local]
+2015-10-26 15:29:20,791 p=3258 u=Administrator |  TASK: [zabbix-agent | Zabbix-agent configure | copy new zabbix_agentd.conf] *** 
+2015-10-26 15:29:21,112 p=3258 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 15:29:21,112 p=3258 u=Administrator |  changed: [template-pc.dl.local]
+2015-10-26 15:29:21,369 p=3258 u=Administrator |  changed: [zabbix-node-1.dl.local]
+2015-10-26 15:29:21,380 p=3258 u=Administrator |  TASK: [zabbix-agent | Firewall configure | back-end port open] **************** 
+2015-10-26 15:29:21,982 p=3258 u=Administrator |  ok: [template-pc.dl.local] => (item=10050/tcp)
+2015-10-26 15:29:21,982 p=3258 u=Administrator |  failed: [zabbix-node-1.dl.local] => (item=10050/tcp) => {"failed": true, "item": "10050/tcp", "parsed": false}
+2015-10-26 15:29:21,983 p=3258 u=Administrator |  failed=True msg='failed to connect to the firewalld daemon'
+OpenSSH_6.6.1, OpenSSL 1.0.1e-fips 11 Feb 2013
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 56: Applying options for *
+debug1: auto-mux: Trying existing master
+debug1: mux_client_request_session: master session id: 2
+Shared connection to 192.168.0.251 closed.
+
+2015-10-26 15:29:22,471 p=3258 u=Administrator |  ok: [root-console-1.dl.local] => (item=10050/tcp)
+2015-10-26 15:29:22,472 p=3258 u=Administrator |  ok: [template-pc.dl.local] => (item=10050/udp)
+2015-10-26 15:29:22,472 p=3258 u=Administrator |  failed: [zabbix-node-1.dl.local] => (item=10050/udp) => {"failed": true, "item": "10050/udp", "parsed": false}
+2015-10-26 15:29:22,472 p=3258 u=Administrator |  failed=True msg='failed to connect to the firewalld daemon'
+OpenSSH_6.6.1, OpenSSL 1.0.1e-fips 11 Feb 2013
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 56: Applying options for *
+debug1: auto-mux: Trying existing master
+debug1: mux_client_request_session: master session id: 2
+Shared connection to 192.168.0.251 closed.
+
+2015-10-26 15:29:22,772 p=3258 u=Administrator |  ok: [root-console-1.dl.local] => (item=10050/udp)
+2015-10-26 15:29:22,780 p=3258 u=Administrator |  NOTIFIED: [zabbix-agent | zabbix-agent sevice reconfig] *********************** 
+2015-10-26 15:29:23,072 p=3258 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 15:29:23,102 p=3258 u=Administrator |  changed: [template-pc.dl.local]
+2015-10-26 15:29:23,112 p=3258 u=Administrator |  PLAY RECAP ******************************************************************** 
+2015-10-26 15:29:23,113 p=3258 u=Administrator |             to retry, use: --limit @/root/zabbix-agent.retry
+
+2015-10-26 15:29:23,113 p=3258 u=Administrator |  root-console-1.dl.local    : ok=6    changed=3    unreachable=0    failed=0   
+2015-10-26 15:29:23,114 p=3258 u=Administrator |  template-pc.dl.local       : ok=6    changed=3    unreachable=0    failed=0   
+2015-10-26 15:29:23,114 p=3258 u=Administrator |  zabbix-node-1.dl.local     : ok=4    changed=2    unreachable=0    failed=1   
+2015-10-26 15:30:44,655 p=3698 u=Administrator |   
+2015-10-26 15:30:44,655 p=3698 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/zabbix-agent.yml
+2015-10-26 15:30:44,655 p=3698 u=Administrator |   
+2015-10-26 15:30:44,688 p=3698 u=Administrator |  PLAY [workstation;zabbix-servers] ********************************************* 
+2015-10-26 15:30:44,689 p=3698 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-10-26 15:30:46,610 p=3698 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 15:30:46,613 p=3698 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 15:30:47,100 p=3698 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 15:30:47,111 p=3698 u=Administrator |  TASK: [zabbix-agent | Zabbix-agent packages install] ************************** 
+2015-10-26 15:30:47,880 p=3698 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 15:30:47,881 p=3698 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 15:30:47,881 p=3698 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 15:30:47,892 p=3698 u=Administrator |  TASK: [zabbix-agent | Zabbix-agent configure | remove old zabbix_agentd.conf] *** 
+2015-10-26 15:30:48,084 p=3698 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 15:30:48,304 p=3698 u=Administrator |  changed: [template-pc.dl.local]
+2015-10-26 15:30:48,305 p=3698 u=Administrator |  changed: [zabbix-node-1.dl.local]
+2015-10-26 15:30:48,316 p=3698 u=Administrator |  TASK: [zabbix-agent | Zabbix-agent configure | copy new zabbix_agentd.conf] *** 
+2015-10-26 15:30:48,641 p=3698 u=Administrator |  changed: [template-pc.dl.local]
+2015-10-26 15:30:48,641 p=3698 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 15:30:48,899 p=3698 u=Administrator |  changed: [zabbix-node-1.dl.local]
+2015-10-26 15:30:48,911 p=3698 u=Administrator |  TASK: [zabbix-agent | Firewall configure | back-end port open] **************** 
+2015-10-26 15:30:49,456 p=3698 u=Administrator |  ok: [root-console-1.dl.local] => (item=10050/tcp)
+2015-10-26 15:30:49,457 p=3698 u=Administrator |  ok: [template-pc.dl.local] => (item=10050/tcp)
+2015-10-26 15:30:49,457 p=3698 u=Administrator |  failed: [zabbix-node-1.dl.local] => (item=10050/tcp) => {"failed": true, "item": "10050/tcp", "parsed": false}
+2015-10-26 15:30:49,457 p=3698 u=Administrator |  failed=True msg='failed to connect to the firewalld daemon'
+OpenSSH_6.6.1, OpenSSL 1.0.1e-fips 11 Feb 2013
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 56: Applying options for *
+debug1: auto-mux: Trying existing master
+debug1: mux_client_request_session: master session id: 2
+Shared connection to 192.168.0.251 closed.
+
+2015-10-26 15:30:49,962 p=3698 u=Administrator |  ok: [root-console-1.dl.local] => (item=10050/udp)
+2015-10-26 15:30:49,962 p=3698 u=Administrator |  ok: [template-pc.dl.local] => (item=10050/udp)
+2015-10-26 15:30:49,962 p=3698 u=Administrator |  failed: [zabbix-node-1.dl.local] => (item=10050/udp) => {"failed": true, "item": "10050/udp", "parsed": false}
+2015-10-26 15:30:49,963 p=3698 u=Administrator |  failed=True msg='failed to connect to the firewalld daemon'
+OpenSSH_6.6.1, OpenSSL 1.0.1e-fips 11 Feb 2013
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 56: Applying options for *
+debug1: auto-mux: Trying existing master
+debug1: mux_client_request_session: master session id: 2
+Shared connection to 192.168.0.251 closed.
+
+2015-10-26 15:30:49,974 p=3698 u=Administrator |  NOTIFIED: [zabbix-agent | zabbix-agent sevice reconfig] *********************** 
+2015-10-26 15:30:50,254 p=3698 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 15:30:50,294 p=3698 u=Administrator |  changed: [template-pc.dl.local]
+2015-10-26 15:30:50,304 p=3698 u=Administrator |  PLAY RECAP ******************************************************************** 
+2015-10-26 15:30:50,304 p=3698 u=Administrator |             to retry, use: --limit @/root/zabbix-agent.retry
+
+2015-10-26 15:30:50,304 p=3698 u=Administrator |  root-console-1.dl.local    : ok=6    changed=3    unreachable=0    failed=0   
+2015-10-26 15:30:50,304 p=3698 u=Administrator |  template-pc.dl.local       : ok=6    changed=3    unreachable=0    failed=0   
+2015-10-26 15:30:50,305 p=3698 u=Administrator |  zabbix-node-1.dl.local     : ok=4    changed=2    unreachable=0    failed=1   

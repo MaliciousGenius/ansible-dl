@@ -1,0 +1,5 @@
+ZabbixServerIP: 192.168.0.251
+
+ZabbixAgentPort:
+  - 10050/tcp
+  - 10050/udp

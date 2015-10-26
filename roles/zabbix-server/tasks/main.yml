@@ -8,7 +8,7 @@
     - nginx sevice reconfig
     - php-fpm sevice reconfig
 
-- name: Zabbix packages install
+- name: Zabbix-server packages install
   yum: name={{ item }}
        enablerepo=zabbix,epel
        state=present

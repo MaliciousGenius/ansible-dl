@@ -1,0 +1,13 @@
+---
+- name: Zabbix-agent configure | remove old zabbix_agentd.conf
+  file: path=/etc/zabbix/zabbix_agentd.conf
+        state=absent
+
+- name: Zabbix-agent configure | copy new zabbix_agentd.conf
+  template: src=zabbix_agentd.conf
+            dest=/etc/zabbix/zabbix_agentd.conf
+            owner=root
+            group=root
+            mode=0644
+  notify:
+    - zabbix-agent sevice reconfig

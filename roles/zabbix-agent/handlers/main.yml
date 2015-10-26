@@ -1,0 +1,9 @@
+---
+- name: zabbix-agent sevice reconfig
+  service: name=zabbix-agent
+           state=restarted
+           enabled=yes
+
+- name: firewall reload
+  service: name=firewalld
+           state=reloaded

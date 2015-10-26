@@ -1,0 +1,13 @@
+---
+- hosts:
+    - zabbix-node-1.dl.local
+  user: root
+  roles:
+    - zabbix-server
+
+- hosts: 
+    - workstation
+    - zabbix-servers
+  user: root
+  roles:
+    - zabbix-agent

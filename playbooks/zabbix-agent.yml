@@ -1,0 +1,7 @@
+---
+- hosts: 
+    - workstation
+    - zabbix-servers
+  user: root
+  roles:
+    - zabbix-agent
