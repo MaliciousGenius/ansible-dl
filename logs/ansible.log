@@ -727,3 +727,105 @@ Shared connection to 192.168.0.251 closed.
 2015-10-26 15:30:50,304 p=3698 u=Administrator |  root-console-1.dl.local    : ok=6    changed=3    unreachable=0    failed=0   
 2015-10-26 15:30:50,304 p=3698 u=Administrator |  template-pc.dl.local       : ok=6    changed=3    unreachable=0    failed=0   
 2015-10-26 15:30:50,305 p=3698 u=Administrator |  zabbix-node-1.dl.local     : ok=4    changed=2    unreachable=0    failed=1   
+2015-10-26 15:35:35,866 p=4185 u=Administrator |   
+2015-10-26 15:35:35,866 p=4185 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/common.yml
+2015-10-26 15:35:35,866 p=4185 u=Administrator |   
+2015-10-26 15:35:35,904 p=4185 u=Administrator |  PLAY [all] ******************************************************************** 
+2015-10-26 15:35:35,904 p=4185 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-10-26 15:35:38,840 p=4185 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 15:35:39,754 p=4185 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 15:35:40,308 p=4185 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 15:35:40,311 p=4185 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 15:35:40,323 p=4185 u=Administrator |  TASK: [common | Hostname change] ********************************************** 
+2015-10-26 15:35:40,659 p=4185 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 15:35:41,178 p=4185 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 15:35:41,179 p=4185 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 15:35:41,179 p=4185 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 15:35:41,191 p=4185 u=Administrator |  TASK: [common | EPEL repository] ********************************************** 
+2015-10-26 15:35:42,929 p=4185 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 15:35:44,536 p=4185 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 15:35:44,537 p=4185 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 15:36:50,093 p=4185 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 15:36:50,106 p=4185 u=Administrator |  TASK: [common | Nux Dextop repository] **************************************** 
+2015-10-26 15:36:51,582 p=4185 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 15:36:53,019 p=4185 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 15:36:54,934 p=4185 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 15:36:54,934 p=4185 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 15:36:54,949 p=4185 u=Administrator |  TASK: [common | Adobe repository] ********************************************* 
+2015-10-26 15:36:56,483 p=4185 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 15:36:56,483 p=4185 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 15:36:57,455 p=4185 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 15:36:57,456 p=4185 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 15:36:57,468 p=4185 u=Administrator |  TASK: [common | Zabbix repository] ******************************************** 
+2015-10-26 15:36:58,849 p=4185 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 15:36:58,849 p=4185 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 15:36:59,820 p=4185 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 15:36:59,821 p=4185 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 15:36:59,831 p=4185 u=Administrator |  TASK: [common | Nginx repository] ********************************************* 
+2015-10-26 15:37:02,577 p=4185 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 15:37:02,578 p=4185 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 15:37:02,578 p=4185 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 15:37:02,579 p=4185 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 15:37:02,594 p=4185 u=Administrator |  TASK: [common | Development Tools install] ************************************ 
+2015-10-26 15:37:04,713 p=4185 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-26 15:37:04,714 p=4185 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 15:37:08,021 p=4185 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 15:38:56,231 p=4185 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 15:38:56,240 p=4185 u=Administrator |  TASK: [common | Packages install] ********************************************* 
+2015-10-26 15:38:59,322 p=4185 u=Administrator |  ok: [template-pc.dl.local] => (item=wget,git,mc)
+2015-10-26 15:39:01,164 p=4185 u=Administrator |  ok: [db-node-1.dl.local] => (item=wget,git,mc)
+2015-10-26 15:39:01,164 p=4185 u=Administrator |  ok: [zabbix-node-1.dl.local] => (item=wget,git,mc)
+2015-10-26 15:39:18,375 p=4185 u=Administrator |  changed: [root-console-1.dl.local] => (item=wget,git,mc)
+2015-10-26 15:39:18,385 p=4185 u=Administrator |  NOTIFIED: [common | epel repo disable] **************************************** 
+2015-10-26 15:39:18,774 p=4185 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 15:39:18,775 p=4185 u=Administrator |  NOTIFIED: [common | nux repo disable] ***************************************** 
+2015-10-26 15:39:19,151 p=4185 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 15:39:19,151 p=4185 u=Administrator |  NOTIFIED: [common | adobe repo disable] *************************************** 
+2015-10-26 15:39:19,526 p=4185 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 15:39:19,526 p=4185 u=Administrator |  NOTIFIED: [common | zabbix repo disable] ************************************** 
+2015-10-26 15:39:19,933 p=4185 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 15:39:19,933 p=4185 u=Administrator |  NOTIFIED: [common | nginx repo disable] *************************************** 
+2015-10-26 15:39:20,331 p=4185 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 15:39:20,331 p=4185 u=Administrator |  PLAY RECAP ******************************************************************** 
+2015-10-26 15:39:20,331 p=4185 u=Administrator |  db-node-1.dl.local         : ok=9    changed=0    unreachable=0    failed=0   
+2015-10-26 15:39:20,332 p=4185 u=Administrator |  root-console-1.dl.local    : ok=14   changed=13   unreachable=0    failed=0   
+2015-10-26 15:39:20,332 p=4185 u=Administrator |  template-pc.dl.local       : ok=9    changed=0    unreachable=0    failed=0   
+2015-10-26 15:39:20,332 p=4185 u=Administrator |  zabbix-node-1.dl.local     : ok=9    changed=0    unreachable=0    failed=0   
+2015-10-26 15:39:50,647 p=4797 u=Administrator |   
+2015-10-26 15:39:50,648 p=4797 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/zabbix-agent.yml
+2015-10-26 15:39:50,648 p=4797 u=Administrator |   
+2015-10-26 15:39:50,683 p=4797 u=Administrator |  PLAY [workstation;zabbix-servers] ********************************************* 
+2015-10-26 15:39:50,684 p=4797 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-10-26 15:39:51,307 p=4797 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 15:39:51,391 p=4797 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 15:39:51,490 p=4797 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 15:39:51,501 p=4797 u=Administrator |  TASK: [zabbix-agent | Zabbix-agent packages install] ************************** 
+2015-10-26 15:39:52,359 p=4797 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 15:39:52,359 p=4797 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-26 15:39:56,987 p=4797 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 15:39:56,996 p=4797 u=Administrator |  TASK: [zabbix-agent | Zabbix-agent configure | remove old zabbix_agentd.conf] *** 
+2015-10-26 15:39:57,429 p=4797 u=Administrator |  changed: [template-pc.dl.local]
+2015-10-26 15:39:57,430 p=4797 u=Administrator |  changed: [zabbix-node-1.dl.local]
+2015-10-26 15:39:57,442 p=4797 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 15:39:57,451 p=4797 u=Administrator |  TASK: [zabbix-agent | Zabbix-agent configure | copy new zabbix_agentd.conf] *** 
+2015-10-26 15:39:57,811 p=4797 u=Administrator |  changed: [template-pc.dl.local]
+2015-10-26 15:39:58,106 p=4797 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 15:39:58,107 p=4797 u=Administrator |  changed: [zabbix-node-1.dl.local]
+2015-10-26 15:39:58,117 p=4797 u=Administrator |  TASK: [zabbix-agent | Firewall configure | back-end port open] **************** 
+2015-10-26 15:39:58,745 p=4797 u=Administrator |  ok: [template-pc.dl.local] => (item=10050/tcp)
+2015-10-26 15:39:58,746 p=4797 u=Administrator |  changed: [root-console-1.dl.local] => (item=10050/tcp)
+2015-10-26 15:39:58,746 p=4797 u=Administrator |  changed: [zabbix-node-1.dl.local] => (item=10050/tcp)
+2015-10-26 15:39:59,316 p=4797 u=Administrator |  ok: [template-pc.dl.local] => (item=10050/udp)
+2015-10-26 15:39:59,316 p=4797 u=Administrator |  changed: [root-console-1.dl.local] => (item=10050/udp)
+2015-10-26 15:39:59,316 p=4797 u=Administrator |  changed: [zabbix-node-1.dl.local] => (item=10050/udp)
+2015-10-26 15:39:59,331 p=4797 u=Administrator |  NOTIFIED: [zabbix-agent | zabbix-agent sevice reconfig] *********************** 
+2015-10-26 15:40:00,024 p=4797 u=Administrator |  changed: [template-pc.dl.local]
+2015-10-26 15:40:00,025 p=4797 u=Administrator |  changed: [zabbix-node-1.dl.local]
+2015-10-26 15:40:00,025 p=4797 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 15:40:00,043 p=4797 u=Administrator |  NOTIFIED: [zabbix-agent | firewall reload] ************************************ 
+2015-10-26 15:40:01,305 p=4797 u=Administrator |  changed: [zabbix-node-1.dl.local]
+2015-10-26 15:40:01,335 p=4797 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 15:40:01,346 p=4797 u=Administrator |  PLAY RECAP ******************************************************************** 
+2015-10-26 15:40:01,347 p=4797 u=Administrator |  root-console-1.dl.local    : ok=7    changed=6    unreachable=0    failed=0   
+2015-10-26 15:40:01,347 p=4797 u=Administrator |  template-pc.dl.local       : ok=6    changed=3    unreachable=0    failed=0   
+2015-10-26 15:40:01,347 p=4797 u=Administrator |  zabbix-node-1.dl.local     : ok=7    changed=5    unreachable=0    failed=0   

@@ -1,0 +1,7 @@
+---
+- name: xfce startup
+  command: systemctl isolate graphical.target
+
+- name: firewall reload
+  service: name=firewalld
+           state=reloaded
