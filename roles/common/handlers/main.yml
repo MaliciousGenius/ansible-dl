@@ -1,0 +1,15 @@
+---
+- name: epel repo disable
+  lineinfile: dest=/etc/yum.repos.d/epel.repo regexp="^enabled=1" line="enabled=0" state=present
+
+- name: nux repo disable
+  lineinfile: dest=/etc/yum.repos.d/nux-dextop.repo regexp="^enabled=1" line="enabled=0" state=present
+
+- name: adobe repo disable
+  lineinfile: dest=/etc/yum.repos.d/adobe-linux-x86_64.repo regexp="^enabled=1" line="enabled=0" state=present
+
+- name: zabbix repo disable
+  lineinfile: dest=/etc/yum.repos.d/zabbix.repo regexp="^enabled=1" line="enabled=0" state=present
+
+- name: nginx repo disable
+  lineinfile: dest=/etc/yum.repos.d/nginx.repo regexp="^enabled=1" line="enabled=0" state=present

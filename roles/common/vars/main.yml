@@ -1,0 +1,5 @@
+---
+Packages:
+  - wget
+  - git
+  - mc

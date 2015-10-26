@@ -1,0 +1,7 @@
+---
+- name: Hostname change
+  hostname: name={{ inventory_hostname_short }}
+
+- include: 01_repository-manage.yml
+- include: 02_devtools-install.yml
+- include: 03_packages-install.yml
