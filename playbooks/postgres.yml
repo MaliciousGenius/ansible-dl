@@ -1,0 +1,11 @@
+---
+- hosts: db-node-1.dl.local
+  user: root
+  roles:
+    - postgres
+
+#su - postgres
+#psql -U postgres
+#\password postgres
+#\q
+#exit

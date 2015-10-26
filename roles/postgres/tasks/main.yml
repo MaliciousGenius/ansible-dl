@@ -1,0 +1,24 @@
+---
+- name: Additional packages install
+  yum: name={{ item }}
+       state=present
+  with_items: AdditionalPackages
+
+- include: 01-build-packages.yml
+
+- name: Postgres packages install
+  yum: name={{ item }}
+       state=present
+  with_items: PostgresPackages
+
+- include: 02-postgres-config.yml
+
+- name: Firewall configure | port open
+  firewalld: zone=public service=postgresql permanent=true state=enabled
+  notify:
+    - firewall reload
+
+- name: Start postgresql service
+  service: name=postgresql-9.4
+           state=started
+           enabled=yes
