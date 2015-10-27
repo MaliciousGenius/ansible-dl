@@ -8,3 +8,11 @@
   yum: name='flash-plugin'
        enablerepo=adobe-linux-x86_64
        state=present
+
+- name: Gnome PackageKit
+  yum: name='gnom-packagekit'
+       state=present
+
+- name: FireFox
+  yum: name='firefox'
+       state=present

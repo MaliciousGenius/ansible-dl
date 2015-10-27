@@ -829,3 +829,267 @@ Shared connection to 192.168.0.251 closed.
 2015-10-26 15:40:01,347 p=4797 u=Administrator |  root-console-1.dl.local    : ok=7    changed=6    unreachable=0    failed=0   
 2015-10-26 15:40:01,347 p=4797 u=Administrator |  template-pc.dl.local       : ok=6    changed=3    unreachable=0    failed=0   
 2015-10-26 15:40:01,347 p=4797 u=Administrator |  zabbix-node-1.dl.local     : ok=7    changed=5    unreachable=0    failed=0   
+2015-10-26 15:48:18,088 p=5400 u=Administrator |   
+2015-10-26 15:48:18,088 p=5400 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui.yml
+2015-10-26 15:48:18,088 p=5400 u=Administrator |   
+2015-10-26 15:48:18,126 p=5400 u=Administrator |  PLAY [workstation] ************************************************************ 
+2015-10-26 15:48:18,126 p=5400 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-10-26 15:48:20,269 p=5400 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 15:48:20,370 p=5400 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 15:48:20,381 p=5400 u=Administrator |  TASK: [gui | X Windows install] *********************************************** 
+2015-10-26 15:48:25,679 p=5400 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 15:48:40,244 p=5400 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 15:48:40,255 p=5400 u=Administrator |  TASK: [gui | Fonts install] *************************************************** 
+2015-10-26 15:48:45,540 p=5400 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 15:49:52,589 p=5400 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 15:49:52,600 p=5400 u=Administrator |  TASK: [gui | Xfce install] **************************************************** 
+2015-10-26 15:49:59,146 p=5400 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 15:51:38,178 p=5400 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 15:51:38,190 p=5400 u=Administrator |  TASK: [gui | gdm install] ***************************************************** 
+2015-10-26 15:51:39,023 p=5400 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 15:51:40,190 p=5400 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 15:51:40,199 p=5400 u=Administrator |  TASK: [gui | start in runlevel 5] ********************************************* 
+2015-10-26 15:51:40,526 p=5400 u=Administrator |  changed: [template-pc.dl.local]
+2015-10-26 15:51:40,716 p=5400 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 15:51:40,725 p=5400 u=Administrator |  TASK: [gui | Xterm install] *************************************************** 
+2015-10-26 15:51:41,414 p=5400 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 15:51:41,428 p=5400 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 15:51:41,439 p=5400 u=Administrator |  TASK: [gui | Adobe Flash install] ********************************************* 
+2015-10-26 15:51:42,120 p=5400 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 15:52:26,446 p=5400 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 15:52:26,456 p=5400 u=Administrator |  TASK: [gui | VNC packages install] ******************************************** 
+2015-10-26 15:52:27,656 p=5400 u=Administrator |  ok: [template-pc.dl.local] => (item=tigervnc-server,xorg-x11-fonts-Type1,xinetd)
+2015-10-26 15:52:40,334 p=5400 u=Administrator |  changed: [root-console-1.dl.local] => (item=tigervnc-server,xorg-x11-fonts-Type1,xinetd)
+2015-10-26 15:52:40,344 p=5400 u=Administrator |  TASK: [gui | remove old custom.conf] ****************************************** 
+2015-10-26 15:52:40,573 p=5400 u=Administrator |  changed: [template-pc.dl.local]
+2015-10-26 15:52:40,744 p=5400 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 15:52:40,751 p=5400 u=Administrator |  TASK: [gui | copy new custom.conf] ******************************************** 
+2015-10-26 15:52:41,041 p=5400 u=Administrator |  changed: [template-pc.dl.local]
+2015-10-26 15:52:41,284 p=5400 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 15:52:41,294 p=5400 u=Administrator |  TASK: [gui | copy vncserver] ************************************************** 
+2015-10-26 15:52:41,572 p=5400 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 15:52:41,822 p=5400 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 15:52:41,832 p=5400 u=Administrator |  TASK: [gui | set param in service] ******************************************** 
+2015-10-26 15:52:42,065 p=5400 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 15:52:42,228 p=5400 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 15:52:42,237 p=5400 u=Administrator |  TASK: [gui | restart xinetd service] ****************************************** 
+2015-10-26 15:52:42,547 p=5400 u=Administrator |  changed: [template-pc.dl.local]
+2015-10-26 15:52:42,732 p=5400 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 15:52:42,744 p=5400 u=Administrator |  TASK: [gui | Firewall configure | vnc port open] ****************************** 
+2015-10-26 15:52:43,164 p=5400 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 15:52:43,332 p=5400 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 15:52:43,343 p=5400 u=Administrator |  NOTIFIED: [gui | xfce startup] ************************************************ 
+2015-10-26 15:52:44,133 p=5400 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 15:52:44,133 p=5400 u=Administrator |  NOTIFIED: [gui | firewall reload] ********************************************* 
+2015-10-26 15:52:45,717 p=5400 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 15:52:45,718 p=5400 u=Administrator |  PLAY RECAP ******************************************************************** 
+2015-10-26 15:52:45,718 p=5400 u=Administrator |  root-console-1.dl.local    : ok=17   changed=14   unreachable=0    failed=0   
+2015-10-26 15:52:45,718 p=5400 u=Administrator |  template-pc.dl.local       : ok=15   changed=4    unreachable=0    failed=0   
+2015-10-26 17:31:42,467 p=9136 u=Administrator |   
+2015-10-26 17:31:42,467 p=9136 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui.yml
+2015-10-26 17:31:42,467 p=9136 u=Administrator |   
+2015-10-26 17:31:42,522 p=9136 u=Administrator |  PLAY [workstation] ************************************************************ 
+2015-10-26 17:31:42,522 p=9136 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-10-26 17:31:44,925 p=9136 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 17:31:44,949 p=9136 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 17:31:44,960 p=9136 u=Administrator |  TASK: [gui | X Windows install] *********************************************** 
+2015-10-26 17:31:46,757 p=9136 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 17:31:47,376 p=9136 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 17:31:47,383 p=9136 u=Administrator |  TASK: [gui | Fonts install] *************************************************** 
+2015-10-26 17:31:48,929 p=9136 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 17:31:52,429 p=9136 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 17:31:52,438 p=9136 u=Administrator |  TASK: [gui | Xfce install] **************************************************** 
+2015-10-26 17:31:53,909 p=9136 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 17:31:54,783 p=9136 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 17:31:54,793 p=9136 u=Administrator |  TASK: [gui | gdm install] ***************************************************** 
+2015-10-26 17:31:55,287 p=9136 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 17:31:55,481 p=9136 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 17:31:55,491 p=9136 u=Administrator |  TASK: [gui | start in runlevel 5] ********************************************* 
+2015-10-26 17:31:55,797 p=9136 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 17:31:55,820 p=9136 u=Administrator |  changed: [template-pc.dl.local]
+2015-10-26 17:31:55,834 p=9136 u=Administrator |  TASK: [gui | Xterm install] *************************************************** 
+2015-10-26 17:31:56,361 p=9136 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 17:31:56,527 p=9136 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 17:31:56,539 p=9136 u=Administrator |  TASK: [gui | Adobe Flash install] ********************************************* 
+2015-10-26 17:31:57,056 p=9136 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 17:31:57,222 p=9136 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 17:31:57,232 p=9136 u=Administrator |  TASK: [gui | VNC packages install] ******************************************** 
+2015-10-26 17:31:58,140 p=9136 u=Administrator |  ok: [root-console-1.dl.local] => (item=tigervnc-server,xorg-x11-fonts-Type1,xinetd)
+2015-10-26 17:31:58,411 p=9136 u=Administrator |  ok: [template-pc.dl.local] => (item=tigervnc-server,xorg-x11-fonts-Type1,xinetd)
+2015-10-26 17:31:58,421 p=9136 u=Administrator |  TASK: [gui | remove old custom.conf] ****************************************** 
+2015-10-26 17:31:58,640 p=9136 u=Administrator |  changed: [template-pc.dl.local]
+2015-10-26 17:31:58,647 p=9136 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 17:31:58,656 p=9136 u=Administrator |  TASK: [gui | copy new custom.conf] ******************************************** 
+2015-10-26 17:31:58,889 p=9136 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 17:31:58,959 p=9136 u=Administrator |  changed: [template-pc.dl.local]
+2015-10-26 17:31:58,969 p=9136 u=Administrator |  TASK: [gui | copy vncserver] ************************************************** 
+2015-10-26 17:31:59,189 p=9136 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 17:31:59,236 p=9136 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 17:31:59,245 p=9136 u=Administrator |  TASK: [gui | set param in service] ******************************************** 
+2015-10-26 17:31:59,426 p=9136 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-26 17:31:59,484 p=9136 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 17:31:59,494 p=9136 u=Administrator |  TASK: [gui | restart xinetd service] ****************************************** 
+2015-10-26 17:31:59,797 p=9136 u=Administrator |  changed: [template-pc.dl.local]
+2015-10-26 17:31:59,829 p=9136 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-26 17:31:59,836 p=9136 u=Administrator |  TASK: [gui | Firewall configure | vnc port open] ****************************** 
+2015-10-26 17:32:00,140 p=9136 u=Administrator |  failed: [root-console-1.dl.local] => {"failed": true, "parsed": false}
+2015-10-26 17:32:00,141 p=9136 u=Administrator |  failed=True msg='failed to connect to the firewalld daemon'
+OpenSSH_6.6.1, OpenSSL 1.0.1e-fips 11 Feb 2013
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 56: Applying options for *
+debug1: auto-mux: Trying existing master
+debug1: mux_client_request_session: master session id: 2
+Shared connection to 192.168.0.248 closed.
+
+2015-10-26 17:32:00,251 p=9136 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-26 17:32:00,260 p=9136 u=Administrator |  PLAY RECAP ******************************************************************** 
+2015-10-26 17:32:00,260 p=9136 u=Administrator |             to retry, use: --limit @/root/gui.retry
+
+2015-10-26 17:32:00,260 p=9136 u=Administrator |  root-console-1.dl.local    : ok=14   changed=4    unreachable=0    failed=1   
+2015-10-26 17:32:00,260 p=9136 u=Administrator |  template-pc.dl.local       : ok=15   changed=4    unreachable=0    failed=0   
+2015-10-27 10:07:36,810 p=8627 u=Administrator |   
+2015-10-27 10:07:36,810 p=8627 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui.yml
+2015-10-27 10:07:36,810 p=8627 u=Administrator |   
+2015-10-27 10:07:36,847 p=8627 u=Administrator |  PLAY [workstation] ************************************************************ 
+2015-10-27 10:07:36,847 p=8627 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-10-27 10:07:38,609 p=8627 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 10:07:39,186 p=8627 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-27 10:07:39,197 p=8627 u=Administrator |  TASK: [gui | X Windows install] *********************************************** 
+2015-10-27 10:07:46,959 p=8627 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 10:07:48,793 p=8627 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-27 10:07:48,803 p=8627 u=Administrator |  TASK: [gui | Fonts install] *************************************************** 
+2015-10-27 10:07:50,361 p=8627 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 10:07:52,577 p=8627 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-27 10:07:52,588 p=8627 u=Administrator |  TASK: [gui | Xfce install] **************************************************** 
+2015-10-27 10:07:54,146 p=8627 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 10:07:55,875 p=8627 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-27 10:07:55,885 p=8627 u=Administrator |  TASK: [gui | gdm install] ***************************************************** 
+2015-10-27 10:07:56,363 p=8627 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 10:07:56,567 p=8627 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-27 10:07:56,577 p=8627 u=Administrator |  TASK: [gui | start in runlevel 5] ********************************************* 
+2015-10-27 10:07:56,843 p=8627 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-27 10:07:56,894 p=8627 u=Administrator |  changed: [template-pc.dl.local]
+2015-10-27 10:07:56,904 p=8627 u=Administrator |  TASK: [gui | Xterm install] *************************************************** 
+2015-10-27 10:07:57,387 p=8627 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 10:07:57,584 p=8627 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-27 10:07:57,594 p=8627 u=Administrator |  TASK: [gui | Adobe Flash install] ********************************************* 
+2015-10-27 10:07:58,077 p=8627 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 10:07:58,272 p=8627 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-27 10:07:58,282 p=8627 u=Administrator |  TASK: [gui | VNC packages install] ******************************************** 
+2015-10-27 10:07:59,145 p=8627 u=Administrator |  ok: [root-console-1.dl.local] => (item=tigervnc-server,xorg-x11-fonts-Type1,xinetd)
+2015-10-27 10:07:59,463 p=8627 u=Administrator |  ok: [template-pc.dl.local] => (item=tigervnc-server,xorg-x11-fonts-Type1,xinetd)
+2015-10-27 10:07:59,472 p=8627 u=Administrator |  TASK: [gui | remove old custom.conf] ****************************************** 
+2015-10-27 10:07:59,686 p=8627 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-27 10:07:59,698 p=8627 u=Administrator |  changed: [template-pc.dl.local]
+2015-10-27 10:07:59,707 p=8627 u=Administrator |  TASK: [gui | copy new custom.conf] ******************************************** 
+2015-10-27 10:07:59,921 p=8627 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-27 10:07:59,988 p=8627 u=Administrator |  changed: [template-pc.dl.local]
+2015-10-27 10:07:59,998 p=8627 u=Administrator |  TASK: [gui | copy vncserver] ************************************************** 
+2015-10-27 10:08:00,213 p=8627 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 10:08:00,251 p=8627 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-27 10:08:00,261 p=8627 u=Administrator |  TASK: [gui | set param in service] ******************************************** 
+2015-10-27 10:08:00,436 p=8627 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 10:08:00,501 p=8627 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-27 10:08:00,508 p=8627 u=Administrator |  TASK: [gui | restart xinetd service] ****************************************** 
+2015-10-27 10:08:00,803 p=8627 u=Administrator |  changed: [template-pc.dl.local]
+2015-10-27 10:08:00,829 p=8627 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-27 10:08:00,839 p=8627 u=Administrator |  TASK: [gui | Firewall configure | vnc port open] ****************************** 
+2015-10-27 10:08:01,155 p=8627 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 10:08:01,269 p=8627 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-27 10:08:01,280 p=8627 u=Administrator |  PLAY RECAP ******************************************************************** 
+2015-10-27 10:08:01,280 p=8627 u=Administrator |  root-console-1.dl.local    : ok=15   changed=4    unreachable=0    failed=0   
+2015-10-27 10:08:01,280 p=8627 u=Administrator |  template-pc.dl.local       : ok=15   changed=4    unreachable=0    failed=0   
+2015-10-27 10:22:05,813 p=9628 u=Administrator |   
+2015-10-27 10:22:05,813 p=9628 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui.yml
+2015-10-27 10:22:05,813 p=9628 u=Administrator |   
+2015-10-27 10:22:05,850 p=9628 u=Administrator |  PLAY [workstation] ************************************************************ 
+2015-10-27 10:22:05,850 p=9628 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-10-27 10:22:07,796 p=9628 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 10:22:08,357 p=9628 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-27 10:22:08,369 p=9628 u=Administrator |  TASK: [gui | X Windows install] *********************************************** 
+2015-10-27 10:22:10,255 p=9628 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 10:22:15,032 p=9628 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-27 10:22:15,042 p=9628 u=Administrator |  TASK: [gui | Fonts install] *************************************************** 
+2015-10-27 10:22:16,575 p=9628 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 10:22:17,443 p=9628 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-27 10:22:17,453 p=9628 u=Administrator |  TASK: [gui | Xfce install] **************************************************** 
+2015-10-27 10:22:19,966 p=9628 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 10:22:23,703 p=9628 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-27 10:22:23,713 p=9628 u=Administrator |  TASK: [gui | gdm install] ***************************************************** 
+2015-10-27 10:22:24,192 p=9628 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 10:22:24,392 p=9628 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-27 10:22:24,402 p=9628 u=Administrator |  TASK: [gui | start in runlevel 5] ********************************************* 
+2015-10-27 10:22:24,674 p=9628 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-27 10:22:24,727 p=9628 u=Administrator |  changed: [template-pc.dl.local]
+2015-10-27 10:22:24,735 p=9628 u=Administrator |  TASK: [gui | Xterm install] *************************************************** 
+2015-10-27 10:22:25,225 p=9628 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 10:22:25,404 p=9628 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-27 10:22:25,417 p=9628 u=Administrator |  TASK: [gui | Adobe Flash install] ********************************************* 
+2015-10-27 10:22:25,900 p=9628 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 10:22:26,095 p=9628 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-27 10:22:26,104 p=9628 u=Administrator |  TASK: [gui | VNC packages install] ******************************************** 
+2015-10-27 10:22:27,032 p=9628 u=Administrator |  ok: [root-console-1.dl.local] => (item=tigervnc-server,xorg-x11-fonts-Type1,xinetd)
+2015-10-27 10:22:27,293 p=9628 u=Administrator |  ok: [template-pc.dl.local] => (item=tigervnc-server,xorg-x11-fonts-Type1,xinetd)
+2015-10-27 10:22:27,303 p=9628 u=Administrator |  TASK: [gui | remove old custom.conf] ****************************************** 
+2015-10-27 10:22:27,527 p=9628 u=Administrator |  changed: [template-pc.dl.local]
+2015-10-27 10:22:27,573 p=9628 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-27 10:22:27,583 p=9628 u=Administrator |  TASK: [gui | copy new custom.conf] ******************************************** 
+2015-10-27 10:22:27,805 p=9628 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-27 10:22:27,848 p=9628 u=Administrator |  changed: [template-pc.dl.local]
+2015-10-27 10:22:27,855 p=9628 u=Administrator |  TASK: [gui | copy vncserver] ************************************************** 
+2015-10-27 10:22:28,063 p=9628 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 10:22:28,116 p=9628 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-27 10:22:28,124 p=9628 u=Administrator |  TASK: [gui | set param in service] ******************************************** 
+2015-10-27 10:22:28,301 p=9628 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 10:22:28,371 p=9628 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-27 10:22:28,380 p=9628 u=Administrator |  TASK: [gui | restart xinetd service] ****************************************** 
+2015-10-27 10:22:28,694 p=9628 u=Administrator |  changed: [template-pc.dl.local]
+2015-10-27 10:22:28,763 p=9628 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-27 10:22:28,774 p=9628 u=Administrator |  TASK: [gui | Firewall configure | vnc port open] ****************************** 
+2015-10-27 10:22:29,112 p=9628 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 10:22:29,219 p=9628 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-27 10:22:29,229 p=9628 u=Administrator |  PLAY RECAP ******************************************************************** 
+2015-10-27 10:22:29,229 p=9628 u=Administrator |  root-console-1.dl.local    : ok=15   changed=4    unreachable=0    failed=0   
+2015-10-27 10:22:29,229 p=9628 u=Administrator |  template-pc.dl.local       : ok=15   changed=4    unreachable=0    failed=0   
+2015-10-27 15:08:46,133 p=18214 u=Administrator |   
+2015-10-27 15:08:46,133 p=18214 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui.yml
+2015-10-27 15:08:46,133 p=18214 u=Administrator |   
+2015-10-27 15:08:46,174 p=18214 u=Administrator |  PLAY [workstation] ************************************************************ 
+2015-10-27 15:08:46,174 p=18214 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-10-27 15:08:48,334 p=18214 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 15:08:56,229 p=18214 u=Administrator |  fatal: [template-pc.dl.local] => SSH Error: ssh: connect to host 192.168.0.230 port 22: Connection timed out
+    while connecting to 192.168.0.230:22
+It is sometimes useful to re-run the command using -vvvv, which prints SSH debug output to help diagnose the issue.
+2015-10-27 15:08:56,237 p=18214 u=Administrator |  TASK: [gui | X Windows install] *********************************************** 
+2015-10-27 15:08:58,424 p=18214 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 15:08:58,425 p=18214 u=Administrator |  TASK: [gui | Fonts install] *************************************************** 
+2015-10-27 15:09:03,987 p=18214 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 15:09:03,987 p=18214 u=Administrator |  TASK: [gui | Xfce install] **************************************************** 
+2015-10-27 15:09:06,954 p=18214 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 15:09:06,954 p=18214 u=Administrator |  TASK: [gui | gdm install] ***************************************************** 
+2015-10-27 15:09:07,426 p=18214 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 15:09:07,426 p=18214 u=Administrator |  TASK: [gui | start in runlevel 5] ********************************************* 
+2015-10-27 15:09:07,691 p=18214 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-27 15:09:07,692 p=18214 u=Administrator |  TASK: [gui | Xterm install] *************************************************** 
+2015-10-27 15:09:08,172 p=18214 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 15:09:08,173 p=18214 u=Administrator |  TASK: [gui | Adobe Flash install] ********************************************* 
+2015-10-27 15:09:08,785 p=18214 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 15:09:08,785 p=18214 u=Administrator |  TASK: [gui | VNC packages install] ******************************************** 
+2015-10-27 15:09:09,744 p=18214 u=Administrator |  ok: [root-console-1.dl.local] => (item=tigervnc-server,xorg-x11-fonts-Type1,xinetd)
+2015-10-27 15:09:09,745 p=18214 u=Administrator |  TASK: [gui | remove old custom.conf] ****************************************** 
+2015-10-27 15:09:09,891 p=18214 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-27 15:09:09,891 p=18214 u=Administrator |  TASK: [gui | copy new custom.conf] ******************************************** 
+2015-10-27 15:09:10,088 p=18214 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-27 15:09:10,088 p=18214 u=Administrator |  TASK: [gui | copy vncserver] ************************************************** 
+2015-10-27 15:09:10,279 p=18214 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 15:09:10,279 p=18214 u=Administrator |  TASK: [gui | set param in service] ******************************************** 
+2015-10-27 15:09:10,430 p=18214 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 15:09:10,430 p=18214 u=Administrator |  TASK: [gui | restart xinetd service] ****************************************** 
+2015-10-27 15:09:10,880 p=18214 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-27 15:09:10,881 p=18214 u=Administrator |  TASK: [gui | Firewall configure | vnc port open] ****************************** 
+2015-10-27 15:09:11,189 p=18214 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 15:09:11,189 p=18214 u=Administrator |  PLAY RECAP ******************************************************************** 
+2015-10-27 15:09:11,189 p=18214 u=Administrator |             to retry, use: --limit @/root/gui.retry
+
+2015-10-27 15:09:11,190 p=18214 u=Administrator |  root-console-1.dl.local    : ok=15   changed=4    unreachable=0    failed=0   
+2015-10-27 15:09:11,190 p=18214 u=Administrator |  template-pc.dl.local       : ok=0    changed=0    unreachable=1    failed=0   
