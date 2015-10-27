@@ -10,7 +10,7 @@
        state=present
 
 - name: Gnome PackageKit
-  yum: name='gnom-packagekit'
+  yum: name='gnome-packagekit'
        state=present
 
 - name: FireFox
