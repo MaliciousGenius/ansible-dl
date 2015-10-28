@@ -1,5 +1,8 @@
 ---
-Packages:
+BasePackages:
   - wget
   - git
   - mc
+
+JRE: jre-8u45-linux-x64.rpm
+JREDistrPath : /usr/local/src/
