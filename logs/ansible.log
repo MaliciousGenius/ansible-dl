@@ -1199,3 +1199,175 @@ It is sometimes useful to re-run the command using -vvvv, which prints SSH debug
 
 2015-10-28 11:44:08,951 p=16147 u=Administrator |  root-console-1.dl.local    : ok=18   changed=5    unreachable=0    failed=0   
 2015-10-28 11:44:08,951 p=16147 u=Administrator |  template-pc.dl.local       : ok=0    changed=0    unreachable=1    failed=0   
+2015-10-28 15:31:56,470 p=5709 u=Administrator |   
+2015-10-28 15:31:56,497 p=5709 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui.yml
+2015-10-28 15:31:56,497 p=5709 u=Administrator |   
+2015-10-28 15:31:57,025 p=5709 u=Administrator |  PLAY [workstation] ************************************************************ 
+2015-10-28 15:31:57,026 p=5709 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-10-28 15:31:58,250 p=5709 u=Administrator |  ERROR: interrupted
+2015-10-28 15:33:15,266 p=5813 u=Administrator |   
+2015-10-28 15:33:15,266 p=5813 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui_test.yml
+2015-10-28 15:33:15,266 p=5813 u=Administrator |   
+2015-10-28 15:33:15,304 p=5813 u=Administrator |  PLAY [test-pc-1.dl.local] ***************************************************** 
+2015-10-28 15:33:15,305 p=5813 u=Administrator |  skipping: no hosts matched
+2015-10-28 15:33:15,305 p=5813 u=Administrator |  PLAY RECAP ******************************************************************** 
+2015-10-28 15:34:20,601 p=5837 u=Administrator |   
+2015-10-28 15:34:20,601 p=5837 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui_test.yml
+2015-10-28 15:34:20,601 p=5837 u=Administrator |   
+2015-10-28 15:34:20,639 p=5837 u=Administrator |  PLAY [test-pc-1.dl.local] ***************************************************** 
+2015-10-28 15:34:20,639 p=5837 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-10-28 15:34:22,632 p=5837 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-28 15:34:22,632 p=5837 u=Administrator |  TASK: [gui | X Windows install] *********************************************** 
+2015-10-28 15:34:27,422 p=5837 u=Administrator |  failed: [test-pc-1.dl.local] => {"failed": true}
+2015-10-28 15:34:27,422 p=5837 u=Administrator |  msg: Error setting/accessing repos: Error getting repository data for epel, repository not found
+2015-10-28 15:34:27,423 p=5837 u=Administrator |  FATAL: all hosts have already failed -- aborting
+2015-10-28 15:34:27,423 p=5837 u=Administrator |  PLAY RECAP ******************************************************************** 
+2015-10-28 15:34:27,423 p=5837 u=Administrator |             to retry, use: --limit @/root/gui_test.retry
+
+2015-10-28 15:34:27,423 p=5837 u=Administrator |  test-pc-1.dl.local         : ok=1    changed=0    unreachable=0    failed=1   
+2015-10-28 15:34:45,413 p=5866 u=Administrator |   
+2015-10-28 15:34:45,413 p=5866 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/common.yml
+2015-10-28 15:34:45,413 p=5866 u=Administrator |   
+2015-10-28 15:34:45,542 p=5866 u=Administrator |  PLAY [all] ******************************************************************** 
+2015-10-28 15:34:45,542 p=5866 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-10-28 15:34:47,286 p=5866 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-28 15:34:49,375 p=5866 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-28 15:34:50,653 p=5866 u=Administrator |  fatal: [template-pc.dl.local] => SSH Error: ssh: connect to host 192.168.0.230 port 22: No route to host
+    while connecting to 192.168.0.230:22
+It is sometimes useful to re-run the command using -vvvv, which prints SSH debug output to help diagnose the issue.
+2015-10-28 15:34:51,673 p=5866 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-28 15:34:51,676 p=5866 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-28 15:34:51,687 p=5866 u=Administrator |  TASK: [common | Hostname change] ********************************************** 
+2015-10-28 15:34:52,025 p=5866 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-28 15:34:52,345 p=5866 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-28 15:34:52,628 p=5866 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-28 15:34:52,628 p=5866 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-28 15:34:52,636 p=5866 u=Administrator |  TASK: [common | EPEL repository] ********************************************** 
+2015-10-28 15:35:01,650 p=5866 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-28 15:35:01,651 p=5866 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-28 15:35:04,614 p=5866 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-28 15:35:04,615 p=5866 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-28 15:35:04,624 p=5866 u=Administrator |  TASK: [common | Nux Dextop repository] **************************************** 
+2015-10-28 15:35:05,916 p=5866 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-28 15:35:06,885 p=5866 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-28 15:35:06,886 p=5866 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-28 15:35:06,886 p=5866 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-28 15:35:06,897 p=5866 u=Administrator |  TASK: [common | Adobe repository] ********************************************* 
+2015-10-28 15:35:08,245 p=5866 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-28 15:35:09,724 p=5866 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-28 15:35:09,725 p=5866 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-28 15:35:09,725 p=5866 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-28 15:35:09,741 p=5866 u=Administrator |  TASK: [common | Zabbix repository] ******************************************** 
+2015-10-28 15:35:11,053 p=5866 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-28 15:35:11,994 p=5866 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-28 15:35:11,995 p=5866 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-28 15:35:11,996 p=5866 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-28 15:35:12,009 p=5866 u=Administrator |  TASK: [common | Nginx repository] ********************************************* 
+2015-10-28 15:35:13,535 p=5866 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-28 15:35:13,535 p=5866 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-28 15:35:14,661 p=5866 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-28 15:35:14,662 p=5866 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-28 15:35:14,672 p=5866 u=Administrator |  TASK: [common | Development Tools install] ************************************ 
+2015-10-28 15:35:34,099 p=5866 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-28 15:35:34,100 p=5866 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-28 15:35:34,100 p=5866 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-28 15:37:20,499 p=5866 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-28 15:37:20,508 p=5866 u=Administrator |  TASK: [common | Base packages install] **************************************** 
+2015-10-28 15:37:23,441 p=5866 u=Administrator |  ok: [root-console-1.dl.local] => (item=wget,git,mc)
+2015-10-28 15:37:25,420 p=5866 u=Administrator |  ok: [zabbix-node-1.dl.local] => (item=wget,git,mc)
+2015-10-28 15:37:25,420 p=5866 u=Administrator |  ok: [db-node-1.dl.local] => (item=wget,git,mc)
+2015-10-28 15:37:35,936 p=5866 u=Administrator |  changed: [test-pc-1.dl.local] => (item=wget,git,mc)
+2015-10-28 15:37:35,944 p=5866 u=Administrator |  TASK: [common | JRE get] ****************************************************** 
+2015-10-28 15:37:36,304 p=5866 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-28 15:37:36,707 p=5866 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-28 15:37:36,708 p=5866 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-28 15:41:08,744 p=5866 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-28 15:41:08,755 p=5866 u=Administrator |  TASK: [common | JRE install] ************************************************** 
+2015-10-28 15:41:14,557 p=5866 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-28 15:41:16,662 p=5866 u=Administrator |  ok: [db-node-1.dl.local]
+2015-10-28 15:41:16,662 p=5866 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-28 15:41:16,663 p=5866 u=Administrator |  ok: [zabbix-node-1.dl.local]
+2015-10-28 15:41:16,673 p=5866 u=Administrator |  NOTIFIED: [common | epel repo disable] **************************************** 
+2015-10-28 15:41:17,182 p=5866 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-28 15:41:17,182 p=5866 u=Administrator |  NOTIFIED: [common | nux repo disable] ***************************************** 
+2015-10-28 15:41:17,555 p=5866 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-28 15:41:17,555 p=5866 u=Administrator |  NOTIFIED: [common | adobe repo disable] *************************************** 
+2015-10-28 15:41:17,890 p=5866 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-28 15:41:17,891 p=5866 u=Administrator |  NOTIFIED: [common | zabbix repo disable] ************************************** 
+2015-10-28 15:41:18,261 p=5866 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-28 15:41:18,261 p=5866 u=Administrator |  NOTIFIED: [common | nginx repo disable] *************************************** 
+2015-10-28 15:41:18,653 p=5866 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-28 15:41:18,654 p=5866 u=Administrator |  PLAY RECAP ******************************************************************** 
+2015-10-28 15:41:18,654 p=5866 u=Administrator |             to retry, use: --limit @/root/common.retry
+
+2015-10-28 15:41:18,655 p=5866 u=Administrator |  db-node-1.dl.local         : ok=11   changed=0    unreachable=0    failed=0   
+2015-10-28 15:41:18,655 p=5866 u=Administrator |  root-console-1.dl.local    : ok=11   changed=0    unreachable=0    failed=0   
+2015-10-28 15:41:18,655 p=5866 u=Administrator |  template-pc.dl.local       : ok=0    changed=0    unreachable=1    failed=0   
+2015-10-28 15:41:18,655 p=5866 u=Administrator |  test-pc-1.dl.local         : ok=16   changed=15   unreachable=0    failed=0   
+2015-10-28 15:41:18,655 p=5866 u=Administrator |  zabbix-node-1.dl.local     : ok=11   changed=0    unreachable=0    failed=0   
+2015-10-28 15:42:19,461 p=7020 u=Administrator |   
+2015-10-28 15:42:19,461 p=7020 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui_test.yml
+2015-10-28 15:42:19,461 p=7020 u=Administrator |   
+2015-10-28 15:42:19,505 p=7020 u=Administrator |  PLAY [test-pc-1.dl.local] ***************************************************** 
+2015-10-28 15:42:19,505 p=7020 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-10-28 15:42:22,458 p=7020 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-28 15:42:22,459 p=7020 u=Administrator |  TASK: [common | Hostname change] ********************************************** 
+2015-10-28 15:42:22,846 p=7020 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-28 15:42:22,846 p=7020 u=Administrator |  TASK: [common | EPEL repository] ********************************************** 
+2015-10-28 15:42:24,282 p=7020 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-28 15:42:24,283 p=7020 u=Administrator |  TASK: [common | Nux Dextop repository] **************************************** 
+2015-10-28 15:42:25,306 p=7020 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-28 15:42:25,306 p=7020 u=Administrator |  TASK: [common | Adobe repository] ********************************************* 
+2015-10-28 15:42:26,586 p=7020 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-28 15:42:26,587 p=7020 u=Administrator |  TASK: [common | Zabbix repository] ******************************************** 
+2015-10-28 15:42:27,644 p=7020 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-28 15:42:27,644 p=7020 u=Administrator |  TASK: [common | Nginx repository] ********************************************* 
+2015-10-28 15:42:28,883 p=7020 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-28 15:42:28,884 p=7020 u=Administrator |  TASK: [common | Development Tools install] ************************************ 
+2015-10-28 15:42:30,073 p=7020 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-28 15:42:30,073 p=7020 u=Administrator |  TASK: [common | Base packages install] **************************************** 
+2015-10-28 15:42:31,062 p=7020 u=Administrator |  ok: [test-pc-1.dl.local] => (item=wget,git,mc)
+2015-10-28 15:42:31,062 p=7020 u=Administrator |  TASK: [common | JRE get] ****************************************************** 
+2015-10-28 15:42:31,396 p=7020 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-28 15:42:31,397 p=7020 u=Administrator |  TASK: [common | JRE install] ************************************************** 
+2015-10-28 15:42:32,267 p=7020 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-28 15:42:32,267 p=7020 u=Administrator |  TASK: [gui | X Windows install] *********************************************** 
+2015-10-28 15:43:44,335 p=7020 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-28 15:43:44,335 p=7020 u=Administrator |  TASK: [gui | Fonts install] *************************************************** 
+2015-10-28 15:44:54,711 p=7020 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-28 15:44:54,711 p=7020 u=Administrator |  TASK: [gui | Xfce install] **************************************************** 
+2015-10-28 15:46:12,017 p=7020 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-28 15:46:12,017 p=7020 u=Administrator |  TASK: [gui | gdm install] ***************************************************** 
+2015-10-28 15:46:12,761 p=7020 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-28 15:46:12,762 p=7020 u=Administrator |  TASK: [gui | start in runlevel 5] ********************************************* 
+2015-10-28 15:46:13,228 p=7020 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-28 15:46:13,229 p=7020 u=Administrator |  TASK: [gui | Xterm install] *************************************************** 
+2015-10-28 15:46:13,909 p=7020 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-28 15:46:13,910 p=7020 u=Administrator |  TASK: [gui | Adobe Flash install] ********************************************* 
+2015-10-28 15:46:46,983 p=7020 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-28 15:46:46,983 p=7020 u=Administrator |  TASK: [gui | Gnome PackageKit] ************************************************ 
+2015-10-28 15:46:53,028 p=7020 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-28 15:46:53,029 p=7020 u=Administrator |  TASK: [gui | FireFox] ********************************************************* 
+2015-10-28 15:52:43,567 p=7020 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-28 15:52:43,567 p=7020 u=Administrator |  TASK: [gui | FireFox Java enable] ********************************************* 
+2015-10-28 15:52:43,931 p=7020 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-28 15:52:43,932 p=7020 u=Administrator |  TASK: [gui | VNC packages install] ******************************************** 
+2015-10-28 15:52:51,541 p=7020 u=Administrator |  changed: [test-pc-1.dl.local] => (item=tigervnc-server,xorg-x11-fonts-Type1,xinetd)
+2015-10-28 15:52:51,541 p=7020 u=Administrator |  TASK: [gui | remove old custom.conf] ****************************************** 
+2015-10-28 15:52:51,933 p=7020 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-28 15:52:51,933 p=7020 u=Administrator |  TASK: [gui | copy new custom.conf] ******************************************** 
+2015-10-28 15:52:52,443 p=7020 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-28 15:52:52,443 p=7020 u=Administrator |  TASK: [gui | copy vncserver] ************************************************** 
+2015-10-28 15:52:52,952 p=7020 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-28 15:52:52,952 p=7020 u=Administrator |  TASK: [gui | set param in service] ******************************************** 
+2015-10-28 15:52:53,314 p=7020 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-28 15:52:53,315 p=7020 u=Administrator |  TASK: [gui | restart xinetd service] ****************************************** 
+2015-10-28 15:52:53,781 p=7020 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-28 15:52:53,782 p=7020 u=Administrator |  TASK: [gui | Firewall configure | vnc port open] ****************************** 
+2015-10-28 15:52:54,337 p=7020 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-28 15:52:54,337 p=7020 u=Administrator |  NOTIFIED: [gui | xfce startup] ************************************************ 
+2015-10-28 15:52:55,113 p=7020 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-28 15:52:55,114 p=7020 u=Administrator |  NOTIFIED: [gui | firewall reload] ********************************************* 
+2015-10-28 15:52:56,854 p=7020 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-28 15:52:56,854 p=7020 u=Administrator |  PLAY RECAP ******************************************************************** 
+2015-10-28 15:52:56,854 p=7020 u=Administrator |  test-pc-1.dl.local         : ok=30   changed=17   unreachable=0    failed=0   

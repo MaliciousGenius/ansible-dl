@@ -14,6 +14,7 @@ filialis
 
 [filialis]
 template-pc.dl.local ansible_ssh_host=192.168.0.230
+test-pc-1.dl.local ansible_ssh_host=192.168.0.231
 
 [root-console]
 root-console-1.dl.local ansible_ssh_host=192.168.0.248
