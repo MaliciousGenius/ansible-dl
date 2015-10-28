@@ -1093,6 +1093,7 @@ It is sometimes useful to re-run the command using -vvvv, which prints SSH debug
 
 2015-10-27 15:09:11,190 p=18214 u=Administrator |  root-console-1.dl.local    : ok=15   changed=4    unreachable=0    failed=0   
 2015-10-27 15:09:11,190 p=18214 u=Administrator |  template-pc.dl.local       : ok=0    changed=0    unreachable=1    failed=0   
+<<<<<<< HEAD
 2015-10-28 11:33:08,801 p=15298 u=Administrator |   
 2015-10-28 11:33:08,801 p=15298 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/common.yml
 2015-10-28 11:33:08,801 p=15298 u=Administrator |   
@@ -1371,3 +1372,92 @@ It is sometimes useful to re-run the command using -vvvv, which prints SSH debug
 2015-10-28 15:52:56,854 p=7020 u=Administrator |  changed: [test-pc-1.dl.local]
 2015-10-28 15:52:56,854 p=7020 u=Administrator |  PLAY RECAP ******************************************************************** 
 2015-10-28 15:52:56,854 p=7020 u=Administrator |  test-pc-1.dl.local         : ok=30   changed=17   unreachable=0    failed=0   
+=======
+2015-10-27 15:56:53,829 p=3416 u=Administrator |   
+2015-10-27 15:56:53,829 p=3416 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui.yml --connection=local
+2015-10-27 15:56:53,829 p=3416 u=Administrator |   
+2015-10-27 15:56:53,894 p=3416 u=Administrator |  PLAY [workstation] ************************************************************ 
+2015-10-27 15:56:53,894 p=3416 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-10-27 15:56:54,438 p=3416 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-27 15:56:54,568 p=3416 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 15:56:54,577 p=3416 u=Administrator |  TASK: [gui | X Windows install] *********************************************** 
+2015-10-27 15:56:57,207 p=3416 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-27 15:56:59,961 p=3416 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 15:56:59,969 p=3416 u=Administrator |  TASK: [gui | Fonts install] *************************************************** 
+2015-10-27 15:57:02,372 p=3416 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 15:57:05,313 p=3416 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-27 15:57:05,321 p=3416 u=Administrator |  TASK: [gui | Xfce install] **************************************************** 
+2015-10-27 15:57:07,483 p=3416 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 15:57:09,760 p=3416 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-27 15:57:09,770 p=3416 u=Administrator |  TASK: [gui | gdm install] ***************************************************** 
+2015-10-27 15:57:10,639 p=3416 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 15:57:10,643 p=3416 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-27 15:57:10,656 p=3416 u=Administrator |  TASK: [gui | start in runlevel 5] ********************************************* 
+2015-10-27 15:57:10,998 p=3416 u=Administrator |  changed: [template-pc.dl.local]
+2015-10-27 15:57:11,083 p=3416 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-27 15:57:11,092 p=3416 u=Administrator |  TASK: [gui | Xterm install] *************************************************** 
+2015-10-27 15:57:11,920 p=3416 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 15:57:11,958 p=3416 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-27 15:57:11,967 p=3416 u=Administrator |  TASK: [gui | Adobe Flash install] ********************************************* 
+2015-10-27 15:57:12,815 p=3416 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 15:57:12,836 p=3416 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-27 15:57:12,851 p=3416 u=Administrator |  TASK: [gui | Gnome PackageKit] ************************************************ 
+2015-10-27 15:57:17,273 p=3416 u=Administrator |  failed: [root-console-1.dl.local] => {"changed": false, "failed": true, "rc": 0, "results": []}
+2015-10-27 15:57:17,274 p=3416 u=Administrator |  msg: No Package matching 'gnom-packagekit' found available, installed or updated
+2015-10-27 15:57:19,671 p=3416 u=Administrator |  failed: [template-pc.dl.local] => {"changed": false, "failed": true, "rc": 0, "results": []}
+2015-10-27 15:57:19,671 p=3416 u=Administrator |  msg: No Package matching 'gnom-packagekit' found available, installed or updated
+2015-10-27 15:57:19,679 p=3416 u=Administrator |  FATAL: all hosts have already failed -- aborting
+2015-10-27 15:57:19,680 p=3416 u=Administrator |  PLAY RECAP ******************************************************************** 
+2015-10-27 15:57:19,680 p=3416 u=Administrator |             to retry, use: --limit @/root/gui.retry
+
+2015-10-27 15:57:19,680 p=3416 u=Administrator |  root-console-1.dl.local    : ok=8    changed=1    unreachable=0    failed=1   
+2015-10-27 15:57:19,680 p=3416 u=Administrator |  template-pc.dl.local       : ok=8    changed=1    unreachable=0    failed=1   
+2015-10-27 16:00:14,829 p=4283 u=Administrator |   
+2015-10-27 16:00:14,829 p=4283 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui.yml --connection=local
+2015-10-27 16:00:14,829 p=4283 u=Administrator |   
+2015-10-27 16:00:14,872 p=4283 u=Administrator |  PLAY [workstation] ************************************************************ 
+2015-10-27 16:00:14,873 p=4283 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-10-27 16:00:15,277 p=4283 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 16:00:15,327 p=4283 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-27 16:00:15,337 p=4283 u=Administrator |  TASK: [gui | X Windows install] *********************************************** 
+2015-10-27 16:00:17,733 p=4283 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 16:00:19,868 p=4283 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-27 16:00:19,876 p=4283 u=Administrator |  TASK: [gui | Fonts install] *************************************************** 
+2015-10-27 16:00:22,206 p=4283 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 16:00:25,042 p=4283 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-27 16:00:25,051 p=4283 u=Administrator |  TASK: [gui | Xfce install] **************************************************** 
+2015-10-27 16:00:27,291 p=4283 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 16:00:32,248 p=4283 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-27 16:00:32,257 p=4283 u=Administrator |  TASK: [gui | gdm install] ***************************************************** 
+2015-10-27 16:00:33,117 p=4283 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 16:00:33,137 p=4283 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-27 16:00:33,148 p=4283 u=Administrator |  TASK: [gui | start in runlevel 5] ********************************************* 
+2015-10-27 16:00:33,446 p=4283 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-27 16:00:33,520 p=4283 u=Administrator |  changed: [template-pc.dl.local]
+2015-10-27 16:00:33,528 p=4283 u=Administrator |  TASK: [gui | Xterm install] *************************************************** 
+2015-10-27 16:00:34,410 p=4283 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 16:00:34,413 p=4283 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-27 16:00:34,427 p=4283 u=Administrator |  TASK: [gui | Adobe Flash install] ********************************************* 
+2015-10-27 16:00:35,284 p=4283 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 16:00:35,288 p=4283 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-27 16:00:35,301 p=4283 u=Administrator |  TASK: [gui | Gnome PackageKit] ************************************************ 
+2015-10-27 16:00:36,161 p=4283 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 16:00:36,166 p=4283 u=Administrator |  ok: [template-pc.dl.local]
+2015-10-27 16:00:36,178 p=4283 u=Administrator |  TASK: [gui | FireFox] ********************************************************* 
+2015-10-27 16:01:10,437 p=4283 u=Administrator |  changed: [template-pc.dl.local]
+2015-10-27 16:01:12,303 p=4283 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 16:01:12,313 p=4283 u=Administrator |  TASK: [gui | VNC packages install] ******************************************** 
+2015-10-27 16:01:13,485 p=4283 u=Administrator |  ok: [root-console-1.dl.local] => (item=tigervnc-server,xorg-x11-fonts-Type1,xinetd)
+2015-10-27 16:01:15,498 p=4283 u=Administrator |  ok: [template-pc.dl.local] => (item=tigervnc-server,xorg-x11-fonts-Type1,xinetd)
+2015-10-27 16:01:15,506 p=4283 u=Administrator |  TASK: [gui | remove old custom.conf] ****************************************** 
+2015-10-27 16:01:15,718 p=4283 u=Administrator |  failed: [template-pc.dl.local] => {"failed": true, "path": "/etc/gdm/custom.conf", "state": "absent"}
+2015-10-27 16:01:15,718 p=4283 u=Administrator |  msg: unlinking failed: [Errno 2] No such file or directory: '/etc/gdm/custom.conf' 
+2015-10-27 16:01:15,721 p=4283 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-27 16:01:15,735 p=4283 u=Administrator |  TASK: [gui | copy new custom.conf] ******************************************** 
+2015-10-27 16:01:15,842 p=4283 u=Administrator |  changed: [root-console-1.dl.local]
+2015-10-27 16:01:15,843 p=4283 u=Administrator |  TASK: [gui | copy vncserver] ************************************************** 
+2015-10-27 16:01:15,964 p=4283 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 16:01:15,964 p=4283 u=Administrator |  TASK: [gui | set param in service] ******************************************** 
+2015-10-27 16:01:16,063 p=4283 u=Administrator |  ok: [root-console-1.dl.local]
+2015-10-27 16:01:16,064 p=4283 u=Administrator |  TASK: [gui | restart xinetd service] ****************************************** 
+>>>>>>> 0ab221bebf20486c289de159cd7b775833bf1e60

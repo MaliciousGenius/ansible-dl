@@ -1,4 +1,9 @@
 ---
+- name: x11vnc reconfig
+  service: name=x11vnc
+           state=restart
+           enable=yes
+
 - name: xfce startup
   command: systemctl isolate graphical.target
 
