@@ -1,0 +1,5 @@
+---
+- hosts: test-pc-1.dl.local
+  user: root
+  roles:
+    - gui
