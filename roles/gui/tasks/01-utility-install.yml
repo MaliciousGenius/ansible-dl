@@ -22,8 +22,9 @@
   command: alternatives --install /usr/lib/mozilla/plugins/libjavaplugin.so libjavaplugin.so /usr/java/jdk1.8.0_45/jre/lib/amd64/libnpjp2.so 20000
 
 ### Foxit PDF
-name: Build packages | postgres source download
-  get_url: url=http://v8.1c.ru/overview/postgresql_patches/9-4-2/postgresql94-9.
-             dest=/root/postgresql94-9.4.2-1.1c.src.rpm
-             
-http://cdn01.foxitsoftware.com/pub/foxit/reader/desktop/linux/1.x/1.0/en_us/FoxitReader1.01.0925_Server_x64_enu_Setup.run.tar.gz
+- name: Foxit packages | source download
+  get_url: url=http://cdn01.foxitsoftware.com/pub/foxit/reader/desktop/linux/1.x/1.0/en_us/FoxitReader1.01.0925_Server_x64_enu_Setup.run.tar.gz
+  dest=/root/FoxitReader1.01.0925_Server_x64_enu_Setup.run.tar.gz
+- name:Foxit unpackages
+  unarchiv: src=/root/FoxitReader1.01.0925_Server_x64_enu_Setup.run.tar.gz dest=/root
+  
