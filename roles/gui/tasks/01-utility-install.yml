@@ -25,6 +25,5 @@
 - name: Foxit packages | source download
   get_url: url=http://cdn01.foxitsoftware.com/pub/foxit/reader/desktop/linux/1.x/1.0/en_us/FoxitReader1.01.0925_Server_x64_enu_Setup.run.tar.gz
   dest=/root/FoxitReader1.01.0925_Server_x64_enu_Setup.run.tar.gz
-- name:Foxit unpackages
-  unarchiv: src=/root/FoxitReader1.01.0925_Server_x64_enu_Setup.run.tar.gz dest=/root
-  
+- name: Foxit unpackages
+  unarchiv: src=/root/FoxitReader1.01.0925_Server_x64_enu_Setup.run.tar.gz dest=/root/FoxitReader1.01.0925_Server_x64_enu_Setup.run

@@ -1587,3 +1587,12 @@ It is sometimes useful to re-run the command using -vvvv, which prints SSH debug
 2015-10-28 16:37:41,098 p=3333 u=Administrator |             to retry, use: --limit @/root/gui_test.retry
 
 2015-10-28 16:37:41,099 p=3333 u=Administrator |  test-pc-1.dl.local         : ok=22   changed=2    unreachable=0    failed=1   
+2015-10-29 15:05:38,274 p=2539 u=Administrator |   
+2015-10-29 15:05:38,274 p=2539 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui_test.yml
+2015-10-29 15:05:38,275 p=2539 u=Administrator |   
+2015-10-29 15:05:38,345 p=2539 u=Administrator |  ERROR: Syntax Error while loading YAML script, /root/ansible-dl/roles/gui/tasks/01-utility-install.yml
+Note: The error may actually appear before this position: line 28, column 1
+
+  dest=/root/FoxitReader1.01.0925_Server_x64_enu_Setup.run.tar.gz
+- name:Foxit unpackages
+^
