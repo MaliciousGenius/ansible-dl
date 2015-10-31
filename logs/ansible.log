@@ -1769,3 +1769,459 @@ Note: The error may actually appear before this position: line 26, column 2
 2015-10-30 14:39:26,199 p=3647 u=Administrator |  changed: [test-pc-1.dl.local]
 2015-10-30 14:39:26,201 p=3647 u=Administrator |  PLAY RECAP ******************************************************************** 
 2015-10-30 14:39:26,201 p=3647 u=Administrator |  test-pc-1.dl.local         : ok=30   changed=11   unreachable=0    failed=0   
+2015-10-31 16:29:14,988 p=51446 u=Administrator |   
+2015-10-31 16:29:14,988 p=51446 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui_test.yml
+2015-10-31 16:29:14,988 p=51446 u=Administrator |   
+2015-10-31 16:29:15,249 p=51446 u=Administrator |  ERROR: Syntax Error while loading YAML script, /root/ansible-dl/roles/gui/tasks/01-utility-install.yml
+Note: The error may actually appear before this position: line 32, column 1
+
+
+- name: Libreoffice-unpackages
+^
+2015-10-31 16:31:39,130 p=53230 u=Administrator |   
+2015-10-31 16:31:39,141 p=53230 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui_test.yml
+2015-10-31 16:31:39,141 p=53230 u=Administrator |   
+2015-10-31 16:31:39,472 p=53230 u=Administrator |  ERROR: Syntax Error while loading YAML script, /root/ansible-dl/roles/gui/tasks/01-utility-install.yml
+Note: The error may actually appear before this position: line 32, column 1
+
+
+- name: Libreoffice-unpackages
+^
+2015-10-31 16:33:09,754 p=53995 u=Administrator |   
+2015-10-31 16:33:09,755 p=53995 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui_test.yml
+2015-10-31 16:33:09,755 p=53995 u=Administrator |   
+2015-10-31 16:33:10,111 p=53995 u=Administrator |  ERROR: Syntax Error while loading YAML script, /root/ansible-dl/roles/gui/tasks/01-utility-install.yml
+Note: The error may actually appear before this position: line 32, column 1
+
+
+- name: Libreoffice-unpackages
+^
+2015-10-31 16:36:26,191 p=56667 u=Administrator |   
+2015-10-31 16:36:26,191 p=56667 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui_test.yml
+2015-10-31 16:36:26,191 p=56667 u=Administrator |   
+2015-10-31 16:36:26,390 p=56667 u=Administrator |  ERROR: Syntax Error while loading YAML script, /root/ansible-dl/roles/gui/tasks/01-utility-install.yml
+Note: The error may actually appear before this position: line 32, column 1
+
+
+- name: Libreoffice-unpackages
+^
+2015-10-31 16:42:18,460 p=60602 u=Administrator |   
+2015-10-31 16:42:18,461 p=60602 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui_test.yml
+2015-10-31 16:42:18,461 p=60602 u=Administrator |   
+2015-10-31 16:42:18,561 p=60602 u=Administrator |  ERROR: Syntax Error while loading YAML script, /root/ansible-dl/roles/gui/tasks/01-utility-install.yml
+Note: The error may actually appear before this position: line 32, column 2
+
+
+ - name: Libreoffice-unpackages
+ ^
+2015-10-31 16:49:24,065 p=65254 u=Administrator |   
+2015-10-31 16:49:24,066 p=65254 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui_test.yml
+2015-10-31 16:49:24,066 p=65254 u=Administrator |   
+2015-10-31 16:49:24,302 p=65254 u=Administrator |  ERROR: Syntax Error while loading YAML script, /root/ansible-dl/roles/gui/tasks/01-utility-install.yml
+Note: The error may actually appear before this position: line 32, column 2
+
+
+ - name: Libreoffice-unpackages
+ ^
+2015-10-31 16:49:43,661 p=65539 u=Administrator |   
+2015-10-31 16:49:43,662 p=65539 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui_test.yml
+2015-10-31 16:49:43,662 p=65539 u=Administrator |   
+2015-10-31 16:49:43,817 p=65539 u=Administrator |  ERROR: Syntax Error while loading YAML script, /root/ansible-dl/roles/gui/tasks/01-utility-install.yml
+Note: The error may actually appear before this position: line 32, column 2
+
+
+ - name: Libreoffice-unpackages
+ ^
+2015-10-31 16:51:44,604 p=66951 u=Administrator |   
+2015-10-31 16:51:44,620 p=66951 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui_test.yml
+2015-10-31 16:51:44,620 p=66951 u=Administrator |   
+2015-10-31 16:51:44,821 p=66951 u=Administrator |  ERROR: Syntax Error while loading YAML script, /root/ansible-dl/roles/gui/tasks/01-utility-install.yml
+Note: The error may actually appear before this position: line 31, column 2
+
+
+ - name: Libreoffice-unpackages
+ ^
+2015-10-31 16:52:59,177 p=67826 u=Administrator |   
+2015-10-31 16:52:59,178 p=67826 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui_test.yml
+2015-10-31 16:52:59,178 p=67826 u=Administrator |   
+2015-10-31 17:08:07,191 p=78490 u=Administrator |   
+2015-10-31 17:08:07,191 p=78490 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui_test.yml
+2015-10-31 17:08:07,192 p=78490 u=Administrator |   
+2015-10-31 17:08:07,413 p=78490 u=Administrator |  ERROR: Syntax Error while loading YAML script, /root/ansible-dl/roles/gui/tasks/01-utility-install.yml
+Note: The error may actually appear before this position: line 38, column 1
+
+  state=present
+
+^
+2015-10-31 17:08:45,359 p=79018 u=Administrator |   
+2015-10-31 17:08:45,361 p=79018 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui_test.yml
+2015-10-31 17:08:45,361 p=79018 u=Administrator |   
+2015-10-31 17:08:45,559 p=79018 u=Administrator |  PLAY [test-pc-1.dl.local] ***************************************************** 
+2015-10-31 17:08:45,560 p=79018 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-10-31 17:08:49,259 p=79018 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:08:49,260 p=79018 u=Administrator |  TASK: [common | Hostname change] ********************************************** 
+2015-10-31 17:08:49,685 p=79018 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:08:49,685 p=79018 u=Administrator |  TASK: [common | EPEL repository] ********************************************** 
+2015-10-31 17:08:51,457 p=79018 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:08:51,457 p=79018 u=Administrator |  TASK: [common | Nux Dextop repository] **************************************** 
+2015-10-31 17:08:52,507 p=79018 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:08:52,507 p=79018 u=Administrator |  TASK: [common | Adobe repository] ********************************************* 
+2015-10-31 17:08:53,893 p=79018 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:08:53,894 p=79018 u=Administrator |  TASK: [common | Zabbix repository] ******************************************** 
+2015-10-31 17:08:54,933 p=79018 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:08:54,934 p=79018 u=Administrator |  TASK: [common | Nginx repository] ********************************************* 
+2015-10-31 17:08:56,111 p=79018 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:08:56,111 p=79018 u=Administrator |  TASK: [common | Development Tools install] ************************************ 
+2015-10-31 17:08:58,770 p=79018 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:08:58,771 p=79018 u=Administrator |  TASK: [common | Base packages install] **************************************** 
+2015-10-31 17:08:59,761 p=79018 u=Administrator |  ok: [test-pc-1.dl.local] => (item=wget,git,mc)
+2015-10-31 17:08:59,761 p=79018 u=Administrator |  TASK: [common | JRE get] ****************************************************** 
+2015-10-31 17:09:00,069 p=79018 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:09:00,069 p=79018 u=Administrator |  TASK: [common | JRE install] ************************************************** 
+2015-10-31 17:09:01,270 p=79018 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:09:01,272 p=79018 u=Administrator |  TASK: [gui | X Windows install] *********************************************** 
+2015-10-31 17:09:04,533 p=79018 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:09:04,533 p=79018 u=Administrator |  TASK: [gui | Fonts install] *************************************************** 
+2015-10-31 17:09:07,609 p=79018 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:09:07,610 p=79018 u=Administrator |  TASK: [gui | Xfce install] **************************************************** 
+2015-10-31 17:09:10,675 p=79018 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:09:10,688 p=79018 u=Administrator |  TASK: [gui | gdm install] ***************************************************** 
+2015-10-31 17:09:11,328 p=79018 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:09:11,334 p=79018 u=Administrator |  TASK: [gui | start in runlevel 5] ********************************************* 
+2015-10-31 17:09:11,916 p=79018 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-31 17:09:11,918 p=79018 u=Administrator |  TASK: [gui | Xterm install] *************************************************** 
+2015-10-31 17:09:12,812 p=79018 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:09:12,824 p=79018 u=Administrator |  TASK: [gui | Adobe Flash install] ********************************************* 
+2015-10-31 17:09:13,822 p=79018 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:09:13,825 p=79018 u=Administrator |  TASK: [gui | Gnome PackageKit] ************************************************ 
+2015-10-31 17:09:15,025 p=79018 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:09:15,027 p=79018 u=Administrator |  TASK: [gui | FireFox] ********************************************************* 
+2015-10-31 17:09:15,858 p=79018 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:09:15,858 p=79018 u=Administrator |  TASK: [gui | FireFox Java enable] ********************************************* 
+2015-10-31 17:09:16,263 p=79018 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-31 17:09:16,264 p=79018 u=Administrator |  TASK: [gui | Foxit install | source download] ********************************* 
+2015-10-31 17:09:24,518 p=79018 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:09:24,520 p=79018 u=Administrator |  TASK: [gui | Libreoffice install] ********************************************* 
+2015-10-31 17:09:27,831 p=79018 u=Administrator |  failed: [test-pc-1.dl.local] => {"changed": false, "failed": true, "rc": 0, "results": []}
+2015-10-31 17:09:27,832 p=79018 u=Administrator |  msg: No Package matching 'LibreOffice' found available, installed or updated
+2015-10-31 17:09:27,832 p=79018 u=Administrator |  FATAL: all hosts have already failed -- aborting
+2015-10-31 17:09:27,832 p=79018 u=Administrator |  PLAY RECAP ******************************************************************** 
+2015-10-31 17:09:27,833 p=79018 u=Administrator |             to retry, use: --limit @/root/gui_test.retry
+
+2015-10-31 17:09:27,833 p=79018 u=Administrator |  test-pc-1.dl.local         : ok=22   changed=2    unreachable=0    failed=1   
+2015-10-31 17:15:12,617 p=83873 u=Administrator |   
+2015-10-31 17:15:12,617 p=83873 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui_test.yml
+2015-10-31 17:15:12,617 p=83873 u=Administrator |   
+2015-10-31 17:15:12,699 p=83873 u=Administrator |  PLAY [test-pc-1.dl.local] ***************************************************** 
+2015-10-31 17:15:12,699 p=83873 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-10-31 17:15:15,416 p=83873 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:15:15,417 p=83873 u=Administrator |  TASK: [common | Hostname change] ********************************************** 
+2015-10-31 17:15:15,648 p=83873 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:15:15,648 p=83873 u=Administrator |  TASK: [common | EPEL repository] ********************************************** 
+2015-10-31 17:15:17,094 p=83873 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:15:17,094 p=83873 u=Administrator |  TASK: [common | Nux Dextop repository] **************************************** 
+2015-10-31 17:15:18,137 p=83873 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:15:18,138 p=83873 u=Administrator |  TASK: [common | Adobe repository] ********************************************* 
+2015-10-31 17:15:19,701 p=83873 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:15:19,702 p=83873 u=Administrator |  TASK: [common | Zabbix repository] ******************************************** 
+2015-10-31 17:15:20,686 p=83873 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:15:20,686 p=83873 u=Administrator |  TASK: [common | Nginx repository] ********************************************* 
+2015-10-31 17:15:21,951 p=83873 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:15:21,952 p=83873 u=Administrator |  TASK: [common | Development Tools install] ************************************ 
+2015-10-31 17:15:24,247 p=83873 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:15:24,247 p=83873 u=Administrator |  TASK: [common | Base packages install] **************************************** 
+2015-10-31 17:15:25,293 p=83873 u=Administrator |  ok: [test-pc-1.dl.local] => (item=wget,git,mc)
+2015-10-31 17:15:25,293 p=83873 u=Administrator |  TASK: [common | JRE get] ****************************************************** 
+2015-10-31 17:15:25,573 p=83873 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:15:25,574 p=83873 u=Administrator |  TASK: [common | JRE install] ************************************************** 
+2015-10-31 17:15:26,506 p=83873 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:15:26,507 p=83873 u=Administrator |  TASK: [gui | X Windows install] *********************************************** 
+2015-10-31 17:15:31,249 p=83873 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:15:31,249 p=83873 u=Administrator |  TASK: [gui | Fonts install] *************************************************** 
+2015-10-31 17:15:33,466 p=83873 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:15:33,468 p=83873 u=Administrator |  TASK: [gui | Xfce install] **************************************************** 
+2015-10-31 17:15:35,744 p=83873 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:15:35,760 p=83873 u=Administrator |  TASK: [gui | gdm install] ***************************************************** 
+2015-10-31 17:15:36,513 p=83873 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:15:36,514 p=83873 u=Administrator |  TASK: [gui | start in runlevel 5] ********************************************* 
+2015-10-31 17:15:37,071 p=83873 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-31 17:15:37,072 p=83873 u=Administrator |  TASK: [gui | Xterm install] *************************************************** 
+2015-10-31 17:15:37,831 p=83873 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:15:37,832 p=83873 u=Administrator |  TASK: [gui | Adobe Flash install] ********************************************* 
+2015-10-31 17:15:38,592 p=83873 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:15:38,592 p=83873 u=Administrator |  TASK: [gui | Gnome PackageKit] ************************************************ 
+2015-10-31 17:15:39,257 p=83873 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:15:39,257 p=83873 u=Administrator |  TASK: [gui | FireFox] ********************************************************* 
+2015-10-31 17:15:40,047 p=83873 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:15:40,048 p=83873 u=Administrator |  TASK: [gui | FireFox Java enable] ********************************************* 
+2015-10-31 17:15:40,479 p=83873 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-31 17:15:40,480 p=83873 u=Administrator |  TASK: [gui | Foxit install | source download] ********************************* 
+2015-10-31 17:15:49,610 p=83873 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:15:49,611 p=83873 u=Administrator |  TASK: [gui | Libreoffice install] ********************************************* 
+2015-10-31 17:15:59,728 p=83873 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-31 17:15:59,729 p=83873 u=Administrator |  TASK: [gui | VNC packages install] ******************************************** 
+2015-10-31 17:16:00,770 p=83873 u=Administrator |  ok: [test-pc-1.dl.local] => (item=tigervnc-server,xorg-x11-fonts-Type1,xinetd)
+2015-10-31 17:16:00,771 p=83873 u=Administrator |  TASK: [gui | remove old custom.conf] ****************************************** 
+2015-10-31 17:16:01,191 p=83873 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-31 17:16:01,202 p=83873 u=Administrator |  TASK: [gui | copy new custom.conf] ******************************************** 
+2015-10-31 17:16:01,973 p=83873 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-31 17:16:01,973 p=83873 u=Administrator |  TASK: [gui | copy vncserver] ************************************************** 
+2015-10-31 17:16:02,291 p=83873 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:16:02,292 p=83873 u=Administrator |  TASK: [gui | set param in service] ******************************************** 
+2015-10-31 17:16:02,637 p=83873 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:16:02,638 p=83873 u=Administrator |  TASK: [gui | restart xinetd service] ****************************************** 
+2015-10-31 17:16:03,438 p=83873 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-31 17:16:03,439 p=83873 u=Administrator |  TASK: [gui | Firewall configure | vnc port open] ****************************** 
+2015-10-31 17:16:03,981 p=83873 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:16:03,994 p=83873 u=Administrator |  PLAY RECAP ******************************************************************** 
+2015-10-31 17:16:03,994 p=83873 u=Administrator |  test-pc-1.dl.local         : ok=30   changed=6    unreachable=0    failed=0   
+2015-10-31 17:37:31,691 p=96343 u=Administrator |   
+2015-10-31 17:37:31,692 p=96343 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui_test.yml
+2015-10-31 17:37:31,692 p=96343 u=Administrator |   
+2015-10-31 17:37:31,780 p=96343 u=Administrator |  PLAY [test-pc-1.dl.local] ***************************************************** 
+2015-10-31 17:37:31,781 p=96343 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-10-31 17:37:34,353 p=96343 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:37:34,354 p=96343 u=Administrator |  TASK: [common | Hostname change] ********************************************** 
+2015-10-31 17:37:34,642 p=96343 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:37:34,643 p=96343 u=Administrator |  TASK: [common | EPEL repository] ********************************************** 
+2015-10-31 17:37:36,323 p=96343 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:37:36,323 p=96343 u=Administrator |  TASK: [common | Nux Dextop repository] **************************************** 
+2015-10-31 17:37:37,346 p=96343 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:37:37,347 p=96343 u=Administrator |  TASK: [common | Adobe repository] ********************************************* 
+2015-10-31 17:37:38,668 p=96343 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:37:38,668 p=96343 u=Administrator |  TASK: [common | Zabbix repository] ******************************************** 
+2015-10-31 17:37:39,725 p=96343 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:37:39,725 p=96343 u=Administrator |  TASK: [common | Nginx repository] ********************************************* 
+2015-10-31 17:37:41,093 p=96343 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:37:41,093 p=96343 u=Administrator |  TASK: [common | Development Tools install] ************************************ 
+2015-10-31 17:37:43,546 p=96343 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:37:43,547 p=96343 u=Administrator |  TASK: [common | Base packages install] **************************************** 
+2015-10-31 17:37:44,541 p=96343 u=Administrator |  ok: [test-pc-1.dl.local] => (item=wget,git,mc)
+2015-10-31 17:37:44,541 p=96343 u=Administrator |  TASK: [common | JRE get] ****************************************************** 
+2015-10-31 17:37:44,730 p=96343 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:37:44,730 p=96343 u=Administrator |  TASK: [common | JRE install] ************************************************** 
+2015-10-31 17:37:45,774 p=96343 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:37:45,774 p=96343 u=Administrator |  TASK: [gui | X Windows install] *********************************************** 
+2015-10-31 17:37:48,247 p=96343 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:37:48,247 p=96343 u=Administrator |  TASK: [gui | Fonts install] *************************************************** 
+2015-10-31 17:37:50,442 p=96343 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:37:50,443 p=96343 u=Administrator |  TASK: [gui | Xfce install] **************************************************** 
+2015-10-31 17:37:52,586 p=96343 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:37:52,586 p=96343 u=Administrator |  TASK: [gui | gdm install] ***************************************************** 
+2015-10-31 17:37:53,124 p=96343 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:37:53,125 p=96343 u=Administrator |  TASK: [gui | start in runlevel 5] ********************************************* 
+2015-10-31 17:37:53,565 p=96343 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-31 17:37:53,566 p=96343 u=Administrator |  TASK: [gui | Xterm install] *************************************************** 
+2015-10-31 17:37:54,345 p=96343 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:37:54,346 p=96343 u=Administrator |  TASK: [gui | Adobe Flash install] ********************************************* 
+2015-10-31 17:37:54,996 p=96343 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:37:55,007 p=96343 u=Administrator |  TASK: [gui | Gnome PackageKit] ************************************************ 
+2015-10-31 17:37:55,858 p=96343 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:37:55,862 p=96343 u=Administrator |  TASK: [gui | FireFox] ********************************************************* 
+2015-10-31 17:37:56,659 p=96343 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:37:56,661 p=96343 u=Administrator |  TASK: [gui | FireFox Java enable] ********************************************* 
+2015-10-31 17:37:56,965 p=96343 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-31 17:37:56,970 p=96343 u=Administrator |  TASK: [gui | Foxit install | source download] ********************************* 
+2015-10-31 17:38:06,009 p=96343 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:38:06,013 p=96343 u=Administrator |  TASK: [gui | Libreoffice install] ********************************************* 
+2015-10-31 17:38:13,463 p=96343 u=Administrator |  failed: [test-pc-1.dl.local] => {"changed": false, "failed": true, "rc": 0, "results": []}
+2015-10-31 17:38:13,475 p=96343 u=Administrator |  msg: No Package matching 'libreoffice libreoffice-langpack-ru' found available, installed or updated
+2015-10-31 17:38:13,487 p=96343 u=Administrator |  FATAL: all hosts have already failed -- aborting
+2015-10-31 17:38:13,536 p=96343 u=Administrator |  PLAY RECAP ******************************************************************** 
+2015-10-31 17:38:13,542 p=96343 u=Administrator |             to retry, use: --limit @/root/gui_test.retry
+
+2015-10-31 17:38:13,554 p=96343 u=Administrator |  test-pc-1.dl.local         : ok=22   changed=2    unreachable=0    failed=1   
+2015-10-31 17:40:14,590 p=98522 u=Administrator |   
+2015-10-31 17:40:14,591 p=98522 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui_test.yml
+2015-10-31 17:40:14,591 p=98522 u=Administrator |   
+2015-10-31 17:40:14,724 p=98522 u=Administrator |  PLAY [test-pc-1.dl.local] ***************************************************** 
+2015-10-31 17:40:14,725 p=98522 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-10-31 17:40:17,218 p=98522 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:40:17,219 p=98522 u=Administrator |  TASK: [common | Hostname change] ********************************************** 
+2015-10-31 17:40:17,413 p=98522 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:40:17,414 p=98522 u=Administrator |  TASK: [common | EPEL repository] ********************************************** 
+2015-10-31 17:40:19,275 p=98522 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:40:19,279 p=98522 u=Administrator |  TASK: [common | Nux Dextop repository] **************************************** 
+2015-10-31 17:40:20,381 p=98522 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:40:20,388 p=98522 u=Administrator |  TASK: [common | Adobe repository] ********************************************* 
+2015-10-31 17:40:21,580 p=98522 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:40:21,594 p=98522 u=Administrator |  TASK: [common | Zabbix repository] ******************************************** 
+2015-10-31 17:40:22,803 p=98522 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:40:22,805 p=98522 u=Administrator |  TASK: [common | Nginx repository] ********************************************* 
+2015-10-31 17:40:24,228 p=98522 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:40:24,230 p=98522 u=Administrator |  TASK: [common | Development Tools install] ************************************ 
+2015-10-31 17:40:26,641 p=98522 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:40:26,643 p=98522 u=Administrator |  TASK: [common | Base packages install] **************************************** 
+2015-10-31 17:40:27,882 p=98522 u=Administrator |  ok: [test-pc-1.dl.local] => (item=wget,git,mc)
+2015-10-31 17:40:27,885 p=98522 u=Administrator |  TASK: [common | JRE get] ****************************************************** 
+2015-10-31 17:40:28,281 p=98522 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:40:28,281 p=98522 u=Administrator |  TASK: [common | JRE install] ************************************************** 
+2015-10-31 17:40:29,259 p=98522 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:40:29,261 p=98522 u=Administrator |  TASK: [gui | X Windows install] *********************************************** 
+2015-10-31 17:40:31,604 p=98522 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:40:31,606 p=98522 u=Administrator |  TASK: [gui | Fonts install] *************************************************** 
+2015-10-31 17:40:33,788 p=98522 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:40:33,788 p=98522 u=Administrator |  TASK: [gui | Xfce install] **************************************************** 
+2015-10-31 17:40:36,087 p=98522 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:40:36,089 p=98522 u=Administrator |  TASK: [gui | gdm install] ***************************************************** 
+2015-10-31 17:40:36,834 p=98522 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:40:36,834 p=98522 u=Administrator |  TASK: [gui | start in runlevel 5] ********************************************* 
+2015-10-31 17:40:37,193 p=98522 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-31 17:40:37,194 p=98522 u=Administrator |  TASK: [gui | Xterm install] *************************************************** 
+2015-10-31 17:40:38,013 p=98522 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:40:38,014 p=98522 u=Administrator |  TASK: [gui | Adobe Flash install] ********************************************* 
+2015-10-31 17:40:38,551 p=98522 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:40:38,551 p=98522 u=Administrator |  TASK: [gui | Gnome PackageKit] ************************************************ 
+2015-10-31 17:40:39,198 p=98522 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:40:39,198 p=98522 u=Administrator |  TASK: [gui | FireFox] ********************************************************* 
+2015-10-31 17:40:40,050 p=98522 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:40:40,050 p=98522 u=Administrator |  TASK: [gui | FireFox Java enable] ********************************************* 
+2015-10-31 17:40:40,439 p=98522 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-31 17:40:40,439 p=98522 u=Administrator |  TASK: [gui | Foxit install | source download] ********************************* 
+2015-10-31 17:40:49,625 p=98522 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:40:49,625 p=98522 u=Administrator |  TASK: [gui | Libreoffice install] ********************************************* 
+2015-10-31 17:40:56,522 p=98522 u=Administrator |  failed: [test-pc-1.dl.local] => {"changed": false, "failed": true, "rc": 0, "results": []}
+2015-10-31 17:40:56,522 p=98522 u=Administrator |  msg: No Package matching 'libreoffice libreoffice-langpack-ru' found available, installed or updated
+2015-10-31 17:40:56,534 p=98522 u=Administrator |  FATAL: all hosts have already failed -- aborting
+2015-10-31 17:40:56,564 p=98522 u=Administrator |  PLAY RECAP ******************************************************************** 
+2015-10-31 17:40:56,576 p=98522 u=Administrator |             to retry, use: --limit @/root/gui_test.retry
+
+2015-10-31 17:40:56,577 p=98522 u=Administrator |  test-pc-1.dl.local         : ok=22   changed=2    unreachable=0    failed=1   
+2015-10-31 17:42:40,779 p=100506 u=Administrator |   
+2015-10-31 17:42:40,780 p=100506 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui_test.yml
+2015-10-31 17:42:40,780 p=100506 u=Administrator |   
+2015-10-31 17:42:41,151 p=100506 u=Administrator |  PLAY [test-pc-1.dl.local] ***************************************************** 
+2015-10-31 17:42:41,151 p=100506 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-10-31 17:42:43,638 p=100506 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:42:43,639 p=100506 u=Administrator |  TASK: [common | Hostname change] ********************************************** 
+2015-10-31 17:42:43,985 p=100506 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:42:43,985 p=100506 u=Administrator |  TASK: [common | EPEL repository] ********************************************** 
+2015-10-31 17:42:45,744 p=100506 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:42:45,745 p=100506 u=Administrator |  TASK: [common | Nux Dextop repository] **************************************** 
+2015-10-31 17:42:46,865 p=100506 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:42:46,866 p=100506 u=Administrator |  TASK: [common | Adobe repository] ********************************************* 
+2015-10-31 17:42:48,280 p=100506 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:42:48,280 p=100506 u=Administrator |  TASK: [common | Zabbix repository] ******************************************** 
+2015-10-31 17:42:49,322 p=100506 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:42:49,323 p=100506 u=Administrator |  TASK: [common | Nginx repository] ********************************************* 
+2015-10-31 17:42:50,667 p=100506 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:42:50,681 p=100506 u=Administrator |  TASK: [common | Development Tools install] ************************************ 
+2015-10-31 17:42:53,099 p=100506 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:42:53,101 p=100506 u=Administrator |  TASK: [common | Base packages install] **************************************** 
+2015-10-31 17:42:54,308 p=100506 u=Administrator |  ok: [test-pc-1.dl.local] => (item=wget,git,mc)
+2015-10-31 17:42:54,309 p=100506 u=Administrator |  TASK: [common | JRE get] ****************************************************** 
+2015-10-31 17:42:54,838 p=100506 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:42:54,838 p=100506 u=Administrator |  TASK: [common | JRE install] ************************************************** 
+2015-10-31 17:42:55,750 p=100506 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:42:55,750 p=100506 u=Administrator |  TASK: [gui | X Windows install] *********************************************** 
+2015-10-31 17:42:58,211 p=100506 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:42:58,211 p=100506 u=Administrator |  TASK: [gui | Fonts install] *************************************************** 
+2015-10-31 17:43:00,677 p=100506 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:43:00,678 p=100506 u=Administrator |  TASK: [gui | Xfce install] **************************************************** 
+2015-10-31 17:43:03,402 p=100506 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:43:03,404 p=100506 u=Administrator |  TASK: [gui | gdm install] ***************************************************** 
+2015-10-31 17:43:04,130 p=100506 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:43:04,130 p=100506 u=Administrator |  TASK: [gui | start in runlevel 5] ********************************************* 
+2015-10-31 17:43:04,673 p=100506 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-31 17:43:04,673 p=100506 u=Administrator |  TASK: [gui | Xterm install] *************************************************** 
+2015-10-31 17:43:05,458 p=100506 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:43:05,460 p=100506 u=Administrator |  TASK: [gui | Adobe Flash install] ********************************************* 
+2015-10-31 17:43:06,315 p=100506 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:43:06,315 p=100506 u=Administrator |  TASK: [gui | Gnome PackageKit] ************************************************ 
+2015-10-31 17:43:07,185 p=100506 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:43:07,185 p=100506 u=Administrator |  TASK: [gui | FireFox] ********************************************************* 
+2015-10-31 17:43:07,896 p=100506 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:43:07,896 p=100506 u=Administrator |  TASK: [gui | FireFox Java enable] ********************************************* 
+2015-10-31 17:43:08,262 p=100506 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-31 17:43:08,263 p=100506 u=Administrator |  TASK: [gui | Foxit install | source download] ********************************* 
+2015-10-31 17:43:17,130 p=100506 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:43:17,133 p=100506 u=Administrator |  TASK: [gui | Libreoffice install] ********************************************* 
+2015-10-31 17:43:23,038 p=100506 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:43:23,079 p=100506 u=Administrator |  TASK: [gui | Libreoffice install langpack] ************************************ 
+2015-10-31 17:43:40,887 p=100506 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-31 17:43:40,993 p=100506 u=Administrator |  TASK: [gui | VNC packages install] ******************************************** 
+2015-10-31 17:43:43,017 p=100506 u=Administrator |  ok: [test-pc-1.dl.local] => (item=tigervnc-server,xorg-x11-fonts-Type1,xinetd)
+2015-10-31 17:43:43,018 p=100506 u=Administrator |  TASK: [gui | remove old custom.conf] ****************************************** 
+2015-10-31 17:43:43,198 p=100506 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-31 17:43:43,199 p=100506 u=Administrator |  TASK: [gui | copy new custom.conf] ******************************************** 
+2015-10-31 17:43:43,783 p=100506 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-31 17:43:43,784 p=100506 u=Administrator |  TASK: [gui | copy vncserver] ************************************************** 
+2015-10-31 17:43:44,192 p=100506 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:43:44,193 p=100506 u=Administrator |  TASK: [gui | set param in service] ******************************************** 
+2015-10-31 17:43:44,576 p=100506 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:43:44,577 p=100506 u=Administrator |  TASK: [gui | restart xinetd service] ****************************************** 
+2015-10-31 17:43:45,312 p=100506 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-31 17:43:45,313 p=100506 u=Administrator |  TASK: [gui | Firewall configure | vnc port open] ****************************** 
+2015-10-31 17:43:45,906 p=100506 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 17:43:45,920 p=100506 u=Administrator |  PLAY RECAP ******************************************************************** 
+2015-10-31 17:43:45,938 p=100506 u=Administrator |  test-pc-1.dl.local         : ok=31   changed=6    unreachable=0    failed=0   
+2015-10-31 18:03:15,020 p=116113 u=Administrator |   
+2015-10-31 18:03:15,021 p=116113 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui_test.yml
+2015-10-31 18:03:15,021 p=116113 u=Administrator |   
+2015-10-31 18:03:15,203 p=116113 u=Administrator |  PLAY [test-pc-1.dl.local] ***************************************************** 
+2015-10-31 18:03:15,204 p=116113 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-10-31 18:03:18,316 p=116113 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 18:03:18,316 p=116113 u=Administrator |  TASK: [common | Hostname change] ********************************************** 
+2015-10-31 18:03:18,946 p=116113 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 18:03:18,946 p=116113 u=Administrator |  TASK: [common | EPEL repository] ********************************************** 
+2015-10-31 18:03:20,498 p=116113 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 18:03:20,499 p=116113 u=Administrator |  TASK: [common | Nux Dextop repository] **************************************** 
+2015-10-31 18:03:21,505 p=116113 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 18:03:21,506 p=116113 u=Administrator |  TASK: [common | Adobe repository] ********************************************* 
+2015-10-31 18:03:22,677 p=116113 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 18:03:22,678 p=116113 u=Administrator |  TASK: [common | Zabbix repository] ******************************************** 
+2015-10-31 18:03:23,718 p=116113 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 18:03:23,718 p=116113 u=Administrator |  TASK: [common | Nginx repository] ********************************************* 
+2015-10-31 18:03:25,023 p=116113 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 18:03:25,024 p=116113 u=Administrator |  TASK: [common | Development Tools install] ************************************ 
+2015-10-31 18:03:27,352 p=116113 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 18:03:27,353 p=116113 u=Administrator |  TASK: [common | Base packages install] **************************************** 
+2015-10-31 18:03:28,448 p=116113 u=Administrator |  ok: [test-pc-1.dl.local] => (item=wget,git,mc)
+2015-10-31 18:03:28,448 p=116113 u=Administrator |  TASK: [common | JRE get] ****************************************************** 
+2015-10-31 18:03:28,767 p=116113 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 18:03:28,767 p=116113 u=Administrator |  TASK: [common | JRE install] ************************************************** 
+2015-10-31 18:03:29,700 p=116113 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 18:03:29,700 p=116113 u=Administrator |  TASK: [gui | X Windows install] *********************************************** 
+2015-10-31 18:03:31,973 p=116113 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 18:03:31,974 p=116113 u=Administrator |  TASK: [gui | Fonts install] *************************************************** 
+2015-10-31 18:03:36,909 p=116113 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 18:03:36,909 p=116113 u=Administrator |  TASK: [gui | Xfce install] **************************************************** 
+2015-10-31 18:03:39,033 p=116113 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 18:03:39,034 p=116113 u=Administrator |  TASK: [gui | gdm install] ***************************************************** 
+2015-10-31 18:03:39,635 p=116113 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 18:03:39,635 p=116113 u=Administrator |  TASK: [gui | start in runlevel 5] ********************************************* 
+2015-10-31 18:03:39,991 p=116113 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-31 18:03:39,991 p=116113 u=Administrator |  TASK: [gui | Xterm install] *************************************************** 
+2015-10-31 18:03:40,582 p=116113 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 18:03:40,583 p=116113 u=Administrator |  TASK: [gui | Adobe Flash install] ********************************************* 
+2015-10-31 18:03:41,209 p=116113 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 18:03:41,210 p=116113 u=Administrator |  TASK: [gui | Gnome PackageKit] ************************************************ 
+2015-10-31 18:03:42,009 p=116113 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 18:03:42,010 p=116113 u=Administrator |  TASK: [gui | FireFox] ********************************************************* 
+2015-10-31 18:03:42,602 p=116113 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 18:03:42,602 p=116113 u=Administrator |  TASK: [gui | FireFox Java enable] ********************************************* 
+2015-10-31 18:03:42,970 p=116113 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-31 18:03:42,970 p=116113 u=Administrator |  TASK: [gui | Foxit install | source download] ********************************* 
+2015-10-31 18:03:51,914 p=116113 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 18:03:51,915 p=116113 u=Administrator |  TASK: [gui | Libreoffice install] ********************************************* 
+2015-10-31 18:03:57,436 p=116113 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 18:03:57,436 p=116113 u=Administrator |  TASK: [gui | Libreoffice install langpack] ************************************ 
+2015-10-31 18:04:04,706 p=116113 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 18:04:04,707 p=116113 u=Administrator |  TASK: [gui | Gedit install] *************************************************** 
+2015-10-31 18:04:21,198 p=116113 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-31 18:04:21,203 p=116113 u=Administrator |  TASK: [gui | VNC packages install] ******************************************** 
+2015-10-31 18:04:22,838 p=116113 u=Administrator |  ok: [test-pc-1.dl.local] => (item=tigervnc-server,xorg-x11-fonts-Type1,xinetd)
+2015-10-31 18:04:22,839 p=116113 u=Administrator |  TASK: [gui | remove old custom.conf] ****************************************** 
+2015-10-31 18:04:23,039 p=116113 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-31 18:04:23,039 p=116113 u=Administrator |  TASK: [gui | copy new custom.conf] ******************************************** 
+2015-10-31 18:04:23,588 p=116113 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-31 18:04:23,588 p=116113 u=Administrator |  TASK: [gui | copy vncserver] ************************************************** 
+2015-10-31 18:04:23,922 p=116113 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 18:04:23,923 p=116113 u=Administrator |  TASK: [gui | set param in service] ******************************************** 
+2015-10-31 18:04:24,105 p=116113 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 18:04:24,105 p=116113 u=Administrator |  TASK: [gui | restart xinetd service] ****************************************** 
+2015-10-31 18:04:24,817 p=116113 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-31 18:04:24,818 p=116113 u=Administrator |  TASK: [gui | Firewall configure | vnc port open] ****************************** 
+2015-10-31 18:04:25,251 p=116113 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-31 18:04:25,252 p=116113 u=Administrator |  PLAY RECAP ******************************************************************** 
+2015-10-31 18:04:25,252 p=116113 u=Administrator |  test-pc-1.dl.local         : ok=32   changed=6    unreachable=0    failed=0   
