@@ -1596,3 +1596,176 @@ Note: The error may actually appear before this position: line 28, column 1
   dest=/root/FoxitReader1.01.0925_Server_x64_enu_Setup.run.tar.gz
 - name:Foxit unpackages
 ^
+2015-10-29 15:11:15,756 p=2633 u=Administrator |   
+2015-10-29 15:11:15,756 p=2633 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui_test.yml
+2015-10-29 15:11:15,756 p=2633 u=Administrator |   
+2015-10-29 15:11:15,800 p=2633 u=Administrator |  ERROR: Syntax Error while loading YAML script, /root/ansible-dl/roles/gui/tasks/01-utility-install.yml
+Note: The error may actually appear before this position: line 28, column 1
+
+  dest=/root/FoxitReader1.01.0925_Server_x64_enu_Setup.run.tar.gz
+- name: Foxit unpackages
+^
+2015-10-29 15:14:16,398 p=2765 u=Administrator |   
+2015-10-29 15:14:16,398 p=2765 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui_test.yml
+2015-10-29 15:14:16,398 p=2765 u=Administrator |   
+2015-10-29 15:14:16,444 p=2765 u=Administrator |  ERROR: Syntax Error while loading YAML script, /root/ansible-dl/roles/gui/tasks/01-utility-install.yml
+Note: The error may actually appear before this position: line 28, column 1
+
+  dest=/root/FoxitReader1.01.0925_Server_x64_enu_Setup.run.tar.gz
+- name: Foxit unpackages
+^
+2015-10-29 15:20:38,422 p=2813 u=Administrator |   
+2015-10-29 15:20:38,422 p=2813 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui_test.yml
+2015-10-29 15:20:38,422 p=2813 u=Administrator |   
+2015-10-29 15:20:38,469 p=2813 u=Administrator |  ERROR: 'action' or 'local_action' attribute missing in task "Foxit unpackages"
+2015-10-29 15:23:10,386 p=2840 u=Administrator |   
+2015-10-29 15:23:10,386 p=2840 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui_test.yml
+2015-10-29 15:23:10,386 p=2840 u=Administrator |   
+2015-10-29 15:23:10,434 p=2840 u=Administrator |  ERROR: 'action' or 'local_action' attribute missing in task "Foxit-unpackages"
+2015-10-29 15:24:28,769 p=2852 u=Administrator |   
+2015-10-29 15:24:28,769 p=2852 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui_test.yml
+2015-10-29 15:24:28,769 p=2852 u=Administrator |   
+2015-10-29 15:24:28,818 p=2852 u=Administrator |  ERROR: unarchiv is not a legal parameter in an Ansible task or handler
+2015-10-29 15:31:33,728 p=2886 u=Administrator |   
+2015-10-29 15:31:33,728 p=2886 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui_test.yml
+2015-10-29 15:31:33,728 p=2886 u=Administrator |   
+2015-10-29 15:31:33,781 p=2886 u=Administrator |  PLAY [test-pc-1.dl.local] ***************************************************** 
+2015-10-29 15:31:33,781 p=2886 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-10-29 15:31:33,933 p=2886 u=Administrator |  fatal: [test-pc-1.dl.local] => SSH Error: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).
+    while connecting to 192.168.0.231:22
+It is sometimes useful to re-run the command using -vvvv, which prints SSH debug output to help diagnose the issue.
+2015-10-29 15:31:33,934 p=2886 u=Administrator |  TASK: [common | Hostname change] ********************************************** 
+2015-10-29 15:31:33,942 p=2886 u=Administrator |  FATAL: no hosts matched or all hosts have already failed -- aborting
+
+2015-10-29 15:31:33,943 p=2886 u=Administrator |  PLAY RECAP ******************************************************************** 
+2015-10-29 15:31:33,943 p=2886 u=Administrator |             to retry, use: --limit @/root/gui_test.retry
+
+2015-10-29 15:31:33,944 p=2886 u=Administrator |  test-pc-1.dl.local         : ok=0    changed=0    unreachable=1    failed=0   
+2015-10-29 15:43:50,143 p=2999 u=Administrator |   
+2015-10-29 15:43:50,143 p=2999 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui_test.yml
+2015-10-29 15:43:50,143 p=2999 u=Administrator |   
+2015-10-29 15:43:50,197 p=2999 u=Administrator |  PLAY [test-pc-1.dl.local] ***************************************************** 
+2015-10-29 15:43:50,197 p=2999 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-10-29 15:43:52,008 p=2999 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-29 15:43:52,008 p=2999 u=Administrator |  TASK: [common | Hostname change] ********************************************** 
+2015-10-29 15:43:52,511 p=2999 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-29 15:43:52,511 p=2999 u=Administrator |  TASK: [common | EPEL repository] ********************************************** 
+2015-10-29 15:43:57,819 p=2999 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-29 15:43:57,820 p=2999 u=Administrator |  TASK: [common | Nux Dextop repository] **************************************** 
+2015-10-29 15:43:59,217 p=2999 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-29 15:43:59,218 p=2999 u=Administrator |  TASK: [common | Adobe repository] ********************************************* 
+2015-10-29 15:44:00,883 p=2999 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-29 15:44:00,883 p=2999 u=Administrator |  TASK: [common | Zabbix repository] ******************************************** 
+2015-10-29 15:44:02,304 p=2999 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-29 15:44:02,305 p=2999 u=Administrator |  TASK: [common | Nginx repository] ********************************************* 
+2015-10-29 15:44:03,892 p=2999 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-29 15:44:03,893 p=2999 u=Administrator |  TASK: [common | Development Tools install] ************************************ 
+2015-10-29 15:45:17,588 p=2999 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-29 15:45:17,588 p=2999 u=Administrator |  TASK: [common | Base packages install] **************************************** 
+2015-10-29 15:45:34,339 p=2999 u=Administrator |  changed: [test-pc-1.dl.local] => (item=wget,git,mc)
+2015-10-29 15:45:34,340 p=2999 u=Administrator |  TASK: [common | JRE get] ****************************************************** 
+2015-10-29 15:47:46,059 p=2999 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-29 15:47:46,060 p=2999 u=Administrator |  TASK: [common | JRE install] ************************************************** 
+2015-10-29 15:47:51,339 p=2999 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-29 15:47:51,339 p=2999 u=Administrator |  TASK: [gui | X Windows install] *********************************************** 
+2015-10-29 15:48:08,121 p=2999 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-29 15:48:08,122 p=2999 u=Administrator |  TASK: [gui | Fonts install] *************************************************** 
+2015-10-29 15:49:36,972 p=2999 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-29 15:49:36,973 p=2999 u=Administrator |  TASK: [gui | Xfce install] **************************************************** 
+2015-10-29 15:50:56,742 p=2999 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-29 15:50:56,743 p=2999 u=Administrator |  TASK: [gui | gdm install] ***************************************************** 
+2015-10-29 15:50:57,583 p=2999 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-29 15:50:57,583 p=2999 u=Administrator |  TASK: [gui | start in runlevel 5] ********************************************* 
+2015-10-29 15:50:58,088 p=2999 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-29 15:50:58,089 p=2999 u=Administrator |  TASK: [gui | Xterm install] *************************************************** 
+2015-10-29 15:50:58,826 p=2999 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-29 15:50:58,826 p=2999 u=Administrator |  TASK: [gui | Adobe Flash install] ********************************************* 
+2015-10-29 15:51:33,999 p=2999 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-29 15:51:34,000 p=2999 u=Administrator |  TASK: [gui | Gnome PackageKit] ************************************************ 
+2015-10-29 15:57:21,525 p=2999 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-29 15:57:21,526 p=2999 u=Administrator |  TASK: [gui | FireFox] ********************************************************* 
+2015-10-29 15:58:04,855 p=2999 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-29 15:58:04,856 p=2999 u=Administrator |  TASK: [gui | FireFox Java enable] ********************************************* 
+2015-10-29 15:58:05,252 p=2999 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-29 15:58:05,253 p=2999 u=Administrator |  TASK: [gui | Foxit packages | source download] ******************************** 
+2015-10-29 15:58:05,396 p=2999 u=Administrator |  fatal: [test-pc-1.dl.local] => input file not found at /root/ansible-dl/roles/gui/files/http:/cdn01.foxitsoftware.com/pub/foxit/reader/desktop/linux/1.x/1.0/en_us/FoxitReader1.01.0925_Server_x64_enu_Setup.run.tar.gz or /root/ansible-dl/playbooks/http:/cdn01.foxitsoftware.com/pub/foxit/reader/desktop/linux/1.x/1.0/en_us/FoxitReader1.01.0925_Server_x64_enu_Setup.run.tar.gz
+2015-10-29 15:58:05,397 p=2999 u=Administrator |  FATAL: all hosts have already failed -- aborting
+2015-10-29 15:58:05,397 p=2999 u=Administrator |  PLAY RECAP ******************************************************************** 
+2015-10-29 15:58:05,398 p=2999 u=Administrator |             to retry, use: --limit @/root/gui_test.retry
+
+2015-10-29 15:58:05,398 p=2999 u=Administrator |  test-pc-1.dl.local         : ok=21   changed=18   unreachable=1    failed=0   
+2015-10-30 14:36:35,149 p=2594 u=Administrator |   
+2015-10-30 14:36:35,160 p=2594 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui_test.yml
+2015-10-30 14:36:35,160 p=2594 u=Administrator |   
+2015-10-30 14:36:35,634 p=2594 u=Administrator |  ERROR: Syntax Error while loading YAML script, /root/ansible-dl/roles/gui/tasks/01-utility-install.yml
+Note: The error may actually appear before this position: line 26, column 2
+
+- name: Foxit install | source download
+ yum: name='http://cdn02.foxitsoftware.com/pub/foxit/reader/desktop/linux/1.x/1.0/enu/FoxitReader-1.0-1.i386.rpm'
+ ^
+2015-10-30 14:37:46,669 p=3647 u=Administrator |   
+2015-10-30 14:37:46,669 p=3647 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui_test.yml
+2015-10-30 14:37:46,670 p=3647 u=Administrator |   
+2015-10-30 14:37:46,757 p=3647 u=Administrator |  PLAY [test-pc-1.dl.local] ***************************************************** 
+2015-10-30 14:37:46,757 p=3647 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-10-30 14:37:50,145 p=3647 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-30 14:37:50,146 p=3647 u=Administrator |  TASK: [common | Hostname change] ********************************************** 
+2015-10-30 14:37:50,551 p=3647 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-30 14:37:50,551 p=3647 u=Administrator |  TASK: [common | EPEL repository] ********************************************** 
+2015-10-30 14:37:52,355 p=3647 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-30 14:37:52,355 p=3647 u=Administrator |  TASK: [common | Nux Dextop repository] **************************************** 
+2015-10-30 14:37:53,337 p=3647 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-30 14:37:53,338 p=3647 u=Administrator |  TASK: [common | Adobe repository] ********************************************* 
+2015-10-30 14:37:54,825 p=3647 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-30 14:37:54,825 p=3647 u=Administrator |  TASK: [common | Zabbix repository] ******************************************** 
+2015-10-30 14:37:55,965 p=3647 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-30 14:37:55,965 p=3647 u=Administrator |  TASK: [common | Nginx repository] ********************************************* 
+2015-10-30 14:37:57,266 p=3647 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-30 14:37:57,267 p=3647 u=Administrator |  TASK: [common | Development Tools install] ************************************ 
+2015-10-30 14:38:05,215 p=3647 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-30 14:38:05,216 p=3647 u=Administrator |  TASK: [common | Base packages install] **************************************** 
+2015-10-30 14:38:06,562 p=3647 u=Administrator |  ok: [test-pc-1.dl.local] => (item=wget,git,mc)
+2015-10-30 14:38:06,563 p=3647 u=Administrator |  TASK: [common | JRE get] ****************************************************** 
+2015-10-30 14:38:06,962 p=3647 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-30 14:38:06,963 p=3647 u=Administrator |  TASK: [common | JRE install] ************************************************** 
+2015-10-30 14:38:08,039 p=3647 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-30 14:38:08,040 p=3647 u=Administrator |  TASK: [gui | X Windows install] *********************************************** 
+2015-10-30 14:38:10,377 p=3647 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-30 14:38:10,378 p=3647 u=Administrator |  TASK: [gui | Fonts install] *************************************************** 
+2015-10-30 14:38:12,706 p=3647 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-30 14:38:12,709 p=3647 u=Administrator |  TASK: [gui | Xfce install] **************************************************** 
+2015-10-30 14:38:15,021 p=3647 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-30 14:38:15,027 p=3647 u=Administrator |  TASK: [gui | gdm install] ***************************************************** 
+2015-10-30 14:38:15,801 p=3647 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-30 14:38:15,802 p=3647 u=Administrator |  TASK: [gui | start in runlevel 5] ********************************************* 
+2015-10-30 14:38:16,412 p=3647 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-30 14:38:16,413 p=3647 u=Administrator |  TASK: [gui | Xterm install] *************************************************** 
+2015-10-30 14:38:17,230 p=3647 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-30 14:38:17,231 p=3647 u=Administrator |  TASK: [gui | Adobe Flash install] ********************************************* 
+2015-10-30 14:38:17,943 p=3647 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-30 14:38:17,944 p=3647 u=Administrator |  TASK: [gui | Gnome PackageKit] ************************************************ 
+2015-10-30 14:38:18,598 p=3647 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-30 14:38:18,599 p=3647 u=Administrator |  TASK: [gui | FireFox] ********************************************************* 
+2015-10-30 14:38:19,267 p=3647 u=Administrator |  ok: [test-pc-1.dl.local]
+2015-10-30 14:38:19,268 p=3647 u=Administrator |  TASK: [gui | FireFox Java enable] ********************************************* 
+2015-10-30 14:38:19,492 p=3647 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-30 14:38:19,492 p=3647 u=Administrator |  TASK: [gui | Foxit install | source download] ********************************* 
+2015-10-30 14:39:05,041 p=3647 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-30 14:39:05,044 p=3647 u=Administrator |  TASK: [gui | VNC packages install] ******************************************** 
+2015-10-30 14:39:22,181 p=3647 u=Administrator |  changed: [test-pc-1.dl.local] => (item=tigervnc-server,xorg-x11-fonts-Type1,xinetd)
+2015-10-30 14:39:22,181 p=3647 u=Administrator |  TASK: [gui | remove old custom.conf] ****************************************** 
+2015-10-30 14:39:22,545 p=3647 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-30 14:39:22,545 p=3647 u=Administrator |  TASK: [gui | copy new custom.conf] ******************************************** 
+2015-10-30 14:39:23,229 p=3647 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-30 14:39:23,230 p=3647 u=Administrator |  TASK: [gui | copy vncserver] ************************************************** 
+2015-10-30 14:39:23,817 p=3647 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-30 14:39:23,818 p=3647 u=Administrator |  TASK: [gui | set param in service] ******************************************** 
+2015-10-30 14:39:24,147 p=3647 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-30 14:39:24,148 p=3647 u=Administrator |  TASK: [gui | restart xinetd service] ****************************************** 
+2015-10-30 14:39:24,540 p=3647 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-30 14:39:24,541 p=3647 u=Administrator |  TASK: [gui | Firewall configure | vnc port open] ****************************** 
+2015-10-30 14:39:25,127 p=3647 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-30 14:39:25,128 p=3647 u=Administrator |  NOTIFIED: [gui | firewall reload] ********************************************* 
+2015-10-30 14:39:26,199 p=3647 u=Administrator |  changed: [test-pc-1.dl.local]
+2015-10-30 14:39:26,201 p=3647 u=Administrator |  PLAY RECAP ******************************************************************** 
+2015-10-30 14:39:26,201 p=3647 u=Administrator |  test-pc-1.dl.local         : ok=30   changed=11   unreachable=0    failed=0   
