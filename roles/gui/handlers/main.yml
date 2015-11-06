@@ -9,4 +9,7 @@
 
 - name: firewall reload
   service: name=firewalld
-           state=reloaded
+           state=reload
+
+- name: restart mashine
+  command: reboot
