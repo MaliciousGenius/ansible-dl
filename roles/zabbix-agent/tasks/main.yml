@@ -1,12 +1,19 @@
 ---
-- name: Zabbix-agent packages install
-  yum: name=zabbix-agent
-       enablerepo=zabbix
-       state=present
-  notify:
-    - zabbix-agent sevice reconfig
+- name: "install the correct"
+  include: 01-rh-zabbix-agent-install.yml
+  when: ansible_os_family == "RedHat"
 
-- include: 01-zabbix-agent-config.yml
+- name: "install the correct"
+  include: 01-deb-zabbix-agent-install.yml
+  when: ansible_os_family == "Debian"
+
+- name: "install the correct"
+  include: 02-rh-zabbix-agent-config.yml
+  when: ansible_os_family == "RedHat"
+
+- name: "install the correct"
+  include: 02-deb-zabbix-agent-config.yml
+  when: ansible_os_family == "Debian"
 
 - name: Firewall configure | back-end port open
   firewalld: zone=public

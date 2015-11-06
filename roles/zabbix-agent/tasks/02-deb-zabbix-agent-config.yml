@@ -1,0 +1,15 @@
+---
+- name: Zabbix-agent configure | remove old zabbix_agentd.conf
+  file: path=/etc/zabbix/zabbix_agent.conf
+        state=absent
+  sudo: yes
+
+- name: Zabbix-agent configure | copy new zabbix_agentd.conf
+  template: src=zabbix_agentd.conf
+            dest=/etc/zabbix/zabbix_agent.conf
+            owner=a
+            group=a
+            mode=0644
+  notify:
+    - zabbix-agent sevice reconfig
+  sudo: yes
