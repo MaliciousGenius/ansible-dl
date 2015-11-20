@@ -1,7 +1,0 @@
----
-- name: Zabbix-agent packages install
-  yum: name=zabbix-agent
-       enablerepo=zabbix
-       state=present
-  notify:
-    - zabbix-agent sevice reconfig

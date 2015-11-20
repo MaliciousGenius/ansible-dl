@@ -4,7 +4,7 @@
         state=absent
 
 - name: Zabbix-agent configure | copy new zabbix_agentd.conf
-  template: src=zabbix_agentd.conf
+  template: src=rh-zabbix-agent.conf
             dest=/etc/zabbix/zabbix_agentd.conf
             owner=root
             group=root

@@ -1,0 +1,29 @@
+---
+- name: Updates apt cache
+  action: apt update_cache=true
+  sudo: yes
+
+- name: Installing zabbix-agent
+  apt: pkg=zabbix-agent
+       state=present
+       update_cache=yes
+       cache_valid_time=3600
+  sudo: yes
+
+- name: Zabbix-agent configure | remove old zabbix_agentd.conf
+  file: path=/etc/zabbix/zabbix_agentd.conf
+        state=absent
+  sudo: yes
+
+- name: Zabbix-agent configure | copy new zabbix_agentd.conf
+  template: src=deb-zabbix-agent.conf
+            dest=/etc/zabbix/zabbix_agentd.conf
+            owner=a
+            group=a
+            mode=0644
+  sudo: yes
+
+- name: Enable the service
+  service: name=zabbix-agent
+           enabled=yes
+  sudo: yes

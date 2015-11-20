@@ -1,0 +1,7 @@
+---
+- hosts: 
+    - servers-old
+    - db-servers-old
+  user: root
+  roles:
+    - zabbix-agent
