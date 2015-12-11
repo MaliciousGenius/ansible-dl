@@ -1,9 +1,0 @@
----
-#vnc
-- name: install x11vnc
-  yum: name=x11vnc state=present
-
-- name: copy config
-  template: src=x11vnc.conf
-            dest={{ config }}
-  notify: x11vnc reconfig

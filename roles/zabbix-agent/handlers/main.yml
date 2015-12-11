@@ -5,4 +5,5 @@
            enabled=yes
 
 - name: firewall reload
-  command: firewall-cmd --reload
+  service: name=firewalld
+           state=reload

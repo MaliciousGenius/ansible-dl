@@ -57,3 +57,4 @@ f29 ansible_ssh_host=192.222.222.29  ansible_ssh_user=a
 
 [root-console]
 root-console-1.dl.local ansible_ssh_host=192.168.0.248
+root-console-2.dl.local ansible_ssh_host=192.168.0.110

@@ -1,5 +1,10 @@
 ---
-- hosts: test-pc-1.dl.local
+- hosts:
+    - root-console-1.dl.local
+#    - root-console-2.dl.local
   user: root
   roles:
+    - common
     - gui
+    - gui-soft
+    - zabbix-agent

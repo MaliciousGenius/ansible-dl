@@ -36,4 +36,3 @@
              state=enabled
   notify:
     - firewall reload
-

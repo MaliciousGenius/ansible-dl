@@ -1,0 +1,8 @@
+---
+- name: Libreoffice install
+  yum: name="libreoffice"
+       state=present
+
+- name: Libreoffice langpack install
+  yum: name="libreoffice-langpack-ru"
+       state=present

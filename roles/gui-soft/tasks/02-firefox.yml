@@ -1,0 +1,7 @@
+---
+- name: Firefox install
+  yum: name="firefox"
+       state=present
+
+- name: Firefox Java enable
+  command: alternatives --install /usr/lib/mozilla/plugins/libjavaplugin.so libjavaplugin.so /usr/java/jdk1.8.0_45/jre/lib/amd64/libnpjp2.so 20000

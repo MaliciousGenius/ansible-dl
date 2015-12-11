@@ -21,7 +21,7 @@
        state=present
 
 - name: start in runlevel 5
-  command: /bin/systemctl set-default graphical.target
+  shell: /bin/systemctl set-default graphical.target
 
 - include: 01-utility-install.yml
 - include: 02-remote-control.yml

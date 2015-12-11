@@ -1,15 +1,7 @@
 ---
-- name: x11vnc reconfig
-  service: name=x11vnc
-           state=restart
-           enable=yes
-
 - name: xfce startup
-  command: systemctl isolate graphical.target
+  shell: systemctl isolate graphical.target
 
 - name: firewall reload
   service: name=firewalld
            state=reload
-
-- name: restart mashine
-  command: reboot

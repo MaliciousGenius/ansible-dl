@@ -1,0 +1,5 @@
+---
+- include: 01-adobe-flash.yml
+- include: 02-firefox.yml
+- include: 03-foxit-pdf.yml
+- include: 04-libreoffice.yml
