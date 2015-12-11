@@ -6,4 +6,4 @@
 
 - name: firewall reload
   service: name=firewalld
-           state=reload
+           state=reloaded

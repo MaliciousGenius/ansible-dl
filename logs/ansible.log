@@ -1,0 +1,379 @@
+2015-12-11 12:21:44,977 p=8690 u=Administrator |   
+2015-12-11 12:21:44,977 p=8690 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui_test.yml
+2015-12-11 12:21:44,977 p=8690 u=Administrator |   
+2015-12-11 12:21:45,051 p=8690 u=Administrator |  PLAY [root-console-1.dl.local] ************************************************ 
+2015-12-11 12:21:45,051 p=8690 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-12-11 12:21:47,380 p=8690 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 12:21:47,381 p=8690 u=Administrator |  TASK: [common | Hostname change] ********************************************** 
+2015-12-11 12:21:47,847 p=8690 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 12:21:47,848 p=8690 u=Administrator |  TASK: [common | EPEL repository] ********************************************** 
+2015-12-11 12:22:37,935 p=8690 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 12:22:37,935 p=8690 u=Administrator |  TASK: [common | Nux Dextop repository] **************************************** 
+2015-12-11 12:22:39,311 p=8690 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 12:22:39,311 p=8690 u=Administrator |  TASK: [common | Adobe repository] ********************************************* 
+2015-12-11 12:22:40,953 p=8690 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 12:22:40,953 p=8690 u=Administrator |  TASK: [common | Zabbix repository] ******************************************** 
+2015-12-11 12:22:42,225 p=8690 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 12:22:42,225 p=8690 u=Administrator |  TASK: [common | Nginx repository] ********************************************* 
+2015-12-11 12:22:43,792 p=8690 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 12:22:43,792 p=8690 u=Administrator |  TASK: [common | Development Tools install] ************************************ 
+2015-12-11 12:24:08,452 p=8690 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 12:24:08,453 p=8690 u=Administrator |  TASK: [common | Base packages install] **************************************** 
+2015-12-11 12:24:17,653 p=8690 u=Administrator |  changed: [root-console-1.dl.local] => (item=wget,git,mc)
+2015-12-11 12:24:17,654 p=8690 u=Administrator |  TASK: [common | JRE get] ****************************************************** 
+2015-12-11 12:26:43,567 p=8690 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 12:26:43,567 p=8690 u=Administrator |  TASK: [common | JRE install] ************************************************** 
+2015-12-11 12:26:49,032 p=8690 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 12:26:49,033 p=8690 u=Administrator |  TASK: [common | Hostname change] ********************************************** 
+2015-12-11 12:26:49,476 p=8690 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 12:26:49,476 p=8690 u=Administrator |  TASK: [common | EPEL repository] ********************************************** 
+2015-12-11 12:26:50,945 p=8690 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 12:26:50,945 p=8690 u=Administrator |  TASK: [common | Nux Dextop repository] **************************************** 
+2015-12-11 12:26:52,016 p=8690 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 12:26:52,016 p=8690 u=Administrator |  TASK: [common | Adobe repository] ********************************************* 
+2015-12-11 12:26:53,355 p=8690 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 12:26:53,355 p=8690 u=Administrator |  TASK: [common | Zabbix repository] ******************************************** 
+2015-12-11 12:26:54,343 p=8690 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 12:26:54,343 p=8690 u=Administrator |  TASK: [common | Nginx repository] ********************************************* 
+2015-12-11 12:27:02,624 p=8690 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 12:27:02,624 p=8690 u=Administrator |  TASK: [common | Development Tools install] ************************************ 
+2015-12-11 12:27:04,430 p=8690 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 12:27:04,430 p=8690 u=Administrator |  TASK: [common | Base packages install] **************************************** 
+2015-12-11 12:27:05,471 p=8690 u=Administrator |  ok: [root-console-1.dl.local] => (item=wget,git,mc)
+2015-12-11 12:27:05,472 p=8690 u=Administrator |  TASK: [common | JRE get] ****************************************************** 
+2015-12-11 12:27:05,831 p=8690 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 12:27:05,832 p=8690 u=Administrator |  TASK: [common | JRE install] ************************************************** 
+2015-12-11 12:27:06,781 p=8690 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 12:27:06,782 p=8690 u=Administrator |  TASK: [gui | X Windows install] *********************************************** 
+2015-12-11 12:27:21,967 p=8690 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 12:27:21,967 p=8690 u=Administrator |  TASK: [gui | Fonts install] *************************************************** 
+2015-12-11 12:28:27,762 p=8690 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 12:28:27,763 p=8690 u=Administrator |  TASK: [gui | Xfce install] **************************************************** 
+2015-12-11 12:29:52,715 p=8690 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 12:29:52,716 p=8690 u=Administrator |  TASK: [gui | gdm install] ***************************************************** 
+2015-12-11 12:29:53,535 p=8690 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 12:29:53,535 p=8690 u=Administrator |  TASK: [gui | start in runlevel 5] ********************************************* 
+2015-12-11 12:29:54,016 p=8690 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 12:29:54,016 p=8690 u=Administrator |  TASK: [gui | Xterm install] *************************************************** 
+2015-12-11 12:29:54,749 p=8690 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 12:29:54,750 p=8690 u=Administrator |  TASK: [gui | Gnome PackageKit] ************************************************ 
+2015-12-11 12:43:24,137 p=8690 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 12:43:24,138 p=8690 u=Administrator |  TASK: [gui | Gedit install] *************************************************** 
+2015-12-11 12:43:34,748 p=8690 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 12:43:34,748 p=8690 u=Administrator |  TASK: [gui | VNC packages install] ******************************************** 
+2015-12-11 12:43:52,864 p=8690 u=Administrator |  changed: [root-console-1.dl.local] => (item=tigervnc-server,xorg-x11-fonts-Type1,xinetd)
+2015-12-11 12:43:52,865 p=8690 u=Administrator |  TASK: [gui | remove old custom.conf] ****************************************** 
+2015-12-11 12:43:53,279 p=8690 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 12:43:53,279 p=8690 u=Administrator |  TASK: [gui | copy new custom.conf] ******************************************** 
+2015-12-11 12:43:53,831 p=8690 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 12:43:53,831 p=8690 u=Administrator |  TASK: [gui | copy vncserver] ************************************************** 
+2015-12-11 12:43:54,369 p=8690 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 12:43:54,369 p=8690 u=Administrator |  TASK: [gui | set param in service] ******************************************** 
+2015-12-11 12:43:54,771 p=8690 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 12:43:54,772 p=8690 u=Administrator |  TASK: [gui | restart xinetd service] ****************************************** 
+2015-12-11 12:43:55,272 p=8690 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 12:43:55,273 p=8690 u=Administrator |  TASK: [gui | Firewall configure | vnc port open] ****************************** 
+2015-12-11 12:43:55,922 p=8690 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 12:43:55,923 p=8690 u=Administrator |  TASK: [gui | X Windows install] *********************************************** 
+2015-12-11 12:43:57,769 p=8690 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 12:43:57,769 p=8690 u=Administrator |  TASK: [gui | Fonts install] *************************************************** 
+2015-12-11 12:43:59,627 p=8690 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 12:43:59,627 p=8690 u=Administrator |  TASK: [gui | Xfce install] **************************************************** 
+2015-12-11 12:44:01,492 p=8690 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 12:44:01,493 p=8690 u=Administrator |  TASK: [gui | gdm install] ***************************************************** 
+2015-12-11 12:44:02,416 p=8690 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 12:44:02,416 p=8690 u=Administrator |  TASK: [gui | start in runlevel 5] ********************************************* 
+2015-12-11 12:44:02,942 p=8690 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 12:44:02,942 p=8690 u=Administrator |  TASK: [gui | Xterm install] *************************************************** 
+2015-12-11 12:44:03,707 p=8690 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 12:44:03,708 p=8690 u=Administrator |  TASK: [gui | Gnome PackageKit] ************************************************ 
+2015-12-11 12:44:04,533 p=8690 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 12:44:04,533 p=8690 u=Administrator |  TASK: [gui | Gedit install] *************************************************** 
+2015-12-11 12:44:05,295 p=8690 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 12:44:05,296 p=8690 u=Administrator |  TASK: [gui | VNC packages install] ******************************************** 
+2015-12-11 12:44:06,444 p=8690 u=Administrator |  ok: [root-console-1.dl.local] => (item=tigervnc-server,xorg-x11-fonts-Type1,xinetd)
+2015-12-11 12:44:06,444 p=8690 u=Administrator |  TASK: [gui | remove old custom.conf] ****************************************** 
+2015-12-11 12:44:06,849 p=8690 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 12:44:06,849 p=8690 u=Administrator |  TASK: [gui | copy new custom.conf] ******************************************** 
+2015-12-11 12:44:07,419 p=8690 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 12:44:07,420 p=8690 u=Administrator |  TASK: [gui | copy vncserver] ************************************************** 
+2015-12-11 12:44:08,037 p=8690 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 12:44:08,038 p=8690 u=Administrator |  TASK: [gui | set param in service] ******************************************** 
+2015-12-11 12:44:08,446 p=8690 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 12:44:08,447 p=8690 u=Administrator |  TASK: [gui | restart xinetd service] ****************************************** 
+2015-12-11 12:44:08,972 p=8690 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 12:44:08,973 p=8690 u=Administrator |  TASK: [gui | Firewall configure | vnc port open] ****************************** 
+2015-12-11 12:44:09,639 p=8690 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 12:44:09,640 p=8690 u=Administrator |  TASK: [gui-soft | Adobe Flash install] **************************************** 
+2015-12-11 12:44:49,907 p=8690 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 12:44:49,908 p=8690 u=Administrator |  TASK: [gui-soft | Firefox install] ******************************************** 
+2015-12-11 12:45:19,910 p=8690 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 12:45:19,911 p=8690 u=Administrator |  TASK: [gui-soft | Firefox Java enable] **************************************** 
+2015-12-11 12:45:20,338 p=8690 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 12:45:20,338 p=8690 u=Administrator |  TASK: [gui-soft | Foxit install] ********************************************** 
+2015-12-11 12:46:50,601 p=8690 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 12:46:50,602 p=8690 u=Administrator |  TASK: [gui-soft | Libreoffice install] **************************************** 
+2015-12-11 12:47:45,935 p=8690 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 12:47:45,935 p=8690 u=Administrator |  TASK: [gui-soft | Libreoffice langpack install] ******************************* 
+2015-12-11 12:47:55,796 p=8690 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 12:47:55,797 p=8690 u=Administrator |  TASK: [zabbix-agent | Zabbix-agent packages install] ************************** 
+2015-12-11 12:48:05,481 p=8690 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 12:48:05,481 p=8690 u=Administrator |  TASK: [zabbix-agent | Zabbix-agent configure | remove old zabbix_agentd.conf] *** 
+2015-12-11 12:48:05,897 p=8690 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 12:48:05,897 p=8690 u=Administrator |  TASK: [zabbix-agent | Zabbix-agent configure | copy new zabbix_agentd.conf] *** 
+2015-12-11 12:48:06,527 p=8690 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 12:48:06,527 p=8690 u=Administrator |  TASK: [zabbix-agent | Firewall configure | port open] ************************* 
+2015-12-11 12:48:07,183 p=8690 u=Administrator |  changed: [root-console-1.dl.local] => (item=10050/tcp)
+2015-12-11 12:48:07,743 p=8690 u=Administrator |  changed: [root-console-1.dl.local] => (item=10050/udp)
+2015-12-11 12:48:07,743 p=8690 u=Administrator |  TASK: [zabbix-agent | Updates apt cache] ************************************** 
+2015-12-11 12:48:07,752 p=8690 u=Administrator |  skipping: [root-console-1.dl.local]
+2015-12-11 12:48:07,753 p=8690 u=Administrator |  TASK: [zabbix-agent | Installing zabbix-agent] ******************************** 
+2015-12-11 12:48:07,764 p=8690 u=Administrator |  skipping: [root-console-1.dl.local]
+2015-12-11 12:48:07,765 p=8690 u=Administrator |  TASK: [zabbix-agent | Zabbix-agent configure | remove old zabbix_agentd.conf] *** 
+2015-12-11 12:48:07,774 p=8690 u=Administrator |  skipping: [root-console-1.dl.local]
+2015-12-11 12:48:07,774 p=8690 u=Administrator |  TASK: [zabbix-agent | Zabbix-agent configure | copy new zabbix_agentd.conf] *** 
+2015-12-11 12:48:07,784 p=8690 u=Administrator |  skipping: [root-console-1.dl.local]
+2015-12-11 12:48:07,784 p=8690 u=Administrator |  TASK: [zabbix-agent | Enable the service] ************************************* 
+2015-12-11 12:48:07,794 p=8690 u=Administrator |  skipping: [root-console-1.dl.local]
+2015-12-11 12:48:07,794 p=8690 u=Administrator |  NOTIFIED: [common | epel repo disable] **************************************** 
+2015-12-11 12:48:08,188 p=8690 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 12:48:08,189 p=8690 u=Administrator |  NOTIFIED: [common | nux repo disable] ***************************************** 
+2015-12-11 12:48:08,593 p=8690 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 12:48:08,593 p=8690 u=Administrator |  NOTIFIED: [common | adobe repo disable] *************************************** 
+2015-12-11 12:48:08,953 p=8690 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 12:48:08,954 p=8690 u=Administrator |  NOTIFIED: [common | zabbix repo disable] ************************************** 
+2015-12-11 12:48:09,322 p=8690 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 12:48:09,323 p=8690 u=Administrator |  NOTIFIED: [common | nginx repo disable] *************************************** 
+2015-12-11 12:48:09,691 p=8690 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 12:48:09,692 p=8690 u=Administrator |  NOTIFIED: [gui | xfce startup] ************************************************ 
+2015-12-11 12:48:10,577 p=8690 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 12:48:10,578 p=8690 u=Administrator |  NOTIFIED: [gui | firewall reload] ********************************************* 
+2015-12-11 12:48:11,100 p=8690 u=Administrator |  failed: [root-console-1.dl.local] => {"failed": true}
+2015-12-11 12:48:11,100 p=8690 u=Administrator |  msg: value of state must be one of: running,started,stopped,restarted,reloaded, got: reload
+2015-12-11 12:48:11,100 p=8690 u=Administrator |  FATAL: all hosts have already failed -- aborting
+2015-12-11 12:48:11,100 p=8690 u=Administrator |  NOTIFIED: [gui | firewall reload] ********************************************* 
+2015-12-11 12:48:11,107 p=8690 u=Administrator |  FATAL: no hosts matched or all hosts have already failed -- aborting
+
+2015-12-11 12:48:11,107 p=8690 u=Administrator |  FATAL: all hosts have already failed -- aborting
+2015-12-11 12:48:11,108 p=8690 u=Administrator |  NOTIFIED: [gui | firewall reload] ********************************************* 
+2015-12-11 12:48:11,114 p=8690 u=Administrator |  FATAL: no hosts matched or all hosts have already failed -- aborting
+
+2015-12-11 12:48:11,115 p=8690 u=Administrator |  FATAL: all hosts have already failed -- aborting
+2015-12-11 12:48:11,115 p=8690 u=Administrator |  PLAY RECAP ******************************************************************** 
+2015-12-11 12:48:11,115 p=8690 u=Administrator |             to retry, use: --limit @/root/gui_test.retry
+
+2015-12-11 12:48:11,115 p=8690 u=Administrator |  root-console-1.dl.local    : ok=67   changed=43   unreachable=0    failed=1   
+2015-12-11 13:12:41,079 p=10440 u=Administrator |   
+2015-12-11 13:12:41,079 p=10440 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui_test.yml
+2015-12-11 13:12:41,079 p=10440 u=Administrator |   
+2015-12-11 13:12:41,173 p=10440 u=Administrator |  PLAY [root-console-1.dl.local] ************************************************ 
+2015-12-11 13:12:41,173 p=10440 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-12-11 13:12:43,863 p=10440 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 13:12:43,864 p=10440 u=Administrator |  TASK: [common | Hostname change] ********************************************** 
+2015-12-11 13:12:44,379 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:12:44,379 p=10440 u=Administrator |  TASK: [common | EPEL repository] ********************************************** 
+2015-12-11 13:13:49,279 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:13:49,280 p=10440 u=Administrator |  TASK: [common | Nux Dextop repository] **************************************** 
+2015-12-11 13:13:50,765 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:13:50,766 p=10440 u=Administrator |  TASK: [common | Adobe repository] ********************************************* 
+2015-12-11 13:13:52,579 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:13:52,579 p=10440 u=Administrator |  TASK: [common | Zabbix repository] ******************************************** 
+2015-12-11 13:13:53,949 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:13:53,949 p=10440 u=Administrator |  TASK: [common | Nginx repository] ********************************************* 
+2015-12-11 13:13:55,621 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:13:55,622 p=10440 u=Administrator |  TASK: [common | Development Tools install] ************************************ 
+2015-12-11 13:15:31,287 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:15:31,287 p=10440 u=Administrator |  TASK: [common | Base packages install] **************************************** 
+2015-12-11 13:15:41,811 p=10440 u=Administrator |  changed: [root-console-1.dl.local] => (item=wget,git,mc)
+2015-12-11 13:15:41,812 p=10440 u=Administrator |  TASK: [common | JRE get] ****************************************************** 
+2015-12-11 13:18:59,221 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:18:59,221 p=10440 u=Administrator |  TASK: [common | JRE install] ************************************************** 
+2015-12-11 13:19:05,854 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:19:05,854 p=10440 u=Administrator |  TASK: [common | Hostname change] ********************************************** 
+2015-12-11 13:19:06,462 p=10440 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 13:19:06,462 p=10440 u=Administrator |  TASK: [common | EPEL repository] ********************************************** 
+2015-12-11 13:19:08,152 p=10440 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 13:19:08,152 p=10440 u=Administrator |  TASK: [common | Nux Dextop repository] **************************************** 
+2015-12-11 13:19:09,456 p=10440 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 13:19:09,456 p=10440 u=Administrator |  TASK: [common | Adobe repository] ********************************************* 
+2015-12-11 13:19:10,779 p=10440 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 13:19:10,780 p=10440 u=Administrator |  TASK: [common | Zabbix repository] ******************************************** 
+2015-12-11 13:19:11,971 p=10440 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 13:19:11,971 p=10440 u=Administrator |  TASK: [common | Nginx repository] ********************************************* 
+2015-12-11 13:19:13,449 p=10440 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 13:19:13,449 p=10440 u=Administrator |  TASK: [common | Development Tools install] ************************************ 
+2015-12-11 13:19:15,545 p=10440 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 13:19:15,545 p=10440 u=Administrator |  TASK: [common | Base packages install] **************************************** 
+2015-12-11 13:19:16,877 p=10440 u=Administrator |  ok: [root-console-1.dl.local] => (item=wget,git,mc)
+2015-12-11 13:19:16,877 p=10440 u=Administrator |  TASK: [common | JRE get] ****************************************************** 
+2015-12-11 13:19:17,364 p=10440 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 13:19:17,365 p=10440 u=Administrator |  TASK: [common | JRE install] ************************************************** 
+2015-12-11 13:19:18,524 p=10440 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 13:19:18,524 p=10440 u=Administrator |  TASK: [gui | X Windows install] *********************************************** 
+2015-12-11 13:19:38,000 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:19:38,000 p=10440 u=Administrator |  TASK: [gui | Fonts install] *************************************************** 
+2015-12-11 13:20:52,840 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:20:52,841 p=10440 u=Administrator |  TASK: [gui | Xfce install] **************************************************** 
+2015-12-11 13:22:16,110 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:22:16,111 p=10440 u=Administrator |  TASK: [gui | gdm install] ***************************************************** 
+2015-12-11 13:22:17,211 p=10440 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 13:22:17,211 p=10440 u=Administrator |  TASK: [gui | start in runlevel 5] ********************************************* 
+2015-12-11 13:22:17,853 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:22:17,854 p=10440 u=Administrator |  TASK: [gui | Xterm install] *************************************************** 
+2015-12-11 13:22:18,779 p=10440 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 13:22:18,779 p=10440 u=Administrator |  TASK: [gui | Gnome PackageKit] ************************************************ 
+2015-12-11 13:22:46,289 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:22:46,290 p=10440 u=Administrator |  TASK: [gui | Gedit install] *************************************************** 
+2015-12-11 13:23:12,166 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:23:12,166 p=10440 u=Administrator |  TASK: [gui | VNC packages install] ******************************************** 
+2015-12-11 13:24:04,599 p=10440 u=Administrator |  changed: [root-console-1.dl.local] => (item=tigervnc-server,xorg-x11-fonts-Type1,xinetd)
+2015-12-11 13:24:04,600 p=10440 u=Administrator |  TASK: [gui | remove old custom.conf] ****************************************** 
+2015-12-11 13:24:05,056 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:24:05,057 p=10440 u=Administrator |  TASK: [gui | copy new custom.conf] ******************************************** 
+2015-12-11 13:24:05,691 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:24:05,691 p=10440 u=Administrator |  TASK: [gui | copy vncserver] ************************************************** 
+2015-12-11 13:24:06,311 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:24:06,312 p=10440 u=Administrator |  TASK: [gui | set param in service] ******************************************** 
+2015-12-11 13:24:06,772 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:24:06,773 p=10440 u=Administrator |  TASK: [gui | restart xinetd service] ****************************************** 
+2015-12-11 13:24:07,268 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:24:07,269 p=10440 u=Administrator |  TASK: [gui | Firewall configure | vnc port open] ****************************** 
+2015-12-11 13:24:07,913 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:24:07,914 p=10440 u=Administrator |  TASK: [gui | X Windows install] *********************************************** 
+2015-12-11 13:24:09,929 p=10440 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 13:24:09,930 p=10440 u=Administrator |  TASK: [gui | Fonts install] *************************************************** 
+2015-12-11 13:24:11,999 p=10440 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 13:24:11,999 p=10440 u=Administrator |  TASK: [gui | Xfce install] **************************************************** 
+2015-12-11 13:24:13,961 p=10440 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 13:24:13,961 p=10440 u=Administrator |  TASK: [gui | gdm install] ***************************************************** 
+2015-12-11 13:24:14,825 p=10440 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 13:24:14,825 p=10440 u=Administrator |  TASK: [gui | start in runlevel 5] ********************************************* 
+2015-12-11 13:24:15,359 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:24:15,359 p=10440 u=Administrator |  TASK: [gui | Xterm install] *************************************************** 
+2015-12-11 13:24:16,146 p=10440 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 13:24:16,146 p=10440 u=Administrator |  TASK: [gui | Gnome PackageKit] ************************************************ 
+2015-12-11 13:24:16,910 p=10440 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 13:24:16,910 p=10440 u=Administrator |  TASK: [gui | Gedit install] *************************************************** 
+2015-12-11 13:24:17,683 p=10440 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 13:24:17,683 p=10440 u=Administrator |  TASK: [gui | VNC packages install] ******************************************** 
+2015-12-11 13:24:18,889 p=10440 u=Administrator |  ok: [root-console-1.dl.local] => (item=tigervnc-server,xorg-x11-fonts-Type1,xinetd)
+2015-12-11 13:24:18,890 p=10440 u=Administrator |  TASK: [gui | remove old custom.conf] ****************************************** 
+2015-12-11 13:24:19,290 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:24:19,290 p=10440 u=Administrator |  TASK: [gui | copy new custom.conf] ******************************************** 
+2015-12-11 13:24:19,925 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:24:19,925 p=10440 u=Administrator |  TASK: [gui | copy vncserver] ************************************************** 
+2015-12-11 13:24:20,558 p=10440 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 13:24:20,559 p=10440 u=Administrator |  TASK: [gui | set param in service] ******************************************** 
+2015-12-11 13:24:20,962 p=10440 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 13:24:20,963 p=10440 u=Administrator |  TASK: [gui | restart xinetd service] ****************************************** 
+2015-12-11 13:24:21,638 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:24:21,639 p=10440 u=Administrator |  TASK: [gui | Firewall configure | vnc port open] ****************************** 
+2015-12-11 13:24:22,167 p=10440 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 13:24:22,168 p=10440 u=Administrator |  TASK: [gui-soft | Adobe Flash install] **************************************** 
+2015-12-11 13:25:10,074 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:25:10,075 p=10440 u=Administrator |  TASK: [gui-soft | Firefox install] ******************************************** 
+2015-12-11 13:26:20,119 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:26:20,119 p=10440 u=Administrator |  TASK: [gui-soft | Firefox Java enable] **************************************** 
+2015-12-11 13:26:20,525 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:26:20,526 p=10440 u=Administrator |  TASK: [gui-soft | Foxit install] ********************************************** 
+2015-12-11 13:31:08,362 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:31:08,363 p=10440 u=Administrator |  TASK: [gui-soft | Libreoffice install] **************************************** 
+2015-12-11 13:38:15,513 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:38:15,513 p=10440 u=Administrator |  TASK: [gui-soft | Libreoffice langpack install] ******************************* 
+2015-12-11 13:38:30,631 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:38:30,632 p=10440 u=Administrator |  TASK: [zabbix-agent | Zabbix-agent packages install] ************************** 
+2015-12-11 13:38:38,658 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:38:38,659 p=10440 u=Administrator |  TASK: [zabbix-agent | Zabbix-agent configure | remove old zabbix_agentd.conf] *** 
+2015-12-11 13:38:39,064 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:38:39,065 p=10440 u=Administrator |  TASK: [zabbix-agent | Zabbix-agent configure | copy new zabbix_agentd.conf] *** 
+2015-12-11 13:38:39,627 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:38:39,628 p=10440 u=Administrator |  TASK: [zabbix-agent | Firewall configure | port open] ************************* 
+2015-12-11 13:38:40,220 p=10440 u=Administrator |  changed: [root-console-1.dl.local] => (item=10050/tcp)
+2015-12-11 13:38:40,766 p=10440 u=Administrator |  changed: [root-console-1.dl.local] => (item=10050/udp)
+2015-12-11 13:38:40,767 p=10440 u=Administrator |  TASK: [zabbix-agent | Updates apt cache] ************************************** 
+2015-12-11 13:38:40,776 p=10440 u=Administrator |  skipping: [root-console-1.dl.local]
+2015-12-11 13:38:40,777 p=10440 u=Administrator |  TASK: [zabbix-agent | Installing zabbix-agent] ******************************** 
+2015-12-11 13:38:40,789 p=10440 u=Administrator |  skipping: [root-console-1.dl.local]
+2015-12-11 13:38:40,789 p=10440 u=Administrator |  TASK: [zabbix-agent | Zabbix-agent configure | remove old zabbix_agentd.conf] *** 
+2015-12-11 13:38:40,799 p=10440 u=Administrator |  skipping: [root-console-1.dl.local]
+2015-12-11 13:38:40,800 p=10440 u=Administrator |  TASK: [zabbix-agent | Zabbix-agent configure | copy new zabbix_agentd.conf] *** 
+2015-12-11 13:38:40,809 p=10440 u=Administrator |  skipping: [root-console-1.dl.local]
+2015-12-11 13:38:40,810 p=10440 u=Administrator |  TASK: [zabbix-agent | Enable the service] ************************************* 
+2015-12-11 13:38:40,819 p=10440 u=Administrator |  skipping: [root-console-1.dl.local]
+2015-12-11 13:38:40,820 p=10440 u=Administrator |  NOTIFIED: [common | epel repo disable] **************************************** 
+2015-12-11 13:38:41,211 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:38:41,211 p=10440 u=Administrator |  NOTIFIED: [common | nux repo disable] ***************************************** 
+2015-12-11 13:38:41,590 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:38:41,591 p=10440 u=Administrator |  NOTIFIED: [common | adobe repo disable] *************************************** 
+2015-12-11 13:38:41,978 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:38:41,978 p=10440 u=Administrator |  NOTIFIED: [common | zabbix repo disable] ************************************** 
+2015-12-11 13:38:42,364 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:38:42,364 p=10440 u=Administrator |  NOTIFIED: [common | nginx repo disable] *************************************** 
+2015-12-11 13:38:42,754 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:38:42,755 p=10440 u=Administrator |  NOTIFIED: [gui | xfce startup] ************************************************ 
+2015-12-11 13:38:43,662 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:38:43,663 p=10440 u=Administrator |  NOTIFIED: [gui | firewall reload] ********************************************* 
+2015-12-11 13:38:45,346 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:38:45,347 p=10440 u=Administrator |  NOTIFIED: [zabbix-agent | zabbix-agent sevice reconfig] *********************** 
+2015-12-11 13:38:46,250 p=10440 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 13:38:46,251 p=10440 u=Administrator |  PLAY RECAP ******************************************************************** 
+2015-12-11 13:38:46,251 p=10440 u=Administrator |  root-console-1.dl.local    : ok=69   changed=45   unreachable=0    failed=0   
+2015-12-11 14:19:21,354 p=13524 u=Administrator |   
+2015-12-11 14:19:21,355 p=13524 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui_test.yml
+2015-12-11 14:19:21,355 p=13524 u=Administrator |   
+2015-12-11 14:19:21,432 p=13524 u=Administrator |  PLAY [root-console-1.dl.local] ************************************************ 
+2015-12-11 14:19:21,432 p=13524 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-12-11 14:19:24,554 p=13524 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 14:19:24,555 p=13524 u=Administrator |  TASK: [common | Hostname change] ********************************************** 
+2015-12-11 14:19:25,097 p=13524 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 14:19:25,098 p=13524 u=Administrator |  TASK: [common | EPEL repository] ********************************************** 
+2015-12-11 14:32:03,613 p=13524 u=Administrator |  ERROR: interrupted
+2015-12-11 14:33:10,099 p=14154 u=Administrator |   
+2015-12-11 14:33:10,099 p=14154 u=Administrator |  /usr/bin/ansible-playbook ./playbooks/gui_test.yml
+2015-12-11 14:33:10,099 p=14154 u=Administrator |   
+2015-12-11 14:33:10,176 p=14154 u=Administrator |  PLAY [root-console-1.dl.local] ************************************************ 
+2015-12-11 14:33:10,176 p=14154 u=Administrator |  GATHERING FACTS *************************************************************** 
+2015-12-11 14:33:12,381 p=14154 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 14:33:12,382 p=14154 u=Administrator |  TASK: [common | Hostname change] ********************************************** 
+2015-12-11 14:33:12,929 p=14154 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 14:33:12,930 p=14154 u=Administrator |  TASK: [common | EPEL repository] ********************************************** 
+2015-12-11 14:57:01,964 p=14154 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 14:57:01,965 p=14154 u=Administrator |  TASK: [common | Nux Dextop repository] **************************************** 
+2015-12-11 14:57:03,607 p=14154 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 14:57:03,608 p=14154 u=Administrator |  TASK: [common | Adobe repository] ********************************************* 
+2015-12-11 14:57:05,257 p=14154 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 14:57:05,258 p=14154 u=Administrator |  TASK: [common | Zabbix repository] ******************************************** 
+2015-12-11 14:57:06,611 p=14154 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 14:57:06,611 p=14154 u=Administrator |  TASK: [common | Nginx repository] ********************************************* 
+2015-12-11 14:57:08,276 p=14154 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 14:57:08,276 p=14154 u=Administrator |  TASK: [common | Development Tools install] ************************************ 
+2015-12-11 14:59:05,596 p=14154 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 14:59:05,596 p=14154 u=Administrator |  TASK: [common | Base packages install] **************************************** 
+2015-12-11 14:59:16,784 p=14154 u=Administrator |  changed: [root-console-1.dl.local] => (item=wget,git,mc)
+2015-12-11 14:59:16,785 p=14154 u=Administrator |  TASK: [common | JRE get] ****************************************************** 
+2015-12-11 15:03:31,034 p=14154 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 15:03:31,035 p=14154 u=Administrator |  TASK: [common | JRE install] ************************************************** 
+2015-12-11 15:03:36,427 p=14154 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 15:03:36,427 p=14154 u=Administrator |  TASK: [common | Hostname change] ********************************************** 
+2015-12-11 15:03:36,899 p=14154 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 15:03:36,899 p=14154 u=Administrator |  TASK: [common | EPEL repository] ********************************************** 
+2015-12-11 15:03:38,424 p=14154 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 15:03:38,425 p=14154 u=Administrator |  TASK: [common | Nux Dextop repository] **************************************** 
+2015-12-11 15:03:39,502 p=14154 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 15:03:39,503 p=14154 u=Administrator |  TASK: [common | Adobe repository] ********************************************* 
+2015-12-11 15:03:41,092 p=14154 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 15:03:41,092 p=14154 u=Administrator |  TASK: [common | Zabbix repository] ******************************************** 
+2015-12-11 15:03:42,109 p=14154 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 15:03:42,110 p=14154 u=Administrator |  TASK: [common | Nginx repository] ********************************************* 
+2015-12-11 15:03:43,434 p=14154 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 15:03:43,434 p=14154 u=Administrator |  TASK: [common | Development Tools install] ************************************ 
+2015-12-11 15:03:46,203 p=14154 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 15:03:46,203 p=14154 u=Administrator |  TASK: [common | Base packages install] **************************************** 
+2015-12-11 15:03:47,267 p=14154 u=Administrator |  ok: [root-console-1.dl.local] => (item=wget,git,mc)
+2015-12-11 15:03:47,268 p=14154 u=Administrator |  TASK: [common | JRE get] ****************************************************** 
+2015-12-11 15:03:47,637 p=14154 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 15:03:47,638 p=14154 u=Administrator |  TASK: [common | JRE install] ************************************************** 
+2015-12-11 15:03:48,632 p=14154 u=Administrator |  ok: [root-console-1.dl.local]
+2015-12-11 15:03:48,632 p=14154 u=Administrator |  TASK: [gui | X Windows install] *********************************************** 
+2015-12-11 15:04:07,920 p=14154 u=Administrator |  changed: [root-console-1.dl.local]
+2015-12-11 15:04:07,920 p=14154 u=Administrator |  TASK: [gui | Fonts install] *************************************************** 
